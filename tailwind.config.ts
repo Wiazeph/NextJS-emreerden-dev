@@ -12,14 +12,15 @@ const config: Config = {
       center: true,
 
       padding: {
-        DEFAULT: '1rem',
-        sm: '1.5rem',
-        md: '2rem',
-        mdl: '2.5rem',
-        lg: '3rem',
-        lgx: '3.5rem',
-        xl: '4rem',
-        xl2: '4.5rem',
+        DEFAULT: '1.5rem',
+        sm: '2rem',
+        md: '2.5rem',
+        mdl: '3rem',
+        lg: '3.5rem',
+        lgx: '4rem',
+        xl: '4.5rem',
+        xl2: '5rem',
+        '2xl': '5.5rem',
       },
 
       screens: {
@@ -35,6 +36,10 @@ const config: Config = {
     },
 
     extend: {
+      spacing: {
+        88: '22rem',
+      },
+
       screens: {
         mdl: '896px',
         lgx: '1152px',
