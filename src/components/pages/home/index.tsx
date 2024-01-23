@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {}
 
 const HomePageComponent = (props: Props) => {
-  return <div>HomePageComponent</div>
+  return <main className="Home-Page Main-Element">HomePageComponent</main>
 }
 
 export default HomePageComponent

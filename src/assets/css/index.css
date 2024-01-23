@@ -4,10 +4,12 @@
 
 @layer base {
   body {
-    @apply flex min-h-dvh;
+    @apply min-h-dvh;
   }
+}
 
-  main {
+@layer components {
+  .Main-Element {
     @apply container;
   }
 }
