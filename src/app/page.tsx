@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePageComponent from '@/components/pages/home'
 
 type Props = {}
 
 const HomePage = (props: Props) => {
-  return <div>HomePage</div>
+  return <HomePageComponent />
 }
 
 export default HomePage
