@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply min-h-dvh;
+    @apply min-h-dvh md:flex;
   }
 }
 
