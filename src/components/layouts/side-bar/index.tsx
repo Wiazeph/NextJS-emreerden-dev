@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfileComponent from './profile'
 import SocialsComponent from './socials'
+import ContactComponent from './contact'
 
 type Props = {}
 
@@ -10,6 +11,8 @@ const SideBarComponent = (props: Props) => {
       <ProfileComponent />
 
       <SocialsComponent />
+
+      <ContactComponent />
     </div>
   )
 }

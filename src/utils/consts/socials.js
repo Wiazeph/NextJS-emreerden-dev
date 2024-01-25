@@ -5,7 +5,6 @@ import {
   FiLinkedin,
   FiCodepen,
 } from 'react-icons/fi'
-import { FaTelegramPlane } from 'react-icons/fa'
 
 const SocialLinks = [
   {
@@ -42,13 +41,6 @@ const SocialLinks = [
     bgColor: 'bg-stone-50',
     hoverColor: 'bg-stone-100',
     icon: <FiCodepen />,
-  },
-  {
-    name: 'Telegram',
-    path: 'https://t.me/Wiazeph',
-    bgColor: 'bg-blue-50',
-    hoverColor: 'bg-blue-100',
-    icon: <FaTelegramPlane />,
   },
 ]
 
