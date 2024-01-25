@@ -1,4 +1,5 @@
 import React from 'react'
+import PageHeaderComponent from '../page-header'
 import Skills from '@/utils/consts/skills'
 
 type Props = {}
@@ -6,19 +7,10 @@ type Props = {}
 const SkillsPageComponent = (props: Props) => {
   return (
     <main className="Skills Page">
-      <div className="Page-Title flex flex-col md:flex-row md:flex-wrap items-center md:items-baseline gap-4 text-center md:text-left">
-        <div>skills.</div>
-
-        <div className="flex items-center gap-x-2 font-normal text-sm tracking-normal">
-          <div className="hidden xl:block text-zinc-400">{'<span>'}</div>
-
-          <div className="sm:text-base text-zinc-600 xl:text-zinc-950">
-            Skills I know, I use and currently continue to learn
-          </div>
-
-          <div className="hidden xl:block text-zinc-400">{'</span>'}</div>
-        </div>
-      </div>
+      <PageHeaderComponent
+        pageTitle="skills."
+        pageDescription="Skills I know, I use and currently continue to learn"
+      />
 
       <ul className="Skills-List max-w-[700px] flex flex-wrap justify-center md:justify-normal gap-4">
         {Skills.map((skill, index) => (

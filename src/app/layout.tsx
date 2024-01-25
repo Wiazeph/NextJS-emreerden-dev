@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <SideBarComponent />
 
-        <div className="container md:h-screen flex flex-col md:overflow-y-auto">
+        <div className="container md:h-dvh md:overflow-y-auto">
           <NavBarComponent />
 
           {children}

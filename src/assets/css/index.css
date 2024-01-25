@@ -22,7 +22,7 @@
 
 @layer utilities {
   .Page-Title {
-    @apply text-4xl md:text-5xl font-bold tracking-[-2px];
+    @apply text-4xl font-bold tracking-[-2px];
   }
 
   /* no-scrollbar */

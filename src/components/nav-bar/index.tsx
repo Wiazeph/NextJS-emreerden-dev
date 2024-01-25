@@ -6,7 +6,7 @@ type Props = {}
 
 const NavBarComponent = (props: Props) => {
   return (
-    <nav className="Nav-Bar pt-6 pb-12 sm:pt-7 sm:pb-14 md:pt-8 md:pb-16 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16 flex justify-center md:justify-normal gap-x-4 overflow-x-auto no-scrollbar">
+    <nav className="Nav-Bar pt-6 pb-12 sm:pt-7 sm:pb-14 md:py-8 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16 flex justify-center md:justify-normal gap-x-3.5 mdl:gap-x-4 overflow-x-auto no-scrollbar">
       {Routes.map((route, index) => (
         <Link
           key={index}
