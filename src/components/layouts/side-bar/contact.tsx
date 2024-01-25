@@ -6,7 +6,7 @@ type Props = {}
 const ContactComponent = (props: Props) => {
   return (
     <div className="Contact flex flex-col gap-y-4">
-      <div className="text-center font-medium text-sm text-zinc-600">
+      <div className="text-center font-medium text-sm text-zinc-600 tracking-[0.5px]">
         Contact Me!
       </div>
 

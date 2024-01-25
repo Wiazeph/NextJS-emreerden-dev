@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply md:flex;
+    @apply md:flex bg-white text-zinc-950;
   }
 }
 

@@ -6,7 +6,7 @@ type Props = {}
 const SocialsComponent = (props: Props) => {
   return (
     <div className="Socials flex flex-col gap-y-4">
-      <div className="text-center font-medium text-sm text-zinc-600">
+      <div className="text-center font-medium text-sm text-zinc-600 tracking-[0.5px]">
         Follow Me!
       </div>
 

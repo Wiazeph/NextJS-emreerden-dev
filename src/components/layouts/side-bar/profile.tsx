@@ -1,6 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 
+import { Caveat } from 'next/font/google'
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['700'],
+  style: ['normal'],
+})
+
 type Props = {}
 
 const ProfileComponent = (props: Props) => {
@@ -14,12 +23,19 @@ const ProfileComponent = (props: Props) => {
         />
       </div>
 
-      <div className="Name text-3xl sm:text-4xl mdl:text-4xl lgx:text-5xl font-bold">
+      <div
+        className={`${caveat.className} Name text-6xl md:text-7xl tracking-[-1px]`}
+      >
         Emre Erden
       </div>
 
-      <div className="About sm:text-lg text-zinc-600">
-        gamer, <br /> super duper front-end developer
+      <div className="About flex flex-col gap-y-1.5 sm:text-lg text-zinc-600">
+        <div>gamer,</div>
+        <div className="flex gap-x-0.5">
+          <div className="mt-px">{'<'}</div>
+          <div>super duper front-end developer</div>
+          <div className="mt-px">{'/>'}</div>
+        </div>
       </div>
     </div>
   )
