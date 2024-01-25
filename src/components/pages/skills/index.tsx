@@ -12,7 +12,7 @@ const SkillsPageComponent = (props: Props) => {
         pageDescription="Skills I know, I use and currently continue to learn"
       />
 
-      <ul className="Skills-List max-w-[700px] flex flex-wrap justify-center md:justify-normal gap-4">
+      <ul className="Skills-List List-Card">
         {Skills.map((skill, index) => (
           <li key={index} className="w-44 mdl:w-48 lg:w-52">
             <a
