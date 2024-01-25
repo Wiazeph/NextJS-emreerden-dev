@@ -29,12 +29,12 @@ const ProfileComponent = (props: Props) => {
         Emre Erden
       </div>
 
-      <div className="About flex flex-col gap-y-1.5 sm:text-lg text-zinc-600">
+      <div className="About flex flex-col gap-y-1.5 sm:text-lg md:text-base lgx:text-lg text-zinc-600">
         <div>gamer,</div>
         <div className="flex gap-x-0.5">
-          <div className="mt-px">{'<'}</div>
+          <div className="md:hidden lg:block mt-px">{'<'}</div>
           <div>super duper front-end developer</div>
-          <div className="mt-px">{'/>'}</div>
+          <div className="md:hidden lg:block mt-px">{'/>'}</div>
         </div>
       </div>
     </div>

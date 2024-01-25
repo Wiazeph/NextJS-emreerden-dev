@@ -10,7 +10,7 @@
 
 @layer components {
   .Page {
-    @apply pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 flex flex-col gap-y-6 sm:gap-y-7 md:gap-y-8 mdl:gap-y-10 lg:gap-y-12;
+    @apply pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;
   }
   .Main-Link {
     @apply underline hover:text-zinc-500 transition-colors duration-200;
@@ -21,10 +21,17 @@
 }
 
 @layer utilities {
-  .Main-Padding {
-    @apply py-6 sm:py-7 md:py-8 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16;
-  }
   .Page-Title {
     @apply text-4xl md:text-5xl font-bold tracking-[-2px];
   }
+
+  /* no-scrollbar */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* no-scrollbar */
 }
