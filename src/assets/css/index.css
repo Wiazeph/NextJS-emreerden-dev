@@ -13,3 +13,9 @@
     @apply container;
   }
 }
+
+@layer utilities {
+  .Main-Padding {
+    @apply py-6 sm:py-7 md:py-8 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16;
+  }
+}
