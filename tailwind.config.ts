@@ -42,6 +42,8 @@ const config: Config = {
         34: '8.5rem',
         88: '22rem',
         104: '26rem',
+        112: '28rem',
+        120: '30rem',
       },
 
       screens: {
