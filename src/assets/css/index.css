@@ -10,12 +10,18 @@
 
 @layer components {
   .Main-Element {
-    @apply container;
+    @apply container md:h-screen md:overflow-y-auto;
+  }
+  .Main-Link {
+    @apply underline hover:text-zinc-500 transition-colors duration-200;
   }
 }
 
 @layer utilities {
   .Main-Padding {
     @apply py-6 sm:py-7 md:py-8 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16;
+  }
+  .Page-Title {
+    @apply text-4xl sm:text-5xl md:text-6xl font-bold tracking-[-2px];
   }
 }
