@@ -10,10 +10,13 @@
 
 @layer components {
   .Page {
-    @apply pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16;
+    @apply pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 flex flex-col gap-y-6 sm:gap-y-7 md:gap-y-8 mdl:gap-y-10 lg:gap-y-12;
   }
   .Main-Link {
     @apply underline hover:text-zinc-500 transition-colors duration-200;
+  }
+  .Main-Card {
+    @apply p-4 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm;
   }
 }
 

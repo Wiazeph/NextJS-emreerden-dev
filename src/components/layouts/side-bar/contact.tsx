@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactLinks from '@/utils/consts/contact'
+import ContactLinks from '@/utils/consts/side-bar/contact'
 
 type Props = {}
 
@@ -17,9 +17,9 @@ const ContactComponent = (props: Props) => {
               href={contact.path}
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-4 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm ${
-                contact.bgColor
-              } ${'hover:' + contact.hoverColor}`}
+              className={`Main-Card ${contact.bgColor} ${
+                'hover:' + contact.hoverColor
+              }`}
             >
               <div className="text-lg">{contact.icon}</div>
 
