@@ -7,7 +7,7 @@ type Props = {
 
 const PageHeaderComponent = (props: Props) => {
   return (
-    <div className="flex flex-col md:flex-row md:flex-wrap items-center md:items-baseline gap-4 text-center md:text-left">
+    <div className="flex flex-col md:flex-row md:flex-wrap items-center md:items-baseline gap-4">
       <div className="Page-Title">{props.pageTitle}</div>
 
       <div className="flex items-center gap-x-2">
