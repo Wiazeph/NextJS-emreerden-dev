@@ -14,7 +14,7 @@ const AboutPageComponent = (props: Props) => {
           href="https://goo.gl/maps/cadu4sCBbzi4B6F98"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline"
+          className="Main-Link"
         >
           Ankara/Turkey
         </a>
@@ -25,7 +25,7 @@ const AboutPageComponent = (props: Props) => {
         myself.
       </div>
 
-      <div className="flex flex-col gap-y-6">
+      <div className="flex flex-col gap-y-4">
         <div className="text-sm text-zinc-600">
           What I like to do and my hobbies are:
         </div>

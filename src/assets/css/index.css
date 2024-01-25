@@ -22,6 +22,6 @@
     @apply py-6 sm:py-7 md:py-8 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16;
   }
   .Page-Title {
-    @apply text-4xl sm:text-5xl md:text-6xl font-bold tracking-[-2px];
+    @apply text-4xl md:text-5xl font-bold tracking-[-2px];
   }
 }
