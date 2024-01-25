@@ -18,7 +18,7 @@ const SocialsComponent = (props: Props) => {
           >
             <div>{social.icon}</div>
 
-            <div>{social.name}</div>
+            <div className="text-sm">{social.name}</div>
           </a>
         </li>
       ))}

@@ -7,7 +7,7 @@ const SocialLinks = [
     username: '@Wiazeph',
     bgColor: 'bg-blue-50',
     hoverColor: 'bg-blue-100',
-    icon: <Twitter />,
+    icon: <Twitter size={20} />,
   },
   {
     name: 'Instagram',
@@ -15,7 +15,7 @@ const SocialLinks = [
     username: '@Wiazeph',
     bgColor: 'bg-red-50',
     hoverColor: 'bg-red-100',
-    icon: <Instagram />,
+    icon: <Instagram size={20} />,
   },
   {
     name: 'GitHub',
@@ -23,7 +23,7 @@ const SocialLinks = [
     username: '@Wiazeph',
     bgColor: 'bg-gray-50',
     hoverColor: 'bg-gray-100',
-    icon: <Github />,
+    icon: <Github size={20} />,
   },
   {
     name: 'LinkedIn',
@@ -31,7 +31,7 @@ const SocialLinks = [
     username: '@Wiazeph',
     bgColor: 'bg-blue-50',
     hoverColor: 'bg-blue-100',
-    icon: <Linkedin />,
+    icon: <Linkedin size={20} />,
   },
   {
     name: 'Codepen',
@@ -39,7 +39,7 @@ const SocialLinks = [
     username: '@Wiazeph',
     bgColor: 'bg-stone-50',
     hoverColor: 'bg-stone-100',
-    icon: <Codepen />,
+    icon: <Codepen size={20} />,
   },
 ]
 
