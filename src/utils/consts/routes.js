@@ -16,8 +16,8 @@ const Routes = [
     name: 'portfolio',
   },
   {
-    path: '/tools',
-    name: 'tools',
+    path: '/utilities',
+    name: 'utilities',
   },
 ]
 
