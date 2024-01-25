@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import '@/assets/css/index.css'
 import SideBarComponent from '@/components/layouts/side-bar'
+import NavBarComponent from '@/components/nav-bar'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,7 +25,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <SideBarComponent />
-        {children}
+
+        <div className="container md:h-screen flex flex-col md:overflow-y-auto">
+          <NavBarComponent />
+
+          {children}
+        </div>
       </body>
     </html>
   )

@@ -9,8 +9,8 @@
 }
 
 @layer components {
-  .Main-Element {
-    @apply container md:h-screen md:overflow-y-auto;
+  .Page {
+    @apply pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16;
   }
   .Main-Link {
     @apply underline hover:text-zinc-500 transition-colors duration-200;

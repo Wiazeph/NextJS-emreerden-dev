@@ -4,7 +4,7 @@ type Props = {}
 
 const AboutPageComponent = (props: Props) => {
   return (
-    <main className="About-Page Main-Element Main-Padding flex flex-col gap-y-8">
+    <main className="About Page flex flex-col gap-y-8">
       <div className="Page-Title">who am i.</div>
 
       <div className="text-lg">
