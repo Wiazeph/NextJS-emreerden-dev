@@ -16,7 +16,7 @@ const SocialsComponent = (props: Props) => {
               social.bgColor
             } ${'hover:' + social.hoverColor}`}
           >
-            <div>{social.icon}</div>
+            <div className="text-lg">{social.icon}</div>
 
             <div className="text-sm">{social.name}</div>
           </a>
