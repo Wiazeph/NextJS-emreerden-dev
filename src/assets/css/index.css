@@ -10,10 +10,11 @@
 
 @layer components {
   .Page {
-    @apply pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 max-w-[700px] flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;
+    @apply bg-red-500 container md:h-dvh pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12 md:overflow-y-auto;
   }
-  .Main-Link {
-    @apply underline hover:text-zinc-500 transition-colors duration-200;
+
+  .Page-Title {
+    @apply font-bold text-4xl text-center md:text-left tracking-[-2px];
   }
 
   /* Card */
@@ -30,10 +31,6 @@
 }
 
 @layer utilities {
-  .Page-Title {
-    @apply font-bold text-4xl text-center md:text-left tracking-[-2px];
-  }
-
   /* no-scrollbar */
   .no-scrollbar {
     -ms-overflow-style: none;

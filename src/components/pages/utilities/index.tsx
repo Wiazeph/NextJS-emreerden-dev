@@ -25,7 +25,7 @@ const UtilitiesPageComponent = (props: Props) => {
             key={index}
             href={utility.path}
             className={cn(
-              'p-1.5 rounded-md hover:bg-zinc-100 transition-colors duration-200',
+              'p-1.5 rounded-md hover:bg-zinc-100 transition-colors',
               pathname === utility.path ? 'bg-zinc-100 hover:bg-zinc-200' : ''
             )}
           >

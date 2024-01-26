@@ -6,18 +6,14 @@ type Props = {}
 
 const NavBarComponent = (props: Props) => {
   return (
-    <nav className="Nav-Bar pt-6 pb-12 sm:pt-7 sm:pb-14 md:py-8 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16 flex justify-center md:justify-normal gap-x-2 md:gap-x-2.5 mdl:gap-x-3 lg:gap-x-3.5 lgx:gap-x-4 overflow-x-auto no-scrollbar">
+    <nav className="Nav-Bar flex flex-col gap-y-1 text-sm">
       {Routes.map((route, index) => (
         <Link
           key={index}
           href={route.path}
-          className="flex gap-x-4 hover:text-zinc-500 transition-colors duration-200"
+          className="group -mx-2 p-2 font-medium rounded-md hover:bg-zinc-200 transition-colors"
         >
-          <div>{route.name}</div>
-
-          {index !== Routes.length - 1 && (
-            <div className="hidden sm:block text-zinc-200">{'/'}</div>
-          )}
+          <div className="transition-transform">{route.name}</div>
         </Link>
       ))}
     </nav>

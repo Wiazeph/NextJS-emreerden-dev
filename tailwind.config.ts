@@ -27,16 +27,12 @@ const config: Config = {
         sm: '640px',
         md: '768px',
         mdl: '896px',
-        lg: '1024px',
-        lgx: '1152px',
-        xl: '1280px',
-        xl2: '1408px',
-        '2xl': '1536px',
       },
     },
 
     extend: {
       spacing: {
+        18: '4.5rem',
         26: '6.5rem',
         30: '7.5rem',
         34: '8.5rem',

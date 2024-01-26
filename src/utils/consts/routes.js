@@ -1,23 +1,23 @@
 const Routes = [
   {
     path: '/',
-    name: 'hello',
+    name: 'Hello',
   },
   {
     path: '/whoami',
-    name: 'whoami',
+    name: 'Who Am I',
   },
   {
     path: '/skills',
-    name: 'skills',
+    name: 'Skills',
   },
   {
     path: '/portfolio',
-    name: 'portfolio',
+    name: 'Portfolio',
   },
   {
     path: '/utilities',
-    name: 'utilities',
+    name: 'Utilities',
   },
 ]
 
