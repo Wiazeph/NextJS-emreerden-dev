@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHeaderComponent from '../page-header'
-import Skills from '@/utils/consts/skills'
+import Skills from '@/utils/consts/pages/skills'
 
 type Props = {}
 

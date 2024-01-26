@@ -9,6 +9,10 @@
 }
 
 @layer components {
+  .Main-Hover-Color {
+    @apply hover:bg-zinc-200 transition-colors;
+  }
+
   /* Side-Bar */
   .Side-Bar-Section-Layout {
     @apply flex flex-col gap-y-3.5;
@@ -16,19 +20,16 @@
   .Side-Bar-Title {
     @apply text-xs font-medium text-zinc-600;
   }
-  .Side-Bar-Hover-Color {
-    @apply hover:bg-zinc-200 transition-colors;
-  }
   .Side-Bar-Card-List {
     @apply flex flex-col gap-y-1;
   }
   .Side-Bar-Card {
-    @apply -mx-2 py-1.5 px-2 text-sm font-medium rounded-md cursor-pointer Side-Bar-Hover-Color;
+    @apply -mx-2 py-1.5 px-2 text-sm font-medium rounded-md cursor-pointer Main-Hover-Color;
   }
   /* Side-Bar */
 
   .Page {
-    @apply bg-red-500 container md:h-dvh pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12 md:overflow-y-auto;
+    @apply container md:h-dvh pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12 md:overflow-y-auto;
   }
 
   .Page-Title {
@@ -40,7 +41,7 @@
     @apply flex flex-wrap justify-center md:justify-normal gap-4;
   }
   .Main-Card {
-    @apply p-4 w-50 sm:w-44 lgx:w-46 xl:w-48 2xl:w-50 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-700 transition-colors;
+    @apply p-4 w-50 sm:w-44 lgx:w-46 xl:w-48 2xl:w-50 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-400 transition-colors;
   }
   /* Card */
 }

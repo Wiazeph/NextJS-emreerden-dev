@@ -1,5 +1,5 @@
-import { FiMail } from 'react-icons/fi'
 import { FaTelegramPlane } from 'react-icons/fa'
+import { FiMail } from 'react-icons/fi'
 
 const ContactLinks = [
   {

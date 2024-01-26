@@ -16,7 +16,7 @@ const ProfileComponent = (props: Props) => {
   return (
     <Link
       href={'/'}
-      className="Profile p-2 -m-2 flex items-center gap-x-3 rounded-md Side-Bar-Hover-Color"
+      className="Profile p-2 -m-2 flex items-center gap-x-3 rounded-md Main-Hover-Color"
     >
       <div className="Image relative w-12 h-12 rounded-full overflow-hidden hover:scale-105 transition-all">
         <Image

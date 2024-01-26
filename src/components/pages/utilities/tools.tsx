@@ -1,5 +1,5 @@
 import React from 'react'
-import Tools from '@/utils/consts/utilities/tools'
+import Tools from '@/utils/consts/pages/utilities/tools'
 
 type Props = {}
 

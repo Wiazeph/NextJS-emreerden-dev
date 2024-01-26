@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import PageHeaderComponent from '../page-header'
-import Utilities from '@/utils/consts/utilities'
+import Utilities from '@/utils/consts/pages/utilities'
 
 type Props = {}
 
