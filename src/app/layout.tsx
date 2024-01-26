@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import '@/assets/css/index.css'
-import SideBarComponent from '@/components/layouts/side-bar'
+import SideBarLayout from '@/components/layouts/side-bar'
 import NavBarComponent from '@/components/nav-bar'
 
 const poppins = Poppins({
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <SideBarComponent />
+        <SideBarLayout />
 
         <div className="container md:h-dvh md:overflow-y-auto">
           <NavBarComponent />
