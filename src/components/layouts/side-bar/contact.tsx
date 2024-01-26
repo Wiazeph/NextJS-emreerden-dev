@@ -10,9 +10,9 @@ const ContactComponent = (props: Props) => {
         Contact Me!
       </div>
 
-      <ul className="Contact-List flex flex-wrap justify-center gap-4">
+      <ul className="Contact-List SideBar-List-Card">
         {ContactLinks.map((contact, index) => (
-          <li key={index} className="w-36">
+          <li key={index}>
             <a
               href={contact.path}
               target="_blank"

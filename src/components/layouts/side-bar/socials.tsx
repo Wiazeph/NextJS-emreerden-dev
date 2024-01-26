@@ -10,9 +10,9 @@ const SocialsComponent = (props: Props) => {
         Follow Me!
       </div>
 
-      <ul className="Socials-List flex flex-wrap justify-center gap-4">
+      <ul className="Socials-List SideBar-List-Card">
         {SocialLinks.map((social, index) => (
-          <li key={index} className="w-34">
+          <li key={index}>
             <a
               href={social.path}
               target="_blank"

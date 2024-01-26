@@ -12,9 +12,9 @@ const SkillsPageComponent = (props: Props) => {
         pageDescription="Skills I know, I use and currently continue to learn"
       />
 
-      <ul className="Skills-List List-Card">
+      <ul className="Skills-List Main-List-Card">
         {Skills.map((skill, index) => (
-          <li key={index} className="w-44 mdl:w-48 lg:w-52">
+          <li key={index}>
             <a
               href={skill.path}
               target="_blank"
@@ -23,7 +23,7 @@ const SkillsPageComponent = (props: Props) => {
             >
               <div className="text-2xl">{skill.icon}</div>
 
-              <div className="text-sm sm:text-base">{skill.name}</div>
+              <div className="text-sm">{skill.name}</div>
             </a>
           </li>
         ))}

@@ -5,14 +5,14 @@ type Props = {}
 
 const ToolsPageComponent = (props: Props) => {
   return (
-    <ul className="Tools-List List-Card">
+    <ul className="Tools-List Main-List-Card">
       {Tools.map((tool, index) => (
-        <li key={index} className="w-44 mdl:w-48 lg:w-52">
+        <li key={index}>
           <a
             href={tool.path}
             target="_blank"
             rel="noopener noreferrer"
-            className="Main-Card text-sm sm:text-base"
+            className="Main-Card text-sm"
           >
             {tool.name}
           </a>
