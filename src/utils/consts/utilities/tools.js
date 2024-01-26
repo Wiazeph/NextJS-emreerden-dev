@@ -76,6 +76,18 @@ const Tools = [
     name: 'Vercel',
   },
   {
+    path: 'https://linear.app/',
+    name: 'Linear',
+  },
+  {
+    path: 'https://calendly.com/',
+    name: 'Calendly',
+  },
+  {
+    path: 'https://zoom.us/',
+    name: 'Zoom',
+  },
+  {
     path: 'https://www.figma.com/',
     name: 'Figma',
   },
@@ -86,14 +98,6 @@ const Tools = [
   {
     path: 'https://excalidraw.com/',
     name: 'Excalidraw',
-  },
-  {
-    path: 'https://calendly.com/',
-    name: 'Calendly',
-  },
-  {
-    path: 'https://zoom.us/',
-    name: 'Zoom',
   },
   {
     path: 'https://app.prntscr.com/',

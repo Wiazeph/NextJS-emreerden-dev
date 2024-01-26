@@ -17,9 +17,7 @@ const SocialsComponent = (props: Props) => {
               href={social.path}
               target="_blank"
               rel="noopener noreferrer"
-              className={`Main-Card ${social.bgColor} ${
-                'hover:' + social.hoverColor
-              }`}
+              className="Main-Card"
             >
               <div className="text-lg">{social.icon}</div>
 

@@ -17,9 +17,7 @@ const ContactComponent = (props: Props) => {
               href={contact.path}
               target="_blank"
               rel="noopener noreferrer"
-              className={`Main-Card ${contact.bgColor} ${
-                'hover:' + contact.hoverColor
-              }`}
+              className="Main-Card"
             >
               <div className="text-lg">{contact.icon}</div>
 

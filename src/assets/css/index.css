@@ -21,7 +21,7 @@
     @apply max-w-[700px] flex flex-wrap justify-center md:justify-normal gap-4;
   }
   .Main-Card {
-    @apply p-4 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm;
+    @apply p-4 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-700 transition-colors;
   }
   /* Card */
 }
