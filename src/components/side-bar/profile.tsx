@@ -18,7 +18,7 @@ const ProfileComponent = (props: Props) => {
       href={'/'}
       className="Profile p-2 -m-2 flex items-center gap-x-3 rounded-md Main-Hover-Color"
     >
-      <div className="Image relative w-12 h-12 rounded-full overflow-hidden hover:scale-105 transition-all">
+      <div className="Image relative w-12 h-12 rounded-full overflow-hidden">
         <Image
           src="https://avatars.githubusercontent.com/u/37252753?v=4"
           alt="Emre Erden"

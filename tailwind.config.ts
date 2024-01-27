@@ -33,12 +33,14 @@ const config: Config = {
     extend: {
       spacing: {
         18: '4.5rem',
+        22: '5.5rem',
         26: '6.5rem',
         30: '7.5rem',
         34: '8.5rem',
         42: '10.5rem',
         46: '11.5rem',
         50: '12.5rem',
+        66: '16.5rem',
         88: '22rem',
         104: '26rem',
         112: '28rem',
