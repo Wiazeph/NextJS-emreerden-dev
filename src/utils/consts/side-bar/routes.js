@@ -11,7 +11,7 @@ const Routes = [
     icon: <RiHomeSmile2Line />,
   },
   {
-    path: '/whoami',
+    path: '/about-me',
     name: 'Who Am I',
     icon: <LuBadgeInfo />,
   },
@@ -26,8 +26,18 @@ const Routes = [
     icon: <MdOutlineWorkspaces />,
   },
   {
-    path: '/utilities',
-    name: 'Utilities',
+    path: '/tools',
+    name: 'Tools',
+    icon: <VscTools />,
+  },
+  {
+    path: '/browser-extensions',
+    name: 'Browser Exts.',
+    icon: <VscTools />,
+  },
+  {
+    path: '/vscode-extensions',
+    name: 'VSCode Exts.',
     icon: <VscTools />,
   },
 ]
