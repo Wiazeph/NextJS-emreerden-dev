@@ -25,21 +25,6 @@ const Routes = [
     path: '/portfolio',
     icon: <MdOutlineWorkspaces />,
   },
-  {
-    name: 'Tools',
-    path: '/tools',
-    icon: <VscTools />,
-  },
-  {
-    name: 'Browser Exts.',
-    path: '/browser-extensions',
-    icon: <VscTools />,
-  },
-  {
-    name: 'VSCode Exts.',
-    path: '/vscode-extensions',
-    icon: <VscTools />,
-  },
 ]
 
 export default Routes

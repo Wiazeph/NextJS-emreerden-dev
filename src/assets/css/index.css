@@ -11,18 +11,15 @@
 @layer components {
   /* Side-Bar */
   .Side-Bar-Card {
-    @apply -mx-2 py-1.5 px-2 text-sm font-medium rounded-md cursor-pointer Main-Hover-Color;
+    @apply -mx-2 py-1.5 px-2 font-medium Main-Hover-Color;
   }
   /* Side-Bar */
 
-  /* Main */
-  .Main-List-Card {
-    @apply flex flex-wrap justify-center mdl:justify-normal gap-4;
-  }
+  /* Pages */
   .Main-Card {
-    @apply p-4 w-52 sm:w-46 md:w-48 mdl:w-46 lg:w-48 lgx:w-50 xl:w-52 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-400 transition-colors;
+    @apply p-4 w-52 sm:w-46 md:w-48 mdl:w-46 lg:w-48 lgx:w-50 xl:w-52 flex items-center justify-center gap-x-2.5 border rounded-md shadow-sm hover:border-zinc-400 transition-colors;
   }
-  /* Main */
+  /* Pages */
 }
 
 @layer utilities {
@@ -40,6 +37,9 @@
   .Side-Bar-Card-List {
     @apply flex flex-col gap-y-1;
   }
+  .Side-Bar-Card-Hover {
+    @apply flex items-center gap-x-2 transition-all;
+  }
   /* Side-Bar */
 
   /* Pages */
@@ -51,6 +51,9 @@
   }
   .Page-Title {
     @apply text-4xl lg:text-5xl text-center mdl:text-left font-bold tracking-[-2px];
+  }
+  .Main-List-Card {
+    @apply flex flex-wrap justify-center mdl:justify-normal gap-4;
   }
   /* Pages */
 

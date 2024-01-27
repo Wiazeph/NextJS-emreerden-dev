@@ -17,16 +17,16 @@ const SideBarListComponent = (props: Props) => {
 
       <ul className={`${props.name}-List Side-Bar-Card-List`}>
         {props.constName.map((item, index) => (
-          <li key={index} className="Side-Bar-Card group">
+          <li key={index} className="Side-Bar-Card cursor-pointer group">
             <a
               href={item.path}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-x-2 group-hover:ml-2 transition-all"
+              className="Side-Bar-Card-Hover group-hover:ml-2"
             >
-              <div className="text-lg">{item.icon}</div>
+              <div>{item.icon}</div>
 
-              <div>{item.name}</div>
+              <div className="text-sm">{item.name}</div>
             </a>
           </li>
         ))}
