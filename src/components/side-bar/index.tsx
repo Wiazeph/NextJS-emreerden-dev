@@ -5,6 +5,7 @@ import NavBarComponent from './nav-bar'
 import SideBarListComponent from './side-bar-list'
 import SocialLinks from '@/utils/consts/side-bar/socials'
 import ContactLinks from '@/utils/consts/side-bar/contact'
+import SettingsComponent from './settings'
 
 type Props = {}
 
@@ -28,6 +29,8 @@ const SideBarLayout = (props: Props) => {
         title="Contact Me!"
         constName={ContactLinks}
       />
+
+      <SettingsComponent />
     </div>
   )
 }

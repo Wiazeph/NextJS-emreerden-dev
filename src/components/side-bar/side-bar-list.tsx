@@ -24,7 +24,7 @@ const SideBarListComponent = (props: Props) => {
               rel="noopener noreferrer"
               className="Side-Bar-Card-Hover group-hover:ml-2"
             >
-              <div>{item.icon}</div>
+              {item.icon}
 
               <div className="text-sm">{item.name}</div>
             </a>
