@@ -4,9 +4,9 @@ type Props = {
   name: string
   title: string
   constName: {
-    icon: JSX.Element
     name: string
     path: string
+    icon: JSX.Element
   }[]
 }
 

@@ -10,38 +10,38 @@ import { SiNextdotjs } from 'react-icons/si'
 
 const Skills = [
   {
-    path: 'https://www.w3schools.com/html/default.asp',
     name: 'HTML',
+    path: 'https://www.w3schools.com/html/default.asp',
     icon: <IoLogoHtml5 />,
   },
   {
-    path: 'https://css-tricks.com/almanac/',
     name: 'CSS',
+    path: 'https://css-tricks.com/almanac/',
     icon: <IoLogoCss3 />,
   },
   {
-    path: 'https://sass-lang.com/',
     name: 'Sass/Scss',
+    path: 'https://sass-lang.com/',
     icon: <IoLogoSass />,
   },
   {
-    path: 'https://getbootstrap.com/',
     name: 'Bootstrap',
+    path: 'https://getbootstrap.com/',
     icon: <FaBootstrap />,
   },
   {
-    path: 'https://tailwindcss.com/',
     name: 'Tailwind CSS',
+    path: 'https://tailwindcss.com/',
     icon: <BiLogoTailwindCss />,
   },
   {
-    path: 'https://javascript.info/',
     name: 'JavaScript',
+    path: 'https://javascript.info/',
     icon: <BiLogoJavascript />,
   },
   {
-    path: 'https://react.dev/',
     name: 'React',
+    path: 'https://react.dev/',
     icon: <FaReact />,
   },
   {
@@ -49,18 +49,18 @@ const Skills = [
     name: 'Zustand',
   },
   {
-    path: 'https://www.typescriptlang.org/',
     name: 'TypeScript',
+    path: 'https://www.typescriptlang.org/',
     icon: <BiLogoTypescript />,
   },
   {
-    path: 'https://nextjs.org/',
     name: 'Next.js',
+    path: 'https://nextjs.org/',
     icon: <SiNextdotjs />,
   },
   {
-    path: 'https://vuejs.org/',
     name: 'Vue',
+    path: 'https://vuejs.org/',
     icon: <FaVuejs />,
   },
   {
@@ -68,8 +68,8 @@ const Skills = [
     name: 'Pinia',
   },
   {
-    path: 'https://www.w3schools.com/git/default.asp',
     name: 'Git',
+    path: 'https://www.w3schools.com/git/default.asp',
     icon: <BiLogoGit />,
   },
 ]

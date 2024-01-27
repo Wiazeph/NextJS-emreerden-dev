@@ -1,107 +1,107 @@
 const VSCode = [
   {
-    path: 'https://proton.me/mail',
     name: 'Proton Mail',
+    path: 'https://proton.me/mail',
   },
   {
-    path: 'https://proton.me/pass',
     name: 'Proton Pass',
+    path: 'https://proton.me/pass',
   },
   {
-    path: 'https://proton.me/calendar',
     name: 'Proton Calendar',
+    path: 'https://proton.me/calendar',
   },
   {
-    path: 'https://protonvpn.com/',
     name: 'Proton VPN',
+    path: 'https://protonvpn.com/',
   },
   {
-    path: 'https://authy.com/',
     name: 'Authy',
+    path: 'https://authy.com/',
   },
   {
-    path: 'https://www.mozilla.org/en-US/firefox/new/',
     name: 'Firefox Browser',
+    path: 'https://www.mozilla.org/en-US/firefox/new/',
   },
   {
-    path: 'https://www.google.com/chrome/',
     name: 'Google Chrome',
+    path: 'https://www.google.com/chrome/',
   },
   {
-    path: 'https://maps.google.com/',
     name: 'Google Maps',
+    path: 'https://maps.google.com/',
   },
   {
-    path: 'https://drive.google.com/drive',
     name: 'Google Drive',
+    path: 'https://drive.google.com/drive',
   },
   {
-    path: 'https://meet.google.com/',
     name: 'Google Meet',
+    path: 'https://meet.google.com/',
   },
   {
-    path: 'https://translate.google.com/',
     name: 'Google Translate',
+    path: 'https://translate.google.com/',
   },
   {
-    path: 'https://www.deepl.com/translator',
     name: 'DeepL Translator',
+    path: 'https://www.deepl.com/translator',
   },
   {
-    path: 'https://todoist.com/',
     name: 'Todoist',
+    path: 'https://todoist.com/',
   },
   {
-    path: 'https://www.notion.so/',
     name: 'Notion',
+    path: 'https://www.notion.so/',
   },
   {
-    path: 'https://getpocket.com/',
     name: 'Pocket',
+    path: 'https://getpocket.com/',
   },
   {
-    path: 'https://code.visualstudio.com/',
     name: 'Visual Studio Code',
+    path: 'https://code.visualstudio.com/',
   },
   {
-    path: 'https://www.sublimetext.com/',
     name: 'Sublime Text',
+    path: 'https://www.sublimetext.com/',
   },
   {
-    path: 'https://openai.com/chatgpt',
     name: 'ChatGPT',
+    path: 'https://openai.com/chatgpt',
   },
   {
-    path: 'https://vercel.com/',
     name: 'Vercel',
+    path: 'https://vercel.com/',
   },
   {
-    path: 'https://linear.app/',
     name: 'Linear',
+    path: 'https://linear.app/',
   },
   {
-    path: 'https://calendly.com/',
     name: 'Calendly',
+    path: 'https://calendly.com/',
   },
   {
-    path: 'https://zoom.us/',
     name: 'Zoom',
+    path: 'https://zoom.us/',
   },
   {
-    path: 'https://www.figma.com/',
     name: 'Figma',
+    path: 'https://www.figma.com/',
   },
   {
-    path: 'https://flowcv.com/',
     name: 'FlowCV',
+    path: 'https://flowcv.com/',
   },
   {
-    path: 'https://excalidraw.com/',
     name: 'Excalidraw',
+    path: 'https://excalidraw.com/',
   },
   {
-    path: 'https://app.prntscr.com/',
     name: 'Lightshot',
+    path: 'https://app.prntscr.com/',
   },
 ]
 

@@ -1,15 +1,15 @@
 const Utilities = [
   {
-    path: '/utilities/tools',
     name: 'Tools',
+    path: '/utilities/tools',
   },
   {
-    path: '/utilities/browser-extensions',
     name: 'Browser Exts.',
+    path: '/utilities/browser-extensions',
   },
   {
-    path: '/utilities/vscode-extensions',
     name: 'VSCode Exts.',
+    path: '/utilities/vscode-extensions',
   },
 ]
 

@@ -6,38 +6,38 @@ import { VscTools } from 'react-icons/vsc'
 
 const Routes = [
   {
-    path: '/',
     name: 'Hello',
+    path: '/',
     icon: <RiHomeSmile2Line />,
   },
   {
-    path: '/about-me',
     name: 'Who Am I',
+    path: '/about-me',
     icon: <LuBadgeInfo />,
   },
   {
-    path: '/skills',
     name: 'Skills',
+    path: '/skills',
     icon: <BsStars />,
   },
   {
-    path: '/portfolio',
     name: 'Portfolio',
+    path: '/portfolio',
     icon: <MdOutlineWorkspaces />,
   },
   {
-    path: '/tools',
     name: 'Tools',
+    path: '/tools',
     icon: <VscTools />,
   },
   {
-    path: '/browser-extensions',
     name: 'Browser Exts.',
+    path: '/browser-extensions',
     icon: <VscTools />,
   },
   {
-    path: '/vscode-extensions',
     name: 'VSCode Exts.',
+    path: '/vscode-extensions',
     icon: <VscTools />,
   },
 ]

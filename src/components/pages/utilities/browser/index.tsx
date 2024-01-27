@@ -1,32 +1,20 @@
 import React from 'react'
 import PageHeaderComponent from '../../page-header'
+import UtilitiesListComponent from '../utilities-list'
 import Browser from '@/utils/consts/pages/utilities/browser'
 
 type Props = {}
 
 const BrowserPageComponent = (props: Props) => {
   return (
-    <main className="Browser Extensions Page">
+    <main className="Browser-Extensions Page">
       <div className="Page-Content">
         <PageHeaderComponent
           pageTitle="browser exts."
-          pageDescription="Useful, efficient tools and resources I use"
+          pageDescription="Useful and efficient Browser Add-ons I use"
         />
 
-        <ul className="Browser-Extensions-List Main-List-Card">
-          {Browser.map((extension, index) => (
-            <li key={index}>
-              <a
-                href={extension.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="Main-Card text-sm"
-              >
-                {extension.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <UtilitiesListComponent name="Browser" constName={Browser} />
       </div>
     </main>
   )
