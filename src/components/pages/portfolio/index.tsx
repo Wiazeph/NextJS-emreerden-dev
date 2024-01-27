@@ -6,10 +6,12 @@ type Props = {}
 const PortfolioPageComponent = (props: Props) => {
   return (
     <main className="Portfolio Page">
-      <PageHeaderComponent
-        pageTitle="portfolio."
-        pageDescription="All the work I have completed and am still updating"
-      />
+      <div className="Page-Content">
+        <PageHeaderComponent
+          pageTitle="portfolio."
+          pageDescription="All the work I have completed and am still updating"
+        />
+      </div>
     </main>
   )
 }

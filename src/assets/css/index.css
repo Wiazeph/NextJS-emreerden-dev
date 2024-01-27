@@ -9,6 +9,23 @@
 }
 
 @layer components {
+  /* Side-Bar */
+  .Side-Bar-Card {
+    @apply -mx-2 py-1.5 px-2 text-sm font-medium rounded-md cursor-pointer Main-Hover-Color;
+  }
+  /* Side-Bar */
+
+  /* Main */
+  .Main-List-Card {
+    @apply flex flex-wrap justify-center md:justify-normal gap-4;
+  }
+  .Main-Card {
+    @apply p-4 w-50 sm:w-44 lgx:w-46 xl:w-48 2xl:w-50 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-400 transition-colors;
+  }
+  /* Main */
+}
+
+@layer utilities {
   .Main-Hover-Color {
     @apply hover:bg-zinc-200 transition-colors;
   }
@@ -23,30 +40,20 @@
   .Side-Bar-Card-List {
     @apply flex flex-col gap-y-1;
   }
-  .Side-Bar-Card {
-    @apply -mx-2 py-1.5 px-2 text-sm font-medium rounded-md cursor-pointer Main-Hover-Color;
-  }
   /* Side-Bar */
 
+  /* Pages */
   .Page {
-    @apply container md:h-dvh pb-6 sm:pb-7 md:pb-8 mdl:pb-10 lg:pb-12 lgx:pb-14 xl:pb-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12 md:overflow-y-auto;
+    @apply w-full h-full min-h-dvh max-h-dvh py-6 sm:py-7 md:py-8 mdl:py-10 lg:py-12 lgx:py-14 xl:py-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12 overflow-y-auto;
   }
-
+  .Page-Content {
+    @apply bg-red-700 w-full max-w-[700px] m-auto;
+  }
   .Page-Title {
-    @apply font-bold text-4xl text-center md:text-left tracking-[-2px];
+    @apply text-4xl text-center md:text-left font-bold tracking-[-2px];
   }
+  /* Pages */
 
-  /* Card */
-  .Main-List-Card {
-    @apply flex flex-wrap justify-center md:justify-normal gap-4;
-  }
-  .Main-Card {
-    @apply p-4 w-50 sm:w-44 lgx:w-46 xl:w-48 2xl:w-50 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-400 transition-colors;
-  }
-  /* Card */
-}
-
-@layer utilities {
   /* no-scrollbar */
   .no-scrollbar {
     -ms-overflow-style: none;
