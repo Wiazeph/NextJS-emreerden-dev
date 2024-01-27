@@ -15,7 +15,7 @@ const AboutPageComponent = (props: Props) => {
             href="https://goo.gl/maps/cadu4sCBbzi4B6F98"
             target="_blank"
             rel="noopener noreferrer"
-            className="Main-Hover-Color underline"
+            className="underline hover:text-zinc-600 transition-colors"
           >
             Ankara/Turkey
           </a>
@@ -40,7 +40,7 @@ const AboutPageComponent = (props: Props) => {
                 target="_blank"
                 href="https://letterboxd.com/Wiazeph/"
                 rel="noopener noreferrer"
-                className="Main-Hover-Color underline"
+                className="underline hover:text-zinc-600 transition-colors"
               >
                 My Letterboxd Account
               </a>
@@ -53,7 +53,7 @@ const AboutPageComponent = (props: Props) => {
                 target="_blank"
                 href="https://steamcommunity.com/id/Wiazeph"
                 rel="noopener noreferrer"
-                className="Main-Hover-Color underline"
+                className="underline hover:text-zinc-600 transition-colors"
               >
                 My Steam Account
               </a>{' '}
@@ -67,7 +67,7 @@ const AboutPageComponent = (props: Props) => {
                 target="_blank"
                 href="https://open.spotify.com/user/gb0jo18xvox7w4gmijbj3l301?si=089ed329e6da4203"
                 rel="noopener noreferrer"
-                className="Main-Hover-Color underline"
+                className="underline hover:text-zinc-600 transition-colors"
               >
                 My Spotify Account
               </a>{' '}

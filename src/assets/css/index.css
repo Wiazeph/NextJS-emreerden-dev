@@ -20,7 +20,7 @@
     @apply flex flex-wrap justify-center mdl:justify-normal gap-4;
   }
   .Main-Card {
-    @apply p-4 w-50 sm:w-44 lgx:w-46 xl:w-48 2xl:w-50 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-400 transition-colors;
+    @apply p-4 w-52 sm:w-46 md:w-48 mdl:w-46 2xl:w-50 flex items-center justify-center gap-x-2.5 border rounded-xl shadow-sm hover:border-zinc-400 transition-colors;
   }
   /* Main */
 }
@@ -44,13 +44,13 @@
 
   /* Pages */
   .Page {
-    @apply w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
+    @apply mdl:px-6 lg:px-8 w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
   }
   .Page-Content {
     @apply w-full max-w-[775px] m-auto py-6 sm:py-7 md:py-8 mdl:pt-14 mdl:pb-10 lg:pt-18 lg:pb-12 lgx:pt-22 lgx:pb-14 xl:pb-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;
   }
   .Page-Title {
-    @apply text-4xl mdl:text-5xl text-center mdl:text-left font-bold tracking-[-2px];
+    @apply text-4xl lg:text-5xl text-center mdl:text-left font-bold tracking-[-2px];
   }
   /* Pages */
 

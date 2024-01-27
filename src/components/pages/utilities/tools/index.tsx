@@ -9,7 +9,7 @@ const ToolsPageComponent = (props: Props) => {
     <main className="Tools Page">
       <div className="Page-Content">
         <PageHeaderComponent
-          pageTitle="utilities."
+          pageTitle="tools."
           pageDescription="Useful, efficient tools and resources I use"
         />
 

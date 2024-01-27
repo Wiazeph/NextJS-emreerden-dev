@@ -9,7 +9,7 @@ const VSCodePageComponent = (props: Props) => {
     <main className="VSCode Extensions Page">
       <div className="Page-Content">
         <PageHeaderComponent
-          pageTitle="utilities."
+          pageTitle="vscode exts."
           pageDescription="Useful, efficient tools and resources I use"
         />
 

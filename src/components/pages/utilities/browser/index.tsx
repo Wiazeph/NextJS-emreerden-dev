@@ -9,7 +9,7 @@ const BrowserPageComponent = (props: Props) => {
     <main className="Browser Extensions Page">
       <div className="Page-Content">
         <PageHeaderComponent
-          pageTitle="utilities."
+          pageTitle="browser exts."
           pageDescription="Useful, efficient tools and resources I use"
         />
 
