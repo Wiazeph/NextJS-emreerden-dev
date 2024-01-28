@@ -1,107 +1,159 @@
 const VSCode = [
   {
-    name: 'Proton Mail',
-    path: 'https://proton.me/mail',
+    name: 'GitHub Copilot',
+    path: 'https://marketplace.visualstudio.com/items?itemName=GitHub.copilot',
   },
   {
-    name: 'Proton Pass',
-    path: 'https://proton.me/pass',
-  },
-  {
-    name: 'Proton Calendar',
-    path: 'https://proton.me/calendar',
-  },
-  {
-    name: 'Proton VPN',
-    path: 'https://protonvpn.com/',
-  },
-  {
-    name: 'Authy',
-    path: 'https://authy.com/',
-  },
-  {
-    name: 'Firefox Browser',
-    path: 'https://www.mozilla.org/en-US/firefox/new/',
-  },
-  {
-    name: 'Google Chrome',
-    path: 'https://www.google.com/chrome/',
-  },
-  {
-    name: 'Google Maps',
-    path: 'https://maps.google.com/',
-  },
-  {
-    name: 'Google Drive',
-    path: 'https://drive.google.com/drive',
-  },
-  {
-    name: 'Google Meet',
-    path: 'https://meet.google.com/',
-  },
-  {
-    name: 'Google Translate',
-    path: 'https://translate.google.com/',
-  },
-  {
-    name: 'DeepL Translator',
-    path: 'https://www.deepl.com/translator',
-  },
-  {
-    name: 'Todoist',
-    path: 'https://todoist.com/',
-  },
-  {
-    name: 'Notion',
-    path: 'https://www.notion.so/',
-  },
-  {
-    name: 'Pocket',
-    path: 'https://getpocket.com/',
-  },
-  {
-    name: 'Visual Studio Code',
-    path: 'https://code.visualstudio.com/',
-  },
-  {
-    name: 'Sublime Text',
-    path: 'https://www.sublimetext.com/',
+    name: 'GitHub Copilot Chat',
+    path: 'https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat',
   },
   {
     name: 'ChatGPT',
-    path: 'https://openai.com/chatgpt',
+    path: 'https://marketplace.visualstudio.com/items?itemName=zhang-renyang.chat-gpt',
   },
   {
-    name: 'Vercel',
-    path: 'https://vercel.com/',
+    name: 'GitLens - Git supercharged',
+    path: 'https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens',
   },
   {
-    name: 'Linear',
-    path: 'https://linear.app/',
+    name: 'GitHub Pull Requests and Issues',
+    path: 'https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github',
   },
   {
-    name: 'Calendly',
-    path: 'https://calendly.com/',
+    name: 'Prettier - Code formatter',
+    path: 'https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode',
   },
   {
-    name: 'Zoom',
-    path: 'https://zoom.us/',
+    name: 'Error Lens',
+    path: 'https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens',
   },
   {
-    name: 'Figma',
-    path: 'https://www.figma.com/',
+    name: 'Console Ninja',
+    path: 'https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja',
   },
   {
-    name: 'FlowCV',
-    path: 'https://flowcv.com/',
+    name: 'Code Spell Checker',
+    path: 'https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker',
   },
   {
-    name: 'Excalidraw',
-    path: 'https://excalidraw.com/',
+    name: 'Tailwind CSS IntelliSense',
+    path: 'https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss',
   },
   {
-    name: 'Lightshot',
-    path: 'https://app.prntscr.com/',
+    name: 'ESLint',
+    path: 'https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint',
+  },
+  {
+    name: 'ES7+ React/Redux/React-Native snippets',
+    path: 'https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets',
+  },
+  {
+    name: 'JavaScript (ES6) code snippets',
+    path: 'https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets',
+  },
+  {
+    name: 'Path Intellisense',
+    path: 'https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense',
+  },
+  {
+    name: 'DotENV',
+    path: 'https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv',
+  },
+  {
+    name: 'SCSS IntelliSense',
+    path: 'https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss',
+  },
+  {
+    name: 'Quokka.js',
+    path: 'https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode',
+  },
+  {
+    name: 'Turbo Console Log',
+    path: 'https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log',
+  },
+  {
+    name: 'CSS Peek',
+    path: 'https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek',
+  },
+  {
+    name: 'JSON Crack',
+    path: 'https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode',
+  },
+  {
+    name: 'Markdown Preview Enhanced',
+    path: 'https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced',
+  },
+  {
+    name: 'vscode-pdf',
+    path: 'https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf',
+  },
+  {
+    name: 'Live Share',
+    path: 'https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare',
+  },
+  {
+    name: 'Live Server',
+    path: 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer',
+  },
+  {
+    name: 'Live Preview',
+    path: 'https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server',
+  },
+  {
+    name: 'Debugger for Firefox',
+    path: 'https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug',
+  },
+  {
+    name: 'Power Mode',
+    path: 'https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode',
+  },
+  {
+    name: 'Material Theme',
+    path: 'https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme',
+  },
+  {
+    name: 'Material Icon Theme',
+    path: 'https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme',
+  },
+  {
+    name: 'Color Highlight',
+    path: 'https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight',
+  },
+  {
+    name: 'indent-rainbow',
+    path: 'https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow',
+  },
+  {
+    name: 'Better Comments',
+    path: 'https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments',
+  },
+  {
+    name: 'vscode-faker',
+    path: 'https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-faker',
+  },
+  {
+    name: 'CodeSnap',
+    path: 'https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap',
+  },
+  {
+    name: 'Vue Language Features (Volar)',
+    path: 'https://marketplace.visualstudio.com/items?itemName=Vue.volar',
+  },
+  {
+    name: 'TypeScript Vue Plugin (Volar)',
+    path: 'https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin',
+  },
+  {
+    name: 'Vue VSCode Snippets',
+    path: 'https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets',
+  },
+  {
+    name: 'Vetur',
+    path: 'https://marketplace.visualstudio.com/items?itemName=octref.vetur',
+  },
+  {
+    name: 'Prisma ',
+    path: 'https://marketplace.visualstudio.com/items?itemName=Prisma.prisma',
   },
 ]
 

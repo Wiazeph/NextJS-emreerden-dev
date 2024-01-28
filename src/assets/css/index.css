@@ -17,7 +17,7 @@
 
   /* Pages */
   .Main-Card {
-    @apply p-4 w-52 sm:w-46 md:w-48 mdl:w-46 lg:w-48 lgx:w-50 xl:w-52 flex items-center justify-center gap-x-2.5 border rounded-md shadow-sm hover:border-zinc-400 transition-colors;
+    @apply px-4 w-52 sm:w-48 lgx:w-50 xl:w-52 h-14 flex items-center justify-center text-center gap-x-2.5 border rounded-md shadow-sm hover:border-zinc-400 transition-colors;
   }
   /* Pages */
 }

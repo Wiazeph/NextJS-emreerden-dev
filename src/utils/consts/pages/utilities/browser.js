@@ -1,107 +1,123 @@
 const Browser = [
   {
-    name: 'Proton Mail',
-    path: 'https://proton.me/mail',
+    name: 'Firefox Multi-Account Containers',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/',
+  },
+  {
+    name: 'Facebook Container',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/facebook-container/',
+  },
+  {
+    name: 'Notes by Firefox',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/notes-by-firefox/',
+  },
+  {
+    name: 'Firefox Color',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/firefox-color/',
+  },
+  {
+    name: 'DuckDuckGo Privacy Essentials',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/',
+  },
+  {
+    name: 'uBlock Origin',
+    path: 'https://ublockorigin.com/',
+  },
+  {
+    name: 'Privacy Badger',
+    path: 'https://privacybadger.org/',
+  },
+  {
+    name: 'User-Agent Switcher and Manager',
+    path: 'https://add0n.com/useragent-switcher.html',
   },
   {
     name: 'Proton Pass',
-    path: 'https://proton.me/pass',
-  },
-  {
-    name: 'Proton Calendar',
-    path: 'https://proton.me/calendar',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/proton-pass/',
   },
   {
     name: 'Proton VPN',
-    path: 'https://protonvpn.com/',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/proton-vpn-firefox-extension/',
   },
   {
-    name: 'Authy',
-    path: 'https://authy.com/',
+    name: 'WebChatGPT',
+    path: 'https://tools.zmo.ai/webchatgpt',
   },
   {
-    name: 'Firefox Browser',
-    path: 'https://www.mozilla.org/en-US/firefox/new/',
+    name: 'ChatGPT for Google',
+    path: 'https://chatgpt4google.com/',
   },
   {
-    name: 'Google Chrome',
-    path: 'https://www.google.com/chrome/',
+    name: 'Grammarly',
+    path: 'https://www.grammarly.com/',
   },
   {
-    name: 'Google Maps',
-    path: 'https://maps.google.com/',
+    name: 'Simple Translate',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/simple-translate/',
   },
   {
-    name: 'Google Drive',
-    path: 'https://drive.google.com/drive',
+    name: 'Imagus',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/imagus/',
   },
   {
-    name: 'Google Meet',
-    path: 'https://meet.google.com/',
+    name: 'Enhancer for YouTube™',
+    path: '',
   },
   {
-    name: 'Google Translate',
-    path: 'https://translate.google.com/',
+    name: 'Dark Reader',
+    path: 'https://darkreader.org/',
   },
   {
-    name: 'DeepL Translator',
-    path: 'https://www.deepl.com/translator',
+    name: 'Minimal Theme for 𝕏 / Twitter',
+    path: 'https://typefully.com/minimal-twitter',
   },
   {
-    name: 'Todoist',
-    path: 'https://todoist.com/',
+    name: 'Turn Off the Lights',
+    path: 'https://www.turnoffthelights.com/',
   },
   {
-    name: 'Notion',
-    path: 'https://www.notion.so/',
+    name: '7TV',
+    path: 'https://7tv.app/',
   },
   {
-    name: 'Pocket',
-    path: 'https://getpocket.com/',
+    name: 'BetterTTV',
+    path: 'https://betterttv.com/',
   },
   {
-    name: 'Visual Studio Code',
-    path: 'https://code.visualstudio.com/',
+    name: 'Return Youtube Dislike',
+    path: 'https://www.returnyoutubedislike.com/',
   },
   {
-    name: 'Sublime Text',
-    path: 'https://www.sublimetext.com/',
+    name: 'Dimensions',
+    path: 'https://www.felixniklas.com/dimensions/',
   },
   {
-    name: 'ChatGPT',
-    path: 'https://openai.com/chatgpt',
+    name: 'Color Zilla',
+    path: 'https://www.colorzilla.com/',
   },
   {
-    name: 'Vercel',
-    path: 'https://vercel.com/',
+    name: 'WhatFont',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/zjm-whatfont/',
   },
   {
-    name: 'Linear',
-    path: 'https://linear.app/',
+    name: 'Wappalyzer',
+    path: 'https://www.wappalyzer.com/',
   },
   {
-    name: 'Calendly',
-    path: 'https://calendly.com/',
+    name: 'WhatRuns',
+    path: 'https://www.whatruns.com/',
   },
   {
-    name: 'Zoom',
-    path: 'https://zoom.us/',
+    name: 'React Developer Tools',
+    path: 'https://react.dev/learn/react-developer-tools',
   },
   {
-    name: 'Figma',
-    path: 'https://www.figma.com/',
+    name: 'Vue Devtools',
+    path: 'https://devtools.vuejs.org/',
   },
   {
-    name: 'FlowCV',
-    path: 'https://flowcv.com/',
-  },
-  {
-    name: 'Excalidraw',
-    path: 'https://excalidraw.com/',
-  },
-  {
-    name: 'Lightshot',
-    path: 'https://app.prntscr.com/',
+    name: 'Google Lighthouse',
+    path: 'https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/',
   },
 ]
 
