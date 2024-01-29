@@ -41,6 +41,8 @@ const config: Config = {
         46: '11.5rem',
         50: '12.5rem',
         66: '16.5rem',
+        70: '17.5rem',
+        76: '19rem',
         88: '22rem',
         104: '26rem',
         112: '28rem',
