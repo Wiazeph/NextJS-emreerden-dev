@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHeaderComponent from '../../page-header'
+import PageHeaderComponent from '@/components/pages/page-header'
 import UtilitiesListComponent from '../utilities-list'
 import VSCode from '@/utils/consts/pages/utilities/vscode'
 

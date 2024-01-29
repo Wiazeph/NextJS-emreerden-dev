@@ -52,7 +52,7 @@
   .Page-Title {
     @apply text-4xl lg:text-5xl text-center mdl:text-left font-bold tracking-[-2px];
   }
-  .Main-List-Card {
+  .Main-Card-List {
     @apply flex flex-wrap justify-center mdl:justify-normal gap-4;
   }
   /* Pages */

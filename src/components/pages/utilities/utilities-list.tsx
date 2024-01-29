@@ -10,7 +10,7 @@ type Props = {
 
 const UtilitiesListComponent = (props: Props) => {
   return (
-    <ul className={`${props.name}-Extensions-List Main-List-Card`}>
+    <ul className={`${props.name}-List Main-Card-List`}>
       {props.constName.map((item, index) => (
         <li key={index}>
           <a

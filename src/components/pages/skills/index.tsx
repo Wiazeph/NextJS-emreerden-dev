@@ -13,7 +13,7 @@ const SkillsPageComponent = (props: Props) => {
           pageDescription="Skills I know, I use and currently continue to learn"
         />
 
-        <ul className="Skills-List Main-List-Card">
+        <ul className="Skills-List Main-Card-List">
           {Skills.map((skill, index) => (
             <li key={index}>
               <a
