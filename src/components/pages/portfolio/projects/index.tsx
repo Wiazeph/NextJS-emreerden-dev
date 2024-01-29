@@ -46,7 +46,10 @@ const ProjectsPageComponent = (props: Props) => {
   return (
     <main className="Projects Page">
       <div className="Page-Content">
-        <PageHeaderComponent pageTitle="projects." pageDescription="TEST" />
+        <PageHeaderComponent
+          pageTitle="projects."
+          pageDescription="My projects I have done and are useable"
+        />
 
         <PortfolioListComponent repoName={repos} />
       </div>

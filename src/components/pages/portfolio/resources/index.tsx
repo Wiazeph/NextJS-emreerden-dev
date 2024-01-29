@@ -46,7 +46,10 @@ const ResourcesPageComponent = (props: Props) => {
   return (
     <main className="Resources Page">
       <div className="Page-Content">
-        <PageHeaderComponent pageTitle="resources." pageDescription="TEST" />
+        <PageHeaderComponent
+          pageTitle="resources."
+          pageDescription="My projects with resources on many subjects"
+        />
 
         <PortfolioListComponent repoName={repos} />
       </div>
