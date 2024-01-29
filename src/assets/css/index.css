@@ -44,7 +44,7 @@
 
   /* Pages */
   .Page {
-    @apply mdl:px-6 lg:px-8 w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
+    @apply px-6 lg:px-8 w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
   }
   .Page-Content {
     @apply w-full max-w-[780px] m-auto py-6 sm:py-7 md:py-8 mdl:pt-14 mdl:pb-10 lg:pt-18 lg:pb-12 lgx:pt-22 lgx:pb-14 xl:pb-16 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;

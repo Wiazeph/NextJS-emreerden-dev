@@ -11,7 +11,7 @@ type Props = {}
 
 const SideBarLayout = (props: Props) => {
   return (
-    <div className="Side-Bar p-4 w-66 min-w-66 h-dvh flex flex-col gap-y-8 bg-zinc-100/50 overflow-y-auto no-scrollbar">
+    <div className="Side-Bar p-4 w-66 min-w-66 h-dvh flex flex-col gap-y-8 bg-zinc-50 overflow-y-auto no-scrollbar">
       <ProfileComponent />
 
       <AboutComponent />

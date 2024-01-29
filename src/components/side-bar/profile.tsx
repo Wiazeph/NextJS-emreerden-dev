@@ -23,6 +23,7 @@ const ProfileComponent = (props: Props) => {
           src="https://avatars.githubusercontent.com/u/37252753?v=4"
           alt="Emre Erden"
           fill
+          sizes="100%"
         />
       </div>
 
