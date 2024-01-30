@@ -41,7 +41,7 @@ const SideBarLayout = (props: Props) => {
 
         <div
           className={cn(
-            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 h-[calc(100dvh-48px)] mdl:h-dvh border-r mdl:border-none transition-transform duration-300 ease-in-out p-4 w-66 min-w-66 flex flex-col gap-y-8 bg-zinc-50 overflow-y-auto no-scrollbar',
+            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 h-[calc(100dvh-48px)] mdl:h-dvh border-r mdl:border-none transition-transform duration-300 ease-in-out p-4 w-[265px] min-w-[265px] flex flex-col gap-y-8 bg-zinc-50 overflow-y-auto no-scrollbar',
             isActive && 'translate-x-0'
           )}
         >
