@@ -44,7 +44,7 @@
 
   /* Pages */
   .Page {
-    @apply px-6 lg:px-8 w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
+    @apply mt-12 px-6 lg:px-8 w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
   }
   .Page-Content {
     @apply w-full max-w-[780px] mx-auto py-6 sm:py-7 md:py-8 mdl:py-14 lg:py-18 lgx:py-22 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;
@@ -66,4 +66,52 @@
     display: none;
   }
   /* no-scrollbar */
+
+  /* Hamburger Menu */
+  .Hamburger-Menu {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .Menu-Rotate.active {
+    transform: rotate(45deg);
+  }
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: currentColor;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+  .Ham-Menu .top {
+    stroke-dasharray: 40 160;
+  }
+  .Ham-Menu .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+  .Ham-Menu .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+  .Ham-Menu.active .top {
+    stroke-dashoffset: -64px;
+  }
+  .Ham-Menu.active .middle {
+    stroke-dashoffset: 0;
+    transform: rotate(90deg);
+  }
+  .Ham-Menu.active .bottom {
+    stroke-dashoffset: -64px;
+  }
+  .Ham-Menu.active ~ .Menu {
+    transform: translateX(0);
+  }
+  /* Hamburger Menu */
 }
