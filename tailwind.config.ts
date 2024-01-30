@@ -54,6 +54,10 @@ const config: Config = {
         lgx: '1152px',
         xl2: '1408px',
       },
+
+      fontFamily: {
+        Caveat: ['var(--font-caveat)'],
+      },
     },
     // Custom Values
   },

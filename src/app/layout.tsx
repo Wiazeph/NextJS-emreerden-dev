@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Poppins, Caveat } from 'next/font/google'
 import '@/assets/css/index.css'
 import SideBarLayout from '@/components/side-bar'
 
@@ -8,6 +8,14 @@ const poppins = Poppins({
   display: 'swap',
   weight: ['400', '500', '600', '700'],
   style: ['normal'],
+})
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['700'],
+  style: ['normal'],
+  variable: '--font-caveat',
 })
 
 export const metadata: Metadata = {
@@ -21,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${caveat.variable}`}>
       <body className={poppins.className}>
         <SideBarLayout />
 

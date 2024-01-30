@@ -2,14 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { Caveat } from 'next/font/google'
-const caveat = Caveat({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['700'],
-  style: ['normal'],
-})
-
 type Props = {}
 
 const ProfileComponent = (props: Props) => {
@@ -27,7 +19,7 @@ const ProfileComponent = (props: Props) => {
         />
       </div>
 
-      <div className={`Name text-4xl ${caveat.className} tracking-[-1px]`}>
+      <div className="Name text-4xl tracking-[-1px] font-Caveat">
         Emre Erden
       </div>
     </Link>
