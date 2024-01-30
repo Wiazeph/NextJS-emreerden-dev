@@ -44,7 +44,7 @@
 
   /* Pages */
   .Page {
-    @apply mt-12 px-6 lg:px-8 w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
+    @apply pt-12 mdl:pt-0 px-6 lg:px-8 w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
   }
   .Page-Content {
     @apply w-full max-w-[780px] mx-auto py-6 sm:py-7 md:py-8 mdl:py-14 lg:py-18 lgx:py-22 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;
@@ -109,9 +109,6 @@
   }
   .Ham-Menu.active .bottom {
     stroke-dashoffset: -64px;
-  }
-  .Ham-Menu.active ~ .Menu {
-    transform: translateX(0);
   }
   /* Hamburger Menu */
 }
