@@ -14,10 +14,15 @@ import { IoIosArrowDown } from 'react-icons/io'
 type Props = {}
 
 const NavBarComponent = (props: Props) => {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [portfolio, setPortfolio] = useState(false)
+  const [utilities, setUtilities] = useState(false)
 
-  const toggleIsExpanded = () => {
-    setIsExpanded(!isExpanded)
+  const toggleIsExpanded = (e: number) => {
+    if (e === 1) {
+      setPortfolio(!portfolio)
+    } else if (e === 2) {
+      setUtilities(!utilities)
+    }
   }
 
   const pathname = usePathname()
@@ -46,7 +51,7 @@ const NavBarComponent = (props: Props) => {
           ))}
         </nav>
 
-        <button className="Side-Bar-Card" onClick={toggleIsExpanded}>
+        <button className="Side-Bar-Card" onClick={() => toggleIsExpanded(1)}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-x-2">
               <MdOutlineWorkspaces />
@@ -55,7 +60,7 @@ const NavBarComponent = (props: Props) => {
             <div
               className={cn(
                 'transition-all duration-300',
-                isExpanded && 'rotate-180'
+                portfolio && 'rotate-180'
               )}
             >
               <IoIosArrowDown />
@@ -66,7 +71,7 @@ const NavBarComponent = (props: Props) => {
         <nav
           className={cn(
             'Portfolio-Routes-List Side-Bar-Card-List relative -left-2 w-[calc(100%+16px)] h-0 opacity-0 overflow-hidden transition-all duration-300',
-            isExpanded && 'h-[104px] opacity-100'
+            portfolio && 'h-[104px] opacity-100'
           )}
         >
           {PortfolioRoutes.map((route, index) => (
@@ -87,7 +92,7 @@ const NavBarComponent = (props: Props) => {
           ))}
         </nav>
 
-        <button className="Side-Bar-Card" onClick={toggleIsExpanded}>
+        <button className="Side-Bar-Card" onClick={() => toggleIsExpanded(2)}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-x-2">
               <LuUtilityPole />
@@ -96,7 +101,7 @@ const NavBarComponent = (props: Props) => {
             <div
               className={cn(
                 'transition-all duration-300',
-                isExpanded && 'rotate-180'
+                utilities && 'rotate-180'
               )}
             >
               <IoIosArrowDown />
@@ -107,7 +112,7 @@ const NavBarComponent = (props: Props) => {
         <nav
           className={cn(
             'Utilities-Routes-List Side-Bar-Card-List relative -left-2 w-[calc(100%+16px)] h-0 opacity-0 overflow-hidden transition-all duration-300',
-            isExpanded && 'h-[104px] opacity-100'
+            utilities && 'h-[104px] opacity-100'
           )}
         >
           {UtilitiesRoutes.map((route, index) => (

@@ -11,13 +11,15 @@ const PageHeaderComponent = (props: Props) => {
       <div className="Page-Title">{props.pageTitle}</div>
 
       <div className="flex items-center gap-x-2">
-        <div className="hidden lgx:block text-zinc-400 text-sm">{'<span>'}</div>
+        <div className="hidden lgx:block text-zinc-400 text-sm select-none">
+          {'<span>'}
+        </div>
 
         <div className="text-sm sm:text-base text-zinc-600 lgx:text-zinc-950">
           {props.pageDescription}
         </div>
 
-        <div className="hidden lgx:block text-zinc-400 text-sm">
+        <div className="hidden lgx:block text-zinc-400 text-sm select-none">
           {'</span>'}
         </div>
       </div>

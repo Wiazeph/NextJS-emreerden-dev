@@ -7,6 +7,7 @@ import {
   BiLogoGit,
 } from 'react-icons/bi'
 import { SiNextdotjs } from 'react-icons/si'
+import { RiSupabaseFill } from 'react-icons/ri'
 
 const Skills = [
   {
@@ -49,14 +50,19 @@ const Skills = [
     name: 'Zustand',
   },
   {
+    name: 'Next.js',
+    path: 'https://nextjs.org/',
+    icon: <SiNextdotjs />,
+  },
+  {
     name: 'TypeScript',
     path: 'https://www.typescriptlang.org/',
     icon: <BiLogoTypescript />,
   },
   {
-    name: 'Next.js',
-    path: 'https://nextjs.org/',
-    icon: <SiNextdotjs />,
+    name: 'Supabase',
+    path: 'https://supabase.com/',
+    icon: <RiSupabaseFill />,
   },
   {
     name: 'Vue',

@@ -27,7 +27,7 @@ const PortfolioListComponent = (props: Props) => {
           </div>
 
           <div className="relative z-20 group-hover:-translate-y-full transition-transform duration-300 w-full bg-zinc-50 border-2 group">
-            <div className="Repo-Information opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:delay-300 p-4 flex flex-col gap-y-6 text-center">
+            <div className="Repo-Information opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 flex flex-col gap-y-6 text-center">
               <div className="Repo-Name">{repo.name}</div>
 
               <div className="Repo-Description text-sm">{repo.desc}</div>
