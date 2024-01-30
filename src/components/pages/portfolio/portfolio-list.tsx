@@ -27,17 +27,17 @@ const PortfolioListComponent = (props: Props) => {
           </div>
 
           <div className="relative z-20 group-hover:-translate-y-full transition-transform duration-300 w-full bg-zinc-50 border-x border-b group">
-            <div className="Repo-Information opacity-0 group-hover:opacity-100 transition-opacity duration-300 pt-4 pb-2 px-2 flex flex-col gap-y-6 text-center">
+            <div className="Repo-Information opacity-0 group-hover:opacity-100 transition-opacity duration-300 pt-4 pb-2 lg:pb-4 px-2 lg:px-4 flex flex-col gap-y-6 text-center">
               <div className="Repo-Name">{repo.name}</div>
 
               <div className="Repo-Description text-sm">{repo.desc}</div>
 
-              <div className="flex justify-center gap-x-2 text-sm select-none">
+              <div className="flex justify-center gap-x-2 lg:gap-x-4 text-sm select-none">
                 <a
                   href={repo.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-2 px-3 flex items-center gap-x-1.5 rounded-md border border-zinc-300 hover:bg-zinc-200/50 transition-colors"
+                  className="py-2 px-2 flex items-center gap-x-1.5 rounded-md border border-zinc-300 hover:bg-zinc-200/50 transition-colors"
                 >
                   <FiGithub />
 
@@ -58,7 +58,7 @@ const PortfolioListComponent = (props: Props) => {
                   href={repo.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-2 px-3 flex items-center gap-x-1.5 rounded-md border border-zinc-300 hover:bg-zinc-200/50 transition-colors"
+                  className="py-2 px-2 flex items-center gap-x-1.5 rounded-md border border-zinc-300 hover:bg-zinc-200/50 transition-colors"
                 >
                   <IoLogoVercel />
 
