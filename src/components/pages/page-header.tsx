@@ -10,7 +10,7 @@ const PageHeaderComponent = (props: Props) => {
     <div className="flex flex-col mdl:flex-row mdl:flex-wrap items-center mdl:items-baseline gap-4">
       <div className="Page-Title">{props.pageTitle}</div>
 
-      <div className="flex items-center gap-x-2">
+      <div className="flex items-center gap-x-2 text-center mdl:text-left">
         <div className="hidden lgx:block text-zinc-400 text-sm select-none">
           {'<span>'}
         </div>
