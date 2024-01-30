@@ -6,7 +6,7 @@ const HomePageComponent = (props: Props) => {
   return (
     <main className="Home Page flex flex-col justify-center">
       <div className="Page-Content">
-        <div className="flex flex-col items-center gap-y-8 text-center mdl:text-left">
+        <div className="flex flex-col items-center mdl:items-start gap-y-8 text-center mdl:text-left">
           <div className="flex flex-col gap-y-4">
             <span className="font-semibold text-zinc-400 text-lg sm:text-xl md:text-2xl">
               Hi 👋, I am
@@ -25,7 +25,7 @@ const HomePageComponent = (props: Props) => {
             </div>
           </div>
 
-          <div className="max-w-[550px]">
+          <div className="max-w-[550px] mdl:max-w-[650px] mdl:text-lg">
             I'm working to be an experienced developer in the Front-End world.
             In this profession, I'm open to learning and improving myself. I
             enjoy learning new things and constantly improving myself.
