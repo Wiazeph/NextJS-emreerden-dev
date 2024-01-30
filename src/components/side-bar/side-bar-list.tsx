@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdArrowOutward } from "react-icons/md";
 
 type Props = {
   name: string
@@ -22,13 +23,15 @@ const SideBarListComponent = (props: Props) => {
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className="Side-Bar-Card group"
+            className="Side-Bar-Card group flex items-center justify-between"
           >
             <div className="Side-Bar-Card-Hover group-hover:ml-2">
               {item.icon}
 
               <div className="text-sm">{item.name}</div>
             </div>
+
+            <MdArrowOutward />
           </a>
         ))}
       </div>
