@@ -20,8 +20,10 @@ const NavBarComponent = (props: Props) => {
   const toggleIsExpanded = (e: number) => {
     if (e === 1) {
       setPortfolio(!portfolio)
+      setUtilities(false)
     } else if (e === 2) {
       setUtilities(!utilities)
+      setPortfolio(false)
     }
   }
 
@@ -83,7 +85,7 @@ const NavBarComponent = (props: Props) => {
                 pathname === route.path ? 'bg-zinc-200' : ''
               )}
             >
-              <div className="Side-Bar-Card-Hover group-hover:ml-2 pl-2">
+              <div className="Side-Bar-Card-Hover group-hover:ml-2 pl-5">
                 {route.icon}
 
                 <div className="text-sm">{route.name}</div>
@@ -124,7 +126,7 @@ const NavBarComponent = (props: Props) => {
                 pathname === route.path ? 'bg-zinc-200' : ''
               )}
             >
-              <div className="Side-Bar-Card-Hover group-hover:ml-2 pl-2">
+              <div className="Side-Bar-Card-Hover group-hover:ml-2 pl-5">
                 {route.icon}
 
                 <div className="text-sm">{route.name}</div>

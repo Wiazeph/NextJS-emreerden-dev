@@ -35,7 +35,7 @@ const HomePageComponent = (props: Props) => {
             href="https://flowcv.com/resume/l3ncgjown0"
             target="_blank"
             rel="noopener noreferrer"
-            className="border rounded-md py-2 px-4 w-max shadow-sm hover:border-zinc-400 transition-colors"
+            className="border rounded-md py-2 px-4 w-fit shadow-sm hover:border-zinc-400 transition-colors"
           >
             View CV
           </a>
