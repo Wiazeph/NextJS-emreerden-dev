@@ -4,15 +4,19 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import PageHeaderComponent from '@/components/pages/page-header'
 import PortfolioListComponent from '../portfolio-list'
+import PortfolioSkeletonComponent from '@/components/ui/skeleton'
 import type { Repo } from '@/types/repo'
 
 type Props = {}
 
 const StudiesPageComponent = (props: Props) => {
   const [repos, setRepos] = useState<Repo[]>([])
+  const [isLoading, setIsLoading] = useState(false)
 
   const getRepoData = async () => {
     try {
+      setIsLoading(true)
+
       const response = await axios.get(
         `https://api.github.com/users/Wiazeph/repos`
       )
@@ -34,7 +38,11 @@ const StudiesPageComponent = (props: Props) => {
         .sort((a: { stars: number }, b: { stars: number }) => b.stars - a.stars)
 
       setRepos(updatedRepos)
+
+      setIsLoading(false)
     } catch (error) {
+      setIsLoading(false)
+
       console.error('Error fetching repository data:', error)
     }
   }
@@ -51,7 +59,11 @@ const StudiesPageComponent = (props: Props) => {
           pageDescription="My simple studies and what I applied while learning"
         />
 
-        <PortfolioListComponent repoName={repos} />
+        {isLoading ? (
+          <PortfolioSkeletonComponent />
+        ) : (
+          <PortfolioListComponent repoName={repos} />
+        )}
       </div>
     </main>
   )
