@@ -1,5 +1,5 @@
 import { IoLogoHtml5, IoLogoCss3, IoLogoSass } from 'react-icons/io'
-import { FaBootstrap, FaReact, FaVuejs } from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
 import {
   BiLogoTailwindCss,
   BiLogoJavascript,
@@ -21,14 +21,9 @@ const Skills = [
     icon: <IoLogoCss3 />,
   },
   {
-    name: 'Sass/Scss',
+    name: 'SASS/SCSS',
     path: 'https://sass-lang.com/',
     icon: <IoLogoSass />,
-  },
-  {
-    name: 'Bootstrap',
-    path: 'https://getbootstrap.com/',
-    icon: <FaBootstrap />,
   },
   {
     name: 'Tailwind CSS',
@@ -65,13 +60,8 @@ const Skills = [
     icon: <RiSupabaseFill />,
   },
   {
-    name: 'Vue',
-    path: 'https://vuejs.org/',
-    icon: <FaVuejs />,
-  },
-  {
-    path: 'https://pinia.vuejs.org/',
-    name: 'Pinia',
+    name: 'Langchain',
+    path: 'https://js.langchain.com/docs/get_started/introduction/',
   },
   {
     name: 'Git',
