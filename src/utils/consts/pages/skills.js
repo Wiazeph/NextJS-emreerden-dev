@@ -55,13 +55,13 @@ const Skills = [
     icon: <BiLogoTypescript />,
   },
   {
+    name: 'Langchain',
+    path: 'https://js.langchain.com/docs/get_started/introduction/',
+  },
+  {
     name: 'Supabase',
     path: 'https://supabase.com/',
     icon: <RiSupabaseFill />,
-  },
-  {
-    name: 'Langchain',
-    path: 'https://js.langchain.com/docs/get_started/introduction/',
   },
   {
     name: 'Git',

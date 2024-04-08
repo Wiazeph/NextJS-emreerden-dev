@@ -61,7 +61,7 @@ const Browser = [
   },
   {
     name: 'Enhancer for YouTube™',
-    path: '',
+    path: 'https://www.mrfdev.com/enhancer-for-youtube',
   },
   {
     name: 'Dark Reader',
@@ -92,6 +92,10 @@ const Browser = [
     path: 'https://www.felixniklas.com/dimensions/',
   },
   {
+    name: 'Simple Ruler',
+    path: 'https://simplerulerextension.com/',
+  },
+  {
     name: 'Color Zilla',
     path: 'https://www.colorzilla.com/',
   },
@@ -106,6 +110,10 @@ const Browser = [
   {
     name: 'WhatRuns',
     path: 'https://www.whatruns.com/',
+  },
+  {
+    name: 'SVG Export',
+    path: 'https://svgexport.io/',
   },
   {
     name: 'React Developer Tools',
