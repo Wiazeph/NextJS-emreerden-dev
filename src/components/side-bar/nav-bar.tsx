@@ -41,7 +41,7 @@ const NavBarComponent = (props: Props) => {
               href={route.path}
               className={cn(
                 'Side-Bar-Card group',
-                pathname === route.path ? 'bg-zinc-200' : ''
+                pathname === route.path ? 'bg-zinc-200/70' : ''
               )}
             >
               <div className="Side-Bar-Card-Hover group-hover:ml-2">

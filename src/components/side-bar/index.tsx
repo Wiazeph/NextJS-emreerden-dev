@@ -23,7 +23,10 @@ const SideBarLayout = (props: Props) => {
       <ClickAwayListener onClickAway={() => setIsActive(false)}>
         <div className="z-40 absolute top-0 left-0 h-12 w-full bg-zinc-50 border-b mdl:hidden overflow-hidden">
           <svg
-            className={`Hamburger-Menu Menu-Rotate Ham-Menu ${activeClass} w-12 h-12 ml-auto block mdl:hidden`}
+            className={cn(
+              'Hamburger-Menu Menu-Rotate Ham-Menu w-12 h-12 ml-auto block mdl:hidden',
+              activeClass
+            )}
             viewBox="0 0 100 100"
             onClick={handleOnClick}
           >
@@ -41,29 +44,35 @@ const SideBarLayout = (props: Props) => {
 
         <div
           className={cn(
-            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 h-[calc(100dvh-48px)] mdl:h-dvh border-r mdl:border-none transition-transform duration-300 ease-in-out p-4 w-68 min-w-68 mdl:w-66 mdl:min-w-66 flex flex-col gap-y-8 bg-zinc-50 overflow-y-auto no-scrollbar',
+            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 p-4 h-dvh border-r mdl:border-none transition-transform duration-300 ease-in-out',
             isActive && 'translate-x-0'
           )}
         >
-          <ProfileComponent />
+          <div className="flex w-68 min-w-68 mdl:w-[340px] mdl:min-w-[340px] h-full border rounded-3xl bg-zinc-50">
+            <div className="w-18 rounded-3xl border-r"></div>
 
-          <AboutComponent />
+            <div className="flex flex-col gap-y-8 px-[18px] py-4 overflow-y-auto no-scrollbar">
+              <ProfileComponent />
 
-          <NavBarComponent />
+              <AboutComponent />
 
-          <SideBarListComponent
-            name="Skills"
-            title="Follow Me!"
-            constName={SocialLinks}
-          />
+              <NavBarComponent />
 
-          <SideBarListComponent
-            name="Contact"
-            title="Contact Me!"
-            constName={ContactLinks}
-          />
+              <SideBarListComponent
+                name="Skills"
+                title="Follow Me!"
+                constName={SocialLinks}
+              />
 
-          <SettingsComponent />
+              <SideBarListComponent
+                name="Contact"
+                title="Contact Me!"
+                constName={ContactLinks}
+              />
+
+              <SettingsComponent />
+            </div>
+          </div>
         </div>
       </ClickAwayListener>
     </>

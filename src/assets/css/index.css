@@ -11,7 +11,7 @@
 @layer components {
   /* Side-Bar */
   .Side-Bar-Card {
-    @apply -mx-2 py-1.5 px-2 font-medium Main-Hover-Color;
+    @apply -mx-2 py-1.5 px-2 rounded-sm Main-Hover-Color;
   }
   /* Side-Bar */
 
@@ -24,7 +24,7 @@
 
 @layer utilities {
   .Main-Hover-Color {
-    @apply hover:bg-zinc-200 transition-colors;
+    @apply hover:bg-zinc-200/70 transition-colors;
   }
 
   /* Side-Bar */
@@ -32,7 +32,7 @@
     @apply flex flex-col gap-y-3.5;
   }
   .Side-Bar-Title {
-    @apply text-xs font-medium text-zinc-600;
+    @apply text-xs text-zinc-600;
   }
   .Side-Bar-Card-List {
     @apply flex flex-col gap-y-1;
