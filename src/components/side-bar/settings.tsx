@@ -6,26 +6,14 @@ type Props = {}
 
 const SettingsComponent = (props: Props) => {
   return (
-    <div className="Settings Side-Bar-Section-Layout">
-      <div className="Side-Bar-Title">Settings</div>
+    <div className="Settings Side-Bar-Section-Layout items-center">
+      <button className="Light-Theme w-fit p-3 text-xl rounded-full Main-Hover-Color">
+        <IoSunnyOutline />
+      </button>
 
-      <div className="Settings-List Side-Bar-Card-List">
-        <button className="Light-Theme Side-Bar-Card group">
-          <div className="Side-Bar-Card-Hover group-hover:ml-2">
-            <IoSunnyOutline />
-
-            <div className="text-sm">Light</div>
-          </div>
-        </button>
-
-        <button className="Dark-Theme Side-Bar-Card group">
-          <div className="Side-Bar-Card-Hover group-hover:ml-2">
-            <IoMoonOutline />
-
-            <div className="text-sm">Dark</div>
-          </div>
-        </button>
-      </div>
+      <button className="Dark-Theme w-fit p-3 text-xl rounded-full Main-Hover-Color">
+        <IoMoonOutline />
+      </button>
     </div>
   )
 }
