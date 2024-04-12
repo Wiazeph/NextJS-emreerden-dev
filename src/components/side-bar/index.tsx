@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { cn } from '@/lib/utils'
-import ProfileComponent from './profile'
+import AvatarComponent from './avatar'
 import AboutComponent from './about'
 import NavBarComponent from './nav-bar'
 import SideBarListComponent from './side-bar-list'
@@ -49,11 +49,13 @@ const SideBarLayout = (props: Props) => {
           )}
         >
           <div className="flex w-68 min-w-68 mdl:w-[340px] mdl:min-w-[340px] h-full border rounded-3xl bg-zinc-50">
-            <div className="w-18 rounded-3xl border-r"></div>
+            <div className="w-18 py-2 flex flex-col justify-between rounded-3xl border-r ">
+              <AvatarComponent />
+
+              <SettingsComponent />
+            </div>
 
             <div className="flex flex-col gap-y-8 px-[18px] py-4 overflow-y-auto no-scrollbar">
-              <ProfileComponent />
-
               <AboutComponent />
 
               <NavBarComponent />
@@ -69,8 +71,6 @@ const SideBarLayout = (props: Props) => {
                 title="Contact Me!"
                 constName={ContactLinks}
               />
-
-              <SettingsComponent />
             </div>
           </div>
         </div>
