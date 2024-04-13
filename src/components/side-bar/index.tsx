@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react'
 //
-import { cn } from '@/lib/utils'
-//
 import AvatarComponent from './avatar'
 import ThemeSettingsComponent from './theme-settings'
 //
@@ -15,6 +13,8 @@ import SocialLinks from '@/utils/consts/side-bar/socials'
 import ContactLinks from '@/utils/consts/side-bar/contact'
 //
 import { ClickAwayListener } from '@/components/ui/click-away-listener'
+//
+import { cn } from '@/lib/utils'
 
 type Props = {}
 

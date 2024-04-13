@@ -1,11 +1,15 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+//
 import axios from 'axios'
+//
 import PageHeaderComponent from '@/components/pages/page-header'
 import PortfolioListComponent from '../portfolio-list'
-import PortfolioSkeletonComponent from '@/components/ui/skeleton'
+//
 import type { Repo } from '@/types/repo'
+//
+import { Skeleton } from '@/components/ui/skeleton'
 
 type Props = {}
 
@@ -60,7 +64,11 @@ const StudiesPageComponent = (props: Props) => {
         />
 
         {isLoading ? (
-          <PortfolioSkeletonComponent />
+          <div className="Main-Card-List">
+            {[...Array(4)].map((_, index) => (
+              <Skeleton key={index} className="Main-Card-Skeleton" />
+            ))}
+          </div>
         ) : (
           <PortfolioListComponent repoName={repos} />
         )}
