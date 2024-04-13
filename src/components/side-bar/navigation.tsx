@@ -3,17 +3,20 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+//
 import { cn } from '@/lib/utils'
+//
 import Routes from '@/utils/consts/side-bar/nav-bar/routes'
 import PortfolioRoutes from '@/utils/consts/side-bar/nav-bar/portfolio-routes'
 import UtilitiesRoutes from '@/utils/consts/side-bar/nav-bar/utilities-routes'
+//
 import { MdOutlineWorkspaces } from 'react-icons/md'
 import { LuUtilityPole } from 'react-icons/lu'
 import { IoIosArrowDown } from 'react-icons/io'
 
 type Props = {}
 
-const NavBarComponent = (props: Props) => {
+const NavigationComponent = (props: Props) => {
   const [portfolio, setPortfolio] = useState(false)
   const [utilities, setUtilities] = useState(false)
 
@@ -30,7 +33,7 @@ const NavBarComponent = (props: Props) => {
   const pathname = usePathname()
 
   return (
-    <div className="Nav-Bar Side-Bar-Section-Layout">
+    <div className="Navigation Side-Bar-Section-Layout">
       <div className="Side-Bar-Title">Navigation</div>
 
       <div className="flex flex-col gap-y-1">
@@ -139,4 +142,4 @@ const NavBarComponent = (props: Props) => {
   )
 }
 
-export default NavBarComponent
+export default NavigationComponent

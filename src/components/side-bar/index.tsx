@@ -1,14 +1,19 @@
 'use client'
 
 import React, { useState } from 'react'
+//
 import { cn } from '@/lib/utils'
+//
 import AvatarComponent from './avatar'
+import ThemeSettingsComponent from './theme-settings'
+//
 import AboutComponent from './about'
-import NavBarComponent from './nav-bar'
+import NavigationComponent from './navigation'
 import SideBarListComponent from './side-bar-list'
+//
 import SocialLinks from '@/utils/consts/side-bar/socials'
 import ContactLinks from '@/utils/consts/side-bar/contact'
-import SettingsComponent from './settings'
+//
 import { ClickAwayListener } from '@/components/ui/click-away-listener'
 
 type Props = {}
@@ -18,10 +23,15 @@ const SideBarLayout = (props: Props) => {
   const handleOnClick = () => setIsActive(!isActive)
   const activeClass = isActive && 'active'
 
+  const username = 'WIAZEPH'
+
   return (
     <>
-      <ClickAwayListener onClickAway={() => setIsActive(false)}>
-        <div className="z-40 absolute top-0 left-0 h-12 w-full bg-zinc-50 border-b mdl:hidden overflow-hidden">
+      <ClickAwayListener
+        onClickAway={() => setIsActive(false)}
+        className="ClickAwayListener"
+      >
+        <div className="Mobile-Menu z-40 absolute top-0 left-0 h-12 w-full bg-zinc-50 border-b mdl:hidden overflow-hidden">
           <svg
             className={cn(
               'Hamburger-Menu Menu-Rotate Ham-Menu w-12 h-12 ml-auto block mdl:hidden',
@@ -52,13 +62,19 @@ const SideBarLayout = (props: Props) => {
             <div className="w-18 py-2 flex flex-col justify-between rounded-3xl border-r ">
               <AvatarComponent />
 
-              <SettingsComponent />
+              <div className="Username flex flex-col gap-y-1 items-center text-sm select-none">
+                {username.split('').map((letter, index) => (
+                  <div key={index}>{letter}</div>
+                ))}
+              </div>
+
+              <ThemeSettingsComponent />
             </div>
 
-            <div className="flex flex-col gap-y-8 px-[18px] py-4 overflow-y-auto no-scrollbar">
+            <div className="flex flex-col gap-y-8 p-6 overflow-y-auto no-scrollbar">
               <AboutComponent />
 
-              <NavBarComponent />
+              <NavigationComponent />
 
               <SideBarListComponent
                 name="Skills"
