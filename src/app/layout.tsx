@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Poppins, Caveat } from 'next/font/google'
-import '@/assets/css/index.css'
+//
+import './globals.css'
+//
 import SideBarLayout from '@/components/side-bar'
 
 const poppins = Poppins({

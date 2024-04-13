@@ -1,11 +1,13 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ['class'],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
+  prefix: '',
   theme: {
     // Custom Values
     container: {
@@ -29,8 +31,10 @@ const config: Config = {
         mdl: '896px',
       },
     },
+    // Custom Values
 
     extend: {
+      // Custom Values
       spacing: {
         18: '4.5rem',
         22: '5.5rem',
@@ -59,9 +63,24 @@ const config: Config = {
       fontFamily: {
         Caveat: ['var(--font-caveat)'],
       },
+      // Custom Values
+
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+      },
+
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+      },
     },
-    // Custom Values
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 }
-export default config
