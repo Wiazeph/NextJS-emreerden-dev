@@ -1,20 +1,53 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 //
-import { IoSunnyOutline } from 'react-icons/io5'
+import { cn } from '@/lib/utils'
+//
+import { useTheme } from 'next-themes'
+//
 import { IoMoonOutline } from 'react-icons/io5'
+import { IoSunnyOutline } from 'react-icons/io5'
 
 type Props = {}
 
 const ThemeSettingsComponent = (props: Props) => {
-  return (
-    <div className="Theme-Settings !gap-y-1 w-min">
-      <button className="Light-Theme Main-Hover-Color p-3 text-xl rounded-full">
-        <IoSunnyOutline />
-      </button>
+  const [themeValue, setThemeValue] = useState<boolean>()
 
-      <button className="Dark-Theme Main-Hover-Color p-3 text-xl rounded-full">
+  const { theme, setTheme } = useTheme()
+
+  useEffect(() => {
+    console.log('theme', theme)
+
+    setThemeValue(theme === 'dark' ? true : false)
+  }, [theme])
+
+  return (
+    <div className="Theme-Settings relative flex flex-col gap-y-2 justify-between items-center rounded-full">
+      <div
+        className="Light-Theme text-2xl p-3 cursor-pointer rounded-full z-10"
+        onClick={() => setTheme('light')}
+        onMouseEnter={() => setThemeValue(false)}
+      >
+        <IoSunnyOutline />
+      </div>
+
+      <div
+        className={cn(
+          'absolute w-12 h-12 rounded-full border-2 transition-transform duration-300',
+          themeValue === false
+            ? 'translate-y-0'
+            : 'translate-y-[calc(100%+7px)]'
+        )}
+      ></div>
+
+      <div
+        className="Dark-Theme text-[22px] p-3 cursor-pointer rounded-full z-10"
+        onClick={() => setTheme('dark')}
+        onMouseEnter={() => setThemeValue(true)}
+      >
         <IoMoonOutline />
-      </button>
+      </div>
     </div>
   )
 }

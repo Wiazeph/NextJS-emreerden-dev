@@ -4,6 +4,8 @@ import { Poppins, Caveat } from 'next/font/google'
 import './globals.css'
 //
 import SideBarLayout from '@/components/side-bar'
+//
+import { ThemeProvider } from '@/components/theme-provider'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -31,11 +33,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${caveat.variable}`}>
+    <html lang="en" className={`${caveat.variable}`} suppressHydrationWarning>
       <body className={poppins.className}>
-        <SideBarLayout />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SideBarLayout />
 
-        {children}
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
