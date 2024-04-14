@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 //
@@ -26,7 +26,7 @@ const NavigationComponent = (props: Props) => {
   const pathname = usePathname()
 
   return (
-    <div className="Navigation Side-Bar-Section-Layout">
+    <div className="Navigation text-sm">
       <div className="Side-Bar-Title">Navigation</div>
 
       <div className="flex flex-col gap-y-1">
@@ -41,9 +41,13 @@ const NavigationComponent = (props: Props) => {
               )}
             >
               <div className="Side-Bar-Card-Hover group-hover:ml-2">
-                {route.icon}
+                <div
+                  className={cn('text-xl', index === 0 && 'text-[21px] -ml-px')}
+                >
+                  {route.icon}
+                </div>
 
-                <div className="text-sm">{route.name}</div>
+                {route.name}
               </div>
             </Link>
           ))}
@@ -51,56 +55,94 @@ const NavigationComponent = (props: Props) => {
 
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1" className="border-none mb-1">
-            <AccordionTrigger className="Side-Bar-Card text-sm font-normal hover:no-underline py-1.5">
+            <AccordionTrigger className="Side-Bar-Card font-normal hover:no-underline py-2">
               <div className="flex items-center gap-x-2">
-                <MdOutlineWorkspaces />
-                <div className="text-sm">Portfolio</div>
+                <div className="text-xl">
+                  <MdOutlineWorkspaces />
+                </div>
+                <div>Portfolio</div>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="Portfolio-Routes-List Side-Bar-Card-List p-0 relative -left-2 mt-1">
-              {PortfolioRoutes.map((route, index) => (
-                <Link
-                  key={index}
-                  href={route.path}
-                  className={cn(
-                    'Side-Bar-Card group',
-                    pathname === route.path ? 'bg-zinc-200' : ''
-                  )}
-                >
-                  <div className="Side-Bar-Card-Hover group-hover:ml-2 pl-5">
-                    {route.icon}
+            <AccordionContent className="flex pb-1">
+              <div className="relative w-[34px] before:content-[''] before:block before:absolute before:top-2 before:left-[9px] before:w-0.5 before:h-[calc(100%-30px)] before:bg-zinc-200 before:z-10 shrink-0">
+                <div className="absolute left-[9px] top-[11px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
 
-                    <div className="text-sm">{route.name}</div>
-                  </div>
-                </Link>
-              ))}
+                <div className="absolute left-[9px] top-[52px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+
+                <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+              </div>
+
+              <div className="Portfolio-Routes-List Side-Bar-Card-List p-0 mt-2 w-full">
+                {PortfolioRoutes.map((route, index) => (
+                  <Link
+                    key={index}
+                    href={route.path}
+                    className={cn(
+                      'px-3 py-2 rounded-md Main-Hover-Color group',
+                      pathname === route.path ? 'bg-zinc-200' : ''
+                    )}
+                  >
+                    <div className="Side-Bar-Card-Hover group-hover:ml-2">
+                      <div
+                        className={cn(
+                          'text-lg',
+                          index === 1 && 'text-xl -mx-px'
+                        )}
+                      >
+                        {route.icon}
+                      </div>
+
+                      {route.name}
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-2" className="border-none">
-            <AccordionTrigger className="Side-Bar-Card text-sm font-normal hover:no-underline py-1.5">
+            <AccordionTrigger className="Side-Bar-Card font-normal hover:no-underline py-2">
               <div className="flex items-center gap-x-2">
-                <LuUtilityPole />
-                <div className="text-sm">Utilities</div>
+                <div className="text-lg ml-px">
+                  <LuUtilityPole />
+                </div>
+                <div>Utilities</div>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="Utilities-Routes-List Side-Bar-Card-List p-0 relative -left-2 mt-1">
-              {UtilitiesRoutes.map((route, index) => (
-                <Link
-                  key={index}
-                  href={route.path}
-                  className={cn(
-                    'Side-Bar-Card group',
-                    pathname === route.path ? 'bg-zinc-200' : ''
-                  )}
-                >
-                  <div className="Side-Bar-Card-Hover group-hover:ml-2 pl-5">
-                    {route.icon}
+            <AccordionContent className="flex pb-1">
+              <div className="relative w-[34px] before:content-[''] before:block before:absolute before:top-2 before:left-[9px] before:w-0.5 before:h-[calc(100%-30px)] before:bg-zinc-200 before:z-10 shrink-0">
+                <div className="absolute left-[9px] top-[11px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
 
-                    <div className="text-sm">{route.name}</div>
-                  </div>
-                </Link>
-              ))}
+                <div className="absolute left-[9px] top-[52px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+
+                <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+              </div>
+
+              <div className="Portfolio-Routes-List Side-Bar-Card-List p-0 mt-2 w-full">
+                {UtilitiesRoutes.map((route, index) => (
+                  <Link
+                    key={index}
+                    href={route.path}
+                    className={cn(
+                      'px-3 py-2 rounded-md Main-Hover-Color group',
+                      pathname === route.path ? 'bg-zinc-200' : ''
+                    )}
+                  >
+                    <div className="Side-Bar-Card-Hover group-hover:ml-2">
+                      <div
+                        className={cn(
+                          'text-lg',
+                          index === 1 && 'text-xl -mx-px'
+                        )}
+                      >
+                        {route.icon}
+                      </div>
+
+                      {route.name}
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

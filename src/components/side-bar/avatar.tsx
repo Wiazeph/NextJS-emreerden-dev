@@ -10,7 +10,7 @@ const AvatarComponent = (props: Props) => {
   return (
     <Link
       href={'/'}
-      className="Avatar-Image inline-block mx-auto w-fit h-fit rounded-full overflow-hidden hover:scale-110 transition-all bg-red-500"
+      className="Avatar-Image inline-block w-fit rounded-full overflow-hidden hover:scale-110 transition-all"
     >
       <Avatar className="h-12 w-12">
         <AvatarImage

@@ -11,7 +11,7 @@
 @layer components {
   /* Side-Bar */
   .Side-Bar-Card {
-    @apply -mx-2 py-1.5 px-2 rounded-sm Main-Hover-Color;
+    @apply -mx-3 px-3 py-2 rounded-md Main-Hover-Color;
   }
   /* Side-Bar */
 
@@ -28,11 +28,8 @@
   }
 
   /* Side-Bar */
-  .Side-Bar-Section-Layout {
-    @apply flex flex-col gap-y-3.5;
-  }
   .Side-Bar-Title {
-    @apply text-xs text-zinc-600;
+    @apply pb-4 text-xs text-zinc-500 uppercase tracking-[1.5px] font-medium;
   }
   .Side-Bar-Card-List {
     @apply flex flex-col gap-y-1;

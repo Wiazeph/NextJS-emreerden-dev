@@ -1,6 +1,6 @@
 import React from 'react'
 //
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward } from 'react-icons/md'
 
 type Props = {
   name: string
@@ -14,7 +14,7 @@ type Props = {
 
 const SideBarListComponent = (props: Props) => {
   return (
-    <div className={`${props.name} Side-Bar-Section-Layout`}>
+    <div className={props.name}>
       <div className="Side-Bar-Title">{props.title}</div>
 
       <div className={`${props.name}-List Side-Bar-Card-List`}>
@@ -27,7 +27,7 @@ const SideBarListComponent = (props: Props) => {
             className="Side-Bar-Card group flex items-center justify-between"
           >
             <div className="Side-Bar-Card-Hover group-hover:ml-2">
-              {item.icon}
+              <div className="text-xl">{item.icon}</div>
 
               <div className="text-sm">{item.name}</div>
             </div>

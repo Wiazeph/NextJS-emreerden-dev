@@ -7,12 +7,12 @@ type Props = {}
 
 const ThemeSettingsComponent = (props: Props) => {
   return (
-    <div className="Theme-Settings Side-Bar-Section-Layout items-center !gap-y-1">
-      <button className="Light-Theme Main-Hover-Color p-3 w-fit text-xl rounded-full">
+    <div className="Theme-Settings !gap-y-1 w-min">
+      <button className="Light-Theme Main-Hover-Color p-3 text-xl rounded-full">
         <IoSunnyOutline />
       </button>
 
-      <button className="Dark-Theme Main-Hover-Color p-3 w-fit text-xl rounded-full">
+      <button className="Dark-Theme Main-Hover-Color p-3 text-xl rounded-full">
         <IoMoonOutline />
       </button>
     </div>

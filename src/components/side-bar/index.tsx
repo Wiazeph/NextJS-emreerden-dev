@@ -59,10 +59,10 @@ const SideBarLayout = (props: Props) => {
           )}
         >
           <div className="flex w-68 min-w-68 mdl:w-[340px] mdl:min-w-[340px] h-full border rounded-3xl bg-zinc-50">
-            <div className="w-18 py-2 flex flex-col justify-between rounded-3xl border-r ">
+            <div className="w-18 py-2 flex flex-col items-center justify-between rounded-3xl border-r">
               <AvatarComponent />
 
-              <div className="Username flex flex-col gap-y-1 items-center text-sm select-none">
+              <div className="Username flex flex-col gap-y-1 items-center w-fit text-sm select-none">
                 {username.split('').map((letter, index) => (
                   <div key={index}>{letter}</div>
                 ))}
