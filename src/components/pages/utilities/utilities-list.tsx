@@ -10,7 +10,9 @@ type Props = {
 
 const UtilitiesListComponent = (props: Props) => {
   return (
-    <ul className={`${props.name}-List Main-Card-List`}>
+    <ul
+      className={`${props.name}-List flex flex-wrap justify-center mdl:justify-normal gap-4`}
+    >
       {props.constName.map((item, index) => (
         <li key={index}>
           <a

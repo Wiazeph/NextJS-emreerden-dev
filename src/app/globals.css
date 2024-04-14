@@ -50,7 +50,7 @@
     @apply text-4xl lg:text-5xl text-center mdl:text-left font-bold tracking-[-2px];
   }
   .Main-Card-List {
-    @apply flex flex-wrap justify-center mdl:justify-normal gap-4;
+    @apply flex flex-col mdl:flex-row mdl:flex-wrap items-center mdl:items-start justify-center mdl:justify-normal gap-4 sm:gap-6 md:gap-8 mdl:gap-6 lg:gap-4;
   }
   .Main-Card-Skeleton {
     @apply h-66 w-72 lg:w-76 lgx:w-80;

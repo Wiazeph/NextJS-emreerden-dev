@@ -54,12 +54,12 @@ const SideBarLayout = (props: Props) => {
 
         <div
           className={cn(
-            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 p-4 h-dvh border-r mdl:border-none transition-transform duration-300 ease-in-out',
+            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 mdl:p-4 h-[calc(100dvh-48px)] mdl:h-dvh transition-transform duration-300 ease-in-out',
             isActive && 'translate-x-0'
           )}
         >
-          <div className="flex w-68 min-w-68 mdl:w-[340px] mdl:min-w-[340px] h-full border rounded-3xl bg-zinc-50">
-            <div className="w-18 py-2 flex flex-col items-center justify-between rounded-3xl border-r">
+          <div className="flex w-[296px] min-w-[296px] lgx:w-[340px] lgx:min-w-[340px] h-full border-r mdl:border mdl:rounded-3xl bg-zinc-50">
+            <div className="w-16 lgx:w-18 py-2 flex flex-col items-center justify-between shrink-0 mdl:rounded-3xl border-r">
               <AvatarComponent />
 
               <div className="Username flex flex-col gap-y-1 items-center w-fit text-sm select-none">

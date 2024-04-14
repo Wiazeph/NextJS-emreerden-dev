@@ -14,7 +14,7 @@ const PortfolioListComponent = (props: Props) => {
       {props.repoName.map((repo, index) => (
         <li
           key={index}
-          className="Repo-Card h-66 w-72 lg:w-76 lgx:w-80 rounded-md shadow-sm overflow-hidden relative group"
+          className="Repo-Card h-66 w-72 sm:h-68 sm:w-80 md:h-72 md:w-88 mdl:h-66 mdl:w-80 lg:w-76 rounded-md shadow-sm overflow-hidden relative group"
         >
           <div className="Repo-Image relative z-10 w-full h-full group-hover:blur-sm group-hover:scale-125 transition-all duration-300">
             <Image

@@ -8,7 +8,7 @@ const AboutPageComponent = (props: Props) => {
       <div className="Page-Content">
         <div className="Page-Title">who am i.</div>
 
-        <div className="text-lg">
+        <div className="text-lg text-center mdl:text-left">
           First of all, Hello Mate! My name is Emre and I'm 23 years old. I live
           in{' '}
           <a

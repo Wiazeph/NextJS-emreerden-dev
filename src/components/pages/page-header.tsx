@@ -7,19 +7,17 @@ type Props = {
 
 const PageHeaderComponent = (props: Props) => {
   return (
-    <div className="flex flex-col mdl:flex-row mdl:flex-wrap items-center mdl:items-baseline gap-4">
+    <div className="flex flex-col gap-y-5 mdl:gap-y-6">
       <div className="Page-Title">{props.pageTitle}</div>
 
-      <div className="flex items-center gap-x-2 text-center mdl:text-left">
-        <div className="hidden lgx:block text-zinc-400 text-sm select-none">
+      <div className="flex flex-col sm:flex-row items-center justify-center mdl:justify-start sm:flex-wrap gap-2 text-center mdl:text-left">
+        <div className="text-zinc-400 text-sm select-none mdl:hidden lg:block">
           {'<span>'}
         </div>
 
-        <div className="text-sm sm:text-base text-zinc-600 lgx:text-zinc-950">
-          {props.pageDescription}
-        </div>
+        <div className="text-zinc-950">{props.pageDescription}</div>
 
-        <div className="hidden lgx:block text-zinc-400 text-sm select-none">
+        <div className="text-zinc-400 text-sm select-none mdl:hidden lg:block">
           {'</span>'}
         </div>
       </div>
