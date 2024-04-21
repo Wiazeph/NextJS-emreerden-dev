@@ -37,7 +37,7 @@ const NavigationComponent = (props: Props) => {
               href={route.path}
               className={cn(
                 'Side-Bar-Card group',
-                pathname === route.path ? 'bg-zinc-200/70' : ''
+                pathname === route.path ? 'bg-zinc-200/70 dark:bg-zinc-700' : ''
               )}
             >
               <div className="Side-Bar-Card-Hover group-hover:ml-2">
@@ -64,12 +64,12 @@ const NavigationComponent = (props: Props) => {
               </div>
             </AccordionTrigger>
             <AccordionContent className="flex pb-1">
-              <div className="relative w-[34px] before:content-[''] before:block before:absolute before:top-2 before:left-[9px] before:w-0.5 before:h-[calc(100%-30px)] before:bg-zinc-200 before:z-10 shrink-0">
-                <div className="absolute left-[9px] top-[11px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+              <div className="relative w-[34px] before:content-[''] before:block before:absolute before:top-2 before:left-[9px] before:w-0.5 before:h-[calc(100%-30px)] before:bg-zinc-200 dark:before:bg-zinc-700 before:z-10 shrink-0">
+                <div className="absolute left-[9px] top-[11px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
 
-                <div className="absolute left-[9px] top-[52px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+                <div className="absolute left-[9px] top-[52px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
 
-                <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+                <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
               </div>
 
               <div className="Portfolio-Routes-List Side-Bar-Card-List p-0 mt-2 w-full">
@@ -79,7 +79,9 @@ const NavigationComponent = (props: Props) => {
                     href={route.path}
                     className={cn(
                       'px-3 py-2 rounded-md Main-Hover-Color group',
-                      pathname === route.path ? 'bg-zinc-200' : ''
+                      pathname === route.path
+                        ? 'bg-zinc-200/70 dark:bg-zinc-700'
+                        : ''
                     )}
                   >
                     <div className="Side-Bar-Card-Hover group-hover:ml-2">
@@ -110,12 +112,12 @@ const NavigationComponent = (props: Props) => {
               </div>
             </AccordionTrigger>
             <AccordionContent className="flex pb-1">
-              <div className="relative w-[34px] before:content-[''] before:block before:absolute before:top-2 before:left-[9px] before:w-0.5 before:h-[calc(100%-30px)] before:bg-zinc-200 before:z-10 shrink-0">
-                <div className="absolute left-[9px] top-[11px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+              <div className="relative w-[34px] before:content-[''] before:block before:absolute before:top-2 before:left-[9px] before:w-0.5 before:h-[calc(100%-30px)] before:bg-zinc-200 dark:before:bg-zinc-700 before:z-10 shrink-0">
+                <div className="absolute left-[9px] top-[11px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
 
-                <div className="absolute left-[9px] top-[52px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+                <div className="absolute left-[9px] top-[52px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
 
-                <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2"></div>
+                <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
               </div>
 
               <div className="Portfolio-Routes-List Side-Bar-Card-List p-0 mt-2 w-full">
@@ -125,7 +127,9 @@ const NavigationComponent = (props: Props) => {
                     href={route.path}
                     className={cn(
                       'px-3 py-2 rounded-md Main-Hover-Color group',
-                      pathname === route.path ? 'bg-zinc-200' : ''
+                      pathname === route.path
+                        ? 'bg-zinc-200/70 dark:bg-zinc-700'
+                        : ''
                     )}
                   >
                     <div className="Side-Bar-Card-Hover group-hover:ml-2">

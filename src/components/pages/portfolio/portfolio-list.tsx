@@ -14,9 +14,9 @@ const PortfolioListComponent = (props: Props) => {
       {props.repoName.map((repo, index) => (
         <li
           key={index}
-          className="Repo-Card h-66 w-72 sm:h-68 sm:w-80 md:h-72 md:w-88 mdl:h-66 mdl:w-80 lg:w-76 rounded-md shadow-sm overflow-hidden relative group"
+          className="Repo-Card h-66 w-72 sm:h-68 sm:w-80 md:h-72 md:w-88 mdl:h-68 lg:h-66 lg:w-76 rounded-md shadow-sm overflow-hidden relative group"
         >
-          <div className="Repo-Image relative z-10 w-full h-full group-hover:blur-sm group-hover:scale-125 transition-all duration-300">
+          <div className="Repo-Image relative z-10 w-full h-full group-hover:blur-sm group-hover:scale-125 transition-all duration-300 select-none">
             <Image
               src={repo.img}
               alt={repo.name}
@@ -26,7 +26,7 @@ const PortfolioListComponent = (props: Props) => {
             />
           </div>
 
-          <div className="relative z-20 group-hover:-translate-y-full transition-transform duration-300 w-full bg-zinc-50 border-x border-b group">
+          <div className="relative z-20 group-hover:-translate-y-full transition-transform duration-300 w-full bg-zinc-50 dark:bg-zinc-800 border-x border-b dark:border-zinc-800 group">
             <div className="Repo-Information opacity-0 group-hover:opacity-100 transition-opacity duration-300 pt-4 pb-2 lg:pb-4 px-2 lg:px-4 flex flex-col gap-y-6 text-center">
               <div className="Repo-Name">{repo.name}</div>
 
@@ -37,7 +37,7 @@ const PortfolioListComponent = (props: Props) => {
                   href={repo.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-2 px-2 flex items-center gap-x-1.5 rounded-md border border-zinc-300 hover:bg-zinc-200/50 transition-colors"
+                  className="py-2 px-2 flex items-center gap-x-1.5 rounded-md border dark:border-zinc-700 hover:border-zinc-200/50 dark:hover:border-zinc-500 transition-colors"
                 >
                   <FiGithub />
 
@@ -48,7 +48,7 @@ const PortfolioListComponent = (props: Props) => {
 
                     <div className="">Star</div>
 
-                    <div className="rounded-full bg-zinc-300 px-[7px] pt-[3px] pb-0.5 leading-4">
+                    <div className="rounded-full bg-zinc-300 dark:bg-zinc-600 px-[7px] pt-[3px] pb-0.5 leading-4">
                       {repo.stars}
                     </div>
                   </div>
@@ -58,7 +58,7 @@ const PortfolioListComponent = (props: Props) => {
                   href={repo.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-2 px-2 flex items-center gap-x-1.5 rounded-md border border-zinc-300 hover:bg-zinc-200/50 transition-colors"
+                  className="py-2 px-2 flex items-center gap-x-1.5 rounded-md border dark:border-zinc-700 hover:border-zinc-200/50 dark:hover:border-zinc-500 transition-colors"
                 >
                   <IoLogoVercel />
 

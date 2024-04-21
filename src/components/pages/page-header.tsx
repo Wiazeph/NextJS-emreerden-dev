@@ -15,7 +15,9 @@ const PageHeaderComponent = (props: Props) => {
           {'<span>'}
         </div>
 
-        <div className="text-zinc-950">{props.pageDescription}</div>
+        <div className="text-zinc-950 dark:text-zinc-200">
+          {props.pageDescription}
+        </div>
 
         <div className="text-zinc-400 text-sm select-none mdl:hidden lg:block">
           {'</span>'}

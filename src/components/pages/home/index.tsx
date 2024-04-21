@@ -17,7 +17,7 @@ const HomePageComponent = (props: Props) => {
             <div className="font-semibold text-xl sm:text-2xl md:text-3xl">
               <span className="text-zinc-400">{'<'}</span>
 
-              <span className="sm:ml-0.5 text-pink-500">
+              <span className="sm:ml-0.5 text-pink-500 dark:text-pink-400">
                 Front-End Developer
               </span>
 
@@ -35,7 +35,7 @@ const HomePageComponent = (props: Props) => {
             href="https://flowcv.com/resume/l3ncgjown0"
             target="_blank"
             rel="noopener noreferrer"
-            className="border rounded-md py-2 px-4 w-fit shadow-sm hover:border-zinc-400 transition-colors"
+            className="border dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500 rounded-md py-2 px-4 w-fit shadow-sm transition-colors"
           >
             View CV
           </a>

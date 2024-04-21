@@ -58,11 +58,11 @@ const SideBarLayout = (props: Props) => {
             isActive && 'translate-x-0'
           )}
         >
-          <div className="flex w-[296px] min-w-[296px] lgx:w-[340px] lgx:min-w-[340px] h-full border-r mdl:border mdl:rounded-3xl bg-zinc-50">
-            <div className="w-16 lgx:w-18 py-2 flex flex-col items-center justify-between shrink-0 mdl:rounded-3xl border-r">
+          <div className="flex w-[296px] min-w-[296px] lgx:w-[340px] lgx:min-w-[340px] h-full border-r mdl:border dark:border-zinc-700 mdl:rounded-3xl bg-zinc-50 dark:bg-zinc-800">
+            <div className="w-16 lgx:w-18 py-2 flex flex-col items-center justify-between shrink-0 mdl:rounded-3xl border-r dark:border-zinc-700">
               <AvatarComponent />
 
-              <div className="Username flex flex-col gap-y-1 items-center w-fit text-sm select-none">
+              <div className="Username flex flex-col gap-y-1 items-center w-fit text-sm">
                 {username.split('').map((letter, index) => (
                   <div key={index}>{letter}</div>
                 ))}
