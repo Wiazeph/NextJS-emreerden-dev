@@ -1,4 +1,8 @@
+'use client'
+
 import React from 'react'
+//
+import { motion } from 'framer-motion'
 
 type Props = {
   name: string
@@ -14,7 +18,12 @@ const UtilitiesListComponent = (props: Props) => {
       className={`${props.name}-List flex flex-wrap justify-center mdl:justify-normal gap-4`}
     >
       {props.constName.map((item, index) => (
-        <li key={index}>
+        <motion.li
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 4 * 0.1 }}
+          key={index}
+        >
           <a
             href={item.path}
             target="_blank"
@@ -23,7 +32,7 @@ const UtilitiesListComponent = (props: Props) => {
           >
             {item.name}
           </a>
-        </li>
+        </motion.li>
       ))}
     </ul>
   )

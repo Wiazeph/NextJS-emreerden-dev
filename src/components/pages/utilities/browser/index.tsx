@@ -1,7 +1,9 @@
 import React from 'react'
+//
+import Browser from '@/utils/consts/pages/utilities/browser'
+//
 import PageHeaderComponent from '@/components/pages/page-header'
 import UtilitiesListComponent from '../utilities-list'
-import Browser from '@/utils/consts/pages/utilities/browser'
 
 type Props = {}
 

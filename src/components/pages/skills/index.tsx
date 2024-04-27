@@ -1,6 +1,12 @@
+'use client'
+
 import React from 'react'
-import PageHeaderComponent from '../page-header'
+//
+import { motion } from 'framer-motion'
+//
 import Skills from '@/utils/consts/pages/skills'
+//
+import PageHeaderComponent from '../page-header'
 
 type Props = {}
 
@@ -15,7 +21,12 @@ const SkillsPageComponent = (props: Props) => {
 
         <ul className="Skills-List Main-Card-List">
           {Skills.map((skill, index) => (
-            <li key={index}>
+            <motion.li
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 4 * 0.1 }}
+              key={index}
+            >
               <a
                 href={skill.path}
                 target="_blank"
@@ -26,7 +37,7 @@ const SkillsPageComponent = (props: Props) => {
 
                 <div className="text-sm">{skill.name}</div>
               </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>

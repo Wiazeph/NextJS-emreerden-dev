@@ -43,7 +43,7 @@ const ThemeSettingsComponent = (props: Props) => {
 
       <div
         className={cn(
-          'absolute w-12 h-12 rounded-full border-2 dark:border-zinc-700 transition-transform',
+          'absolute w-12 h-12 rounded-full border-2 dark:border-zinc-700 transition-transform duration-300',
           themeValue === false
             ? 'translate-y-0'
             : 'translate-y-[calc(100%+7px)]'

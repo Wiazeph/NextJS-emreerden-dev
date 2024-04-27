@@ -1,6 +1,12 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
+//
+import { motion } from 'framer-motion'
+//
 import { Repo } from '@/types/repo'
+//
 import { FiGithub, FiStar } from 'react-icons/fi'
 import { IoLogoVercel } from 'react-icons/io5'
 
@@ -12,7 +18,10 @@ const PortfolioListComponent = (props: Props) => {
   return (
     <ul className="Repo-List Main-Card-List">
       {props.repoName.map((repo, index) => (
-        <li
+        <motion.li
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 4 * 0.1 }}
           key={index}
           className="Repo-Card h-66 w-72 sm:h-68 sm:w-80 md:h-72 md:w-88 mdl:h-68 lg:h-66 lg:w-76 rounded-md shadow-sm overflow-hidden relative group"
         >
@@ -67,7 +76,7 @@ const PortfolioListComponent = (props: Props) => {
               </div>
             </div>
           </div>
-        </li>
+        </motion.li>
       ))}
     </ul>
   )

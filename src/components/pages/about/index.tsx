@@ -1,4 +1,8 @@
+'use client'
+
 import React from 'react'
+//
+import { motion } from 'framer-motion'
 
 type Props = {}
 
@@ -6,9 +10,21 @@ const AboutPageComponent = (props: Props) => {
   return (
     <main className="About Page">
       <div className="Page-Content">
-        <div className="Page-Title">who am i.</div>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 2 * 0.1 }}
+          className="Page-Title"
+        >
+          who am i.
+        </motion.div>
 
-        <div className="text-lg text-center mdl:text-left">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 3 * 0.1 }}
+          className="text-lg text-center mdl:text-left"
+        >
           First of all, Hello Mate! My name is Emre and I'm 23 years old. I live
           in{' '}
           <a
@@ -24,15 +40,24 @@ const AboutPageComponent = (props: Props) => {
           an experienced developer. In this profession, I'm open to learning and
           improving myself. I enjoy learning new things and constantly improving
           myself.
-        </div>
+        </motion.div>
 
         <div className="flex flex-col gap-y-4">
-          <div className="text-sm text-zinc-600 dark:text-zinc-400">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.2, delay: 4 * 0.1 }}
+            className="text-sm text-zinc-600 dark:text-zinc-400"
+          >
             What I like to do and my hobbies are:
-          </div>
+          </motion.div>
 
           <div className="flex flex-col gap-y-4">
-            <div>
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 5 * 0.1 }}
+            >
               I love watching Movies and TV Series. And I like to talk to people
               about them. If you want to see the movies I watched and my watch
               list:{' '}
@@ -44,9 +69,13 @@ const AboutPageComponent = (props: Props) => {
               >
                 My Letterboxd Account
               </a>
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 6 * 0.1 }}
+            >
               I love playing computer games since childhood. It's something I
               can never give up. If you are interested in games, you can check{' '}
               <a
@@ -58,9 +87,13 @@ const AboutPageComponent = (props: Props) => {
                 My Steam Account
               </a>{' '}
               for the games I play and add me as a friend.
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 7 * 0.1 }}
+            >
               Also, I have to say that finding new songs and creating playlists
               on Spotify are among my hobbies. You can check{' '}
               <a
@@ -72,7 +105,7 @@ const AboutPageComponent = (props: Props) => {
                 My Spotify Account
               </a>{' '}
               for playlists.
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

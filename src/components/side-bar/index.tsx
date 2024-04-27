@@ -12,7 +12,7 @@ import SideBarListComponent from './side-bar-list'
 import SocialLinks from '@/utils/consts/side-bar/socials'
 import ContactLinks from '@/utils/consts/side-bar/contact'
 //
-import { ClickAwayListener } from '@/components/ui/click-away-listener'
+import { ClickAwayListener } from '@/components/click-away-listener'
 //
 import { cn } from '@/lib/utils'
 
@@ -31,7 +31,7 @@ const SideBarLayout = (props: Props) => {
         onClickAway={() => setIsActive(false)}
         className="ClickAwayListener"
       >
-        <div className="Mobile-Menu z-40 absolute top-0 left-0 h-12 w-full bg-zinc-50 border-b mdl:hidden overflow-hidden">
+        <div className="Mobile-Menu z-40 absolute top-0 left-0 h-12 w-full bg-zinc-50 dark:bg-zinc-800 border-b dark:border-zinc-700 mdl:hidden overflow-hidden">
           <svg
             className={cn(
               'Hamburger-Menu Menu-Rotate Ham-Menu w-12 h-12 ml-auto block mdl:hidden',
