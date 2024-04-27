@@ -33,7 +33,7 @@ const SkillsPageComponent = (props: Props) => {
                 rel="noopener noreferrer"
                 className="Main-Card"
               >
-                <div className="text-2xl">{skill.icon}</div>
+                {skill?.icon && <div className="text-2xl">{skill.icon}</div>}
 
                 <div className="text-sm">{skill.name}</div>
               </a>

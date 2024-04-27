@@ -71,7 +71,7 @@ const SideBarLayout = (props: Props) => {
               <ThemeSettingsComponent />
             </div>
 
-            <div className="flex flex-col gap-y-8 p-6 overflow-y-auto no-scrollbar">
+            <div className="flex flex-col gap-y-8 p-6 overflow-y-auto w-full no-scrollbar">
               <AboutComponent />
 
               <NavigationComponent />

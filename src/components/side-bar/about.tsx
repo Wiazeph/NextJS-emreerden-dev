@@ -7,12 +7,10 @@ const AboutComponent = (props: Props) => {
     <div className="About">
       <div className="Side-Bar-Title">Headline</div>
 
-      <div className="flex flex-col gap-y-1.5">
-        <div className="font-Caveat text-3xl">Emre Erden</div>
+      <div className="flex flex-col gap-y-2 text-sm">
+        <div>Gamer,</div>
 
-        <div className="text-sm">gamer,</div>
-
-        <div className="text-sm">super duper front-end developer</div>
+        <div>Front-End Developer</div>
       </div>
     </div>
   )
