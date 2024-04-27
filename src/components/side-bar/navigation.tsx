@@ -25,6 +25,16 @@ type Props = {}
 const NavigationComponent = (props: Props) => {
   const pathname = usePathname()
 
+  const defaultAccordion = () => {
+    if (PortfolioRoutes.some((route) => route.path === pathname)) {
+      return 'item-1'
+    } else if (UtilitiesRoutes.some((route) => route.path === pathname)) {
+      return 'item-2'
+    } else {
+      return ''
+    }
+  }
+
   return (
     <div className="Navigation text-sm">
       <div className="Side-Bar-Title">Navigation</div>
@@ -53,7 +63,7 @@ const NavigationComponent = (props: Props) => {
           ))}
         </nav>
 
-        <Accordion type="single" collapsible>
+        <Accordion type="single" collapsible defaultValue={defaultAccordion()}>
           <AccordionItem value="item-1" className="border-none mb-1">
             <AccordionTrigger className="Side-Bar-Card font-normal hover:no-underline py-2">
               <div className="flex items-center gap-x-2">

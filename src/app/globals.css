@@ -52,9 +52,6 @@
   .Main-Card-List {
     @apply flex flex-wrap items-center mdl:items-start justify-center mdl:justify-normal gap-4;
   }
-  .Main-Card-Skeleton {
-    @apply h-66 w-72 lg:w-76 lgx:w-80;
-  }
   /* Pages */
 }
 
