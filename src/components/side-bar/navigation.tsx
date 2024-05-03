@@ -51,11 +51,7 @@ const NavigationComponent = (props: Props) => {
               )}
             >
               <div className="Side-Bar-Card-Hover group-hover:ml-2">
-                <div
-                  className={cn('text-xl', index === 0 && 'text-[21px] -ml-px')}
-                >
-                  {route.icon}
-                </div>
+                <div className="text-lg">{route.icon}</div>
 
                 {route.name}
               </div>
@@ -67,7 +63,7 @@ const NavigationComponent = (props: Props) => {
           <AccordionItem value="item-1" className="border-none mb-1">
             <AccordionTrigger className="Side-Bar-Card font-normal hover:no-underline py-2">
               <div className="flex items-center gap-x-2">
-                <div className="text-xl">
+                <div className="text-lg">
                   <MdOutlineWorkspaces />
                 </div>
                 <div>Portfolio</div>
@@ -82,7 +78,7 @@ const NavigationComponent = (props: Props) => {
                 <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
               </div>
 
-              <div className="Portfolio-Routes-List Side-Bar-Card-List p-0 mt-2 w-full">
+              <div className="Portfolio-Routes-List Side-Bar-Card-List p-0 mt-1 w-full">
                 {PortfolioRoutes.map((route, index) => (
                   <Link
                     key={index}
@@ -95,12 +91,7 @@ const NavigationComponent = (props: Props) => {
                     )}
                   >
                     <div className="Side-Bar-Card-Hover group-hover:ml-2">
-                      <div
-                        className={cn(
-                          'text-lg',
-                          index === 1 && 'text-xl -mx-px'
-                        )}
-                      >
+                      <div className={cn(index === 1 && 'text-lg -mx-px')}>
                         {route.icon}
                       </div>
 
@@ -115,7 +106,7 @@ const NavigationComponent = (props: Props) => {
           <AccordionItem value="item-2" className="border-none">
             <AccordionTrigger className="Side-Bar-Card font-normal hover:no-underline py-2">
               <div className="flex items-center gap-x-2">
-                <div className="text-lg ml-px">
+                <div className="text-lg">
                   <LuUtilityPole />
                 </div>
                 <div>Utilities</div>
@@ -130,7 +121,7 @@ const NavigationComponent = (props: Props) => {
                 <div className="absolute left-[9px] top-[92px] w-4 h-4 rounded-bl-md border-b-2 border-l-2 dark:border-zinc-700"></div>
               </div>
 
-              <div className="Portfolio-Routes-List Side-Bar-Card-List p-0 mt-2 w-full">
+              <div className="Utilities-Routes-List Side-Bar-Card-List p-0 mt-1 w-full">
                 {UtilitiesRoutes.map((route, index) => (
                   <Link
                     key={index}
@@ -143,14 +134,7 @@ const NavigationComponent = (props: Props) => {
                     )}
                   >
                     <div className="Side-Bar-Card-Hover group-hover:ml-2">
-                      <div
-                        className={cn(
-                          'text-lg',
-                          index === 1 && 'text-xl -mx-px'
-                        )}
-                      >
-                        {route.icon}
-                      </div>
+                      <div className="text-lg">{route.icon}</div>
 
                       {route.name}
                     </div>

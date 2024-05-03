@@ -27,7 +27,7 @@ const SideBarListComponent = (props: Props) => {
             className="Side-Bar-Card group flex items-center justify-between"
           >
             <div className="Side-Bar-Card-Hover group-hover:ml-2">
-              <div className="text-xl">{item.icon}</div>
+              {item.icon}
 
               <div className="text-sm">{item.name}</div>
             </div>

@@ -32,13 +32,13 @@
 
   /* Side-Bar */
   .Side-Bar-Title {
-    @apply pb-4 text-xs text-zinc-500 uppercase tracking-[1.5px] font-medium;
+    @apply pb-4 text-xs text-zinc-600 dark:text-zinc-400 tracking-wide;
   }
   .Side-Bar-Card-List {
     @apply flex flex-col gap-y-1;
   }
   .Side-Bar-Card-Hover {
-    @apply flex items-center gap-x-2 transition-all;
+    @apply flex items-center gap-x-3 transition-all;
   }
   /* Side-Bar */
 

@@ -1,13 +1,13 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 //
 import { cn } from '@/lib/utils'
 //
 import AvatarComponent from './avatar'
 import ThemeSettingsComponent from './theme-settings'
 //
-import AboutComponent from './headline'
+import HeadlineComponent from './headline'
 import NavigationComponent from './navigation'
 import SideBarListComponent from '../side-bar-list'
 //
@@ -24,6 +24,10 @@ const SideBarLayout = (props: Props) => {
   const activeClass = isActive && 'active'
 
   const username = 'WIAZEPH'
+
+  useEffect(() => {
+    setIsActive(false)
+  }, [])
 
   return (
     <>
@@ -54,40 +58,30 @@ const SideBarLayout = (props: Props) => {
 
         <div
           className={cn(
-            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 mdl:p-4 h-[calc(100dvh-48px)] mdl:h-dvh transition-transform duration-300 ease-in-out',
+            'Side-Bar Menu z-50 absolute top-12 mdl:static -translate-x-full mdl:translate-x-0 h-[calc(100dvh-48px)] mdl:h-dvh transition-transform duration-300 ease-in-out',
             isActive && 'translate-x-0'
           )}
         >
-          <div className="flex w-[296px] min-w-[296px] lgx:w-[324px] lgx:min-w-[324px] h-full border-r mdl:border dark:border-zinc-700 mdl:rounded-3xl bg-zinc-50 dark:bg-zinc-800">
-            <div className="w-16 py-2 flex flex-col items-center justify-between shrink-0 mdl:rounded-3xl border-r dark:border-zinc-700">
-              <AvatarComponent />
+          <div className="w-72 min-w-72 h-full border-r dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 flex flex-col gap-y-8 p-6 overflow-y-auto no-scrollbar">
+            <AvatarComponent />
 
-              <div className="Username flex flex-col gap-y-1 items-center w-fit text-sm">
-                {username.split('').map((letter, index) => (
-                  <div key={index}>{letter}</div>
-                ))}
-              </div>
+            <HeadlineComponent />
 
-              <ThemeSettingsComponent />
-            </div>
+            <NavigationComponent />
 
-            <div className="flex flex-col gap-y-8 p-6 overflow-y-auto w-full no-scrollbar">
-              <AboutComponent />
+            <SideBarListComponent
+              name="Skills"
+              title="Follow Me!"
+              constName={SocialLinks}
+            />
 
-              <NavigationComponent />
+            <SideBarListComponent
+              name="Contact"
+              title="Contact Me!"
+              constName={ContactLinks}
+            />
 
-              <SideBarListComponent
-                name="Skills"
-                title="Follow Me!"
-                constName={SocialLinks}
-              />
-
-              <SideBarListComponent
-                name="Contact"
-                title="Contact Me!"
-                constName={ContactLinks}
-              />
-            </div>
+            <ThemeSettingsComponent />
           </div>
         </div>
       </ClickAwayListener>

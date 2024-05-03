@@ -12,50 +12,46 @@ import { IoSunnyOutline } from 'react-icons/io5'
 type Props = {}
 
 const ThemeSettingsComponent = (props: Props) => {
-  const [themeValue, setThemeValue] = useState<boolean>()
-
   const { theme, setTheme } = useTheme()
 
+  const [themeValue, setThemeValue] = useState<string>()
+
   useEffect(() => {
-    setThemeValue(theme === 'dark' ? true : false)
+    setThemeValue(theme)
   }, [theme])
 
-  const handleMouseEnter = (isDark: boolean) => {
-    setThemeValue(isDark)
-  }
-
-  const handleMouseLeave = () => {
-    setThemeValue(theme === 'dark' ? true : false)
-  }
-
   return (
-    <div
-      className="Theme-Settings relative flex flex-col gap-y-2 justify-between items-center rounded-full"
-      onMouseLeave={handleMouseLeave}
-    >
-      <div
-        className="Light-Theme text-2xl p-3 cursor-pointer rounded-full z-10"
-        onClick={() => setTheme('light')}
-        onMouseEnter={() => handleMouseEnter(false)}
-      >
-        <IoSunnyOutline />
-      </div>
+    <div className="Theme-Settings">
+      <div className="Side-Bar-Title">Theme</div>
 
-      <div
-        className={cn(
-          'absolute w-12 h-12 rounded-full border-2 dark:border-zinc-700 transition-transform duration-300',
-          themeValue === false
-            ? 'translate-y-0'
-            : 'translate-y-[calc(100%+7px)]'
-        )}
-      ></div>
+      <div className="Side-Bar-Card-List">
+        <div
+          onClick={() => setTheme('light')}
+          className={cn(
+            'Side-Bar-Card group cursor-pointer',
+            themeValue === 'light' && 'bg-zinc-200/70 dark:bg-zinc-700'
+          )}
+        >
+          <div className="Side-Bar-Card-Hover group-hover:ml-2">
+            <IoSunnyOutline />
 
-      <div
-        className="Dark-Theme text-[22px] p-3 cursor-pointer rounded-full z-10"
-        onClick={() => setTheme('dark')}
-        onMouseEnter={() => handleMouseEnter(true)}
-      >
-        <IoMoonOutline />
+            <div className="text-sm">Light</div>
+          </div>
+        </div>
+
+        <div
+          onClick={() => setTheme('dark')}
+          className={cn(
+            'Side-Bar-Card group cursor-pointer',
+            themeValue === 'dark' && 'bg-zinc-200/70 dark:bg-zinc-700'
+          )}
+        >
+          <div className="Side-Bar-Card-Hover group-hover:ml-2">
+            <IoMoonOutline />
+
+            <div className="text-sm">Dark</div>
+          </div>
+        </div>
       </div>
     </div>
   )
