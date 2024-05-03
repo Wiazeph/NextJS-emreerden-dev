@@ -4,7 +4,7 @@ import React from 'react'
 //
 import { motion } from 'framer-motion'
 //
-import Skills from '@/utils/consts/pages/skills'
+import { Skills } from '@/constants/pages/skills'
 //
 import PageHeaderComponent from '../page-header'
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import React from 'react'
-import AboutComponent from '@/components/pages/about'
+//
+import AboutComponent from '@/components/pages/about-me'
 
 export const metadata: Metadata = {
   title: 'About - Emre Erden',

@@ -1,4 +1,4 @@
-const VSCode = [
+export const VSCode = [
   {
     name: 'GitHub Copilot',
     path: 'https://marketplace.visualstudio.com/items?itemName=GitHub.copilot',
@@ -156,5 +156,3 @@ const VSCode = [
     path: 'https://marketplace.visualstudio.com/items?itemName=Prisma.prisma',
   },
 ]
-
-export default VSCode

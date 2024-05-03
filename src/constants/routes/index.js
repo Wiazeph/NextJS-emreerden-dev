@@ -2,7 +2,7 @@ import { RiHomeSmile2Line } from 'react-icons/ri'
 import { LuBadgeInfo } from 'react-icons/lu'
 import { BsStars } from 'react-icons/bs'
 
-const Routes = [
+export const Routes = [
   {
     name: 'Hello',
     path: '/',
@@ -19,5 +19,3 @@ const Routes = [
     icon: <BsStars />,
   },
 ]
-
-export default Routes

@@ -2,9 +2,9 @@ import React from 'react'
 
 type Props = {}
 
-const AboutComponent = (props: Props) => {
+const HeadlineComponent = (props: Props) => {
   return (
-    <div className="About">
+    <div className="Headline">
       <div className="Side-Bar-Title">Headline</div>
 
       <div className="flex flex-col gap-y-2 text-sm">
@@ -16,4 +16,4 @@ const AboutComponent = (props: Props) => {
   )
 }
 
-export default AboutComponent
+export default HeadlineComponent

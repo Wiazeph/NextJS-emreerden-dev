@@ -9,7 +9,7 @@ import {
 import { SiNextdotjs } from 'react-icons/si'
 import { RiSupabaseFill } from 'react-icons/ri'
 
-const Skills = [
+export const Skills = [
   {
     name: 'HTML',
     path: 'https://www.w3schools.com/html/default.asp',
@@ -69,5 +69,3 @@ const Skills = [
     icon: <BiLogoGit />,
   },
 ]
-
-export default Skills

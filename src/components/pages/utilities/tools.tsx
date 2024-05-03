@@ -1,9 +1,9 @@
 import React from 'react'
 //
-import Tools from '@/utils/consts/pages/utilities/tools'
+import { Tools } from '@/constants/pages/utilities/tools'
 //
-import PageHeaderComponent from '@/components/pages/page-header'
-import UtilitiesListComponent from '../utilities-list'
+import PageHeaderComponent from '@/components/page-header'
+import UtilitiesListComponent from '@/components/utilities-list'
 
 type Props = {}
 

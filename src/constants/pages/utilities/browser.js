@@ -1,4 +1,4 @@
-const Browser = [
+export const Browser = [
   {
     name: 'Firefox Multi-Account Containers',
     path: 'https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/',
@@ -128,5 +128,3 @@ const Browser = [
     path: 'https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/',
   },
 ]
-
-export default Browser

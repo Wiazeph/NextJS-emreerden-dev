@@ -1,7 +1,7 @@
 import { FaTelegramPlane } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
 
-const ContactLinks = [
+export const ContactLinks = [
   {
     name: 'Telegram',
     path: 'https://t.me/Wiazeph',
@@ -13,5 +13,3 @@ const ContactLinks = [
     icon: <FiMail />,
   },
 ]
-
-export default ContactLinks

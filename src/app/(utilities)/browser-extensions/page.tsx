@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import React from 'react'
+//
 import BrowserComponent from '@/components/pages/utilities/browser'
 
 export const metadata: Metadata = {

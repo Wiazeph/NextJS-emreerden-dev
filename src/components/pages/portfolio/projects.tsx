@@ -6,8 +6,8 @@ import axios from 'axios'
 //
 import type { Repo } from '@/types/repo'
 //
-import PageHeaderComponent from '@/components/pages/page-header'
-import PortfolioListComponent from '../portfolio-list'
+import PageHeaderComponent from '@/components/page-header'
+import PortfolioListComponent from '@/components/portfolio-list'
 
 type Props = {}
 

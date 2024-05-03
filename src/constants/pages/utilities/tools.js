@@ -1,4 +1,4 @@
-const Tools = [
+export const Tools = [
   {
     name: 'Proton Mail',
     path: 'https://proton.me/mail',
@@ -104,5 +104,3 @@ const Tools = [
     path: 'https://app.prntscr.com/',
   },
 ]
-
-export default Tools

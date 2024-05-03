@@ -2,7 +2,7 @@ import { VscTools } from 'react-icons/vsc'
 import { IoExtensionPuzzleOutline } from 'react-icons/io5'
 import { VscExtensions } from 'react-icons/vsc'
 
-const UtilitiesRoutes = [
+export const UtilitiesRoutes = [
   {
     name: 'Tools',
     path: '/tools',
@@ -19,5 +19,3 @@ const UtilitiesRoutes = [
     icon: <VscExtensions />,
   },
 ]
-
-export default UtilitiesRoutes

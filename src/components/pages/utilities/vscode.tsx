@@ -1,9 +1,9 @@
 import React from 'react'
 //
-import VSCode from '@/utils/consts/pages/utilities/vscode'
+import { VSCode } from '@/constants/pages/utilities/vscode'
 //
-import PageHeaderComponent from '@/components/pages/page-header'
-import UtilitiesListComponent from '../utilities-list'
+import PageHeaderComponent from '@/components/page-header'
+import UtilitiesListComponent from '@/components/utilities-list'
 
 type Props = {}
 

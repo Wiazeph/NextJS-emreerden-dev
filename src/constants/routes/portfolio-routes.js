@@ -1,7 +1,7 @@
 import { GrProjects, GrResources } from 'react-icons/gr'
 import { BsPersonWorkspace } from 'react-icons/bs'
 
-const PortfolioRoutes = [
+export const PortfolioRoutes = [
   {
     name: 'Projects',
     path: '/projects',
@@ -18,5 +18,3 @@ const PortfolioRoutes = [
     icon: <BsPersonWorkspace />,
   },
 ]
-
-export default PortfolioRoutes

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import React from 'react'
+//
 import VSCodeComponent from '@/components/pages/utilities/vscode'
 
 export const metadata: Metadata = {

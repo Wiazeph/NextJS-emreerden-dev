@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import React from 'react'
+//
 import ResourcesPageComponent from '@/components/pages/portfolio/resources'
 
 export const metadata: Metadata = {

@@ -4,11 +4,11 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 //
-import Routes from '@/utils/consts/side-bar/nav-bar/routes'
-import PortfolioRoutes from '@/utils/consts/side-bar/nav-bar/portfolio-routes'
-import UtilitiesRoutes from '@/utils/consts/side-bar/nav-bar/utilities-routes'
-//
 import { cn } from '@/lib/utils'
+//
+import { Routes } from '@/constants/routes'
+import { PortfolioRoutes } from '@/constants/routes/portfolio-routes'
+import { UtilitiesRoutes } from '@/constants/routes/utilities-routes'
 //
 import {
   Accordion,

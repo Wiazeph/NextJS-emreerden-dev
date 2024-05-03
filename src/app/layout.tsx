@@ -5,7 +5,7 @@ import './globals.css'
 //
 import SideBarLayout from '@/components/side-bar'
 //
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '@/components/helpers/theme-provider'
 
 const poppins = Poppins({
   subsets: ['latin'],

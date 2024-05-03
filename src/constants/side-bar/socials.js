@@ -6,7 +6,7 @@ import {
   FiCodepen,
 } from 'react-icons/fi'
 
-const SocialLinks = [
+export const SocialLinks = [
   {
     name: 'Twitter',
     path: 'https://twitter.com/Wiazeph',
@@ -33,5 +33,3 @@ const SocialLinks = [
     icon: <FiCodepen />,
   },
 ]
-
-export default SocialLinks
