@@ -1,13 +1,12 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 //
 import { cn } from '@/lib/utils'
 //
-import ThemeSettingsComponent from './theme-settings'
-//
 import HeadlineComponent from './headline'
 import NavigationComponent from './navigation'
+import ThemeSettingsComponent from './theme-settings'
 import SideBarListComponent from '../side-bar-list'
 //
 import { SocialLinks } from '@/constants/side-bar/socials'
@@ -21,12 +20,6 @@ const SideBarLayout = (props: Props) => {
   const [isActive, setIsActive] = useState(false)
   const handleOnClick = () => setIsActive(!isActive)
   const activeClass = isActive && 'active'
-
-  const username = 'WIAZEPH'
-
-  useEffect(() => {
-    setIsActive(false)
-  }, [])
 
   return (
     <>

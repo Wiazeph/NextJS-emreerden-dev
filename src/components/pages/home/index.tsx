@@ -16,13 +16,13 @@ const HomePageComponent = (props: Props) => {
     <main className="Home Page">
       <div className="w-full max-w-[780px] mx-auto pt-18 pb-12 mdl:py-14 lg:py-18 lgx:py-22 xl:py-30 px-6 mdl:pr-10 flex flex-col gap-y-14">
         <div className="flex flex-col items-center mdl:items-start gap-y-8 text-center mdl:text-left">
-          <div className="flex gap-x-8 items-center">
+          <div className="flex flex-col mdl:flex-row gap-4 sm:gap-6 md:gap-8 items-center">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.2, delay: 2 * 0.1 }}
             >
-              <Avatar className="h-32 w-32 rounded-2xl">
+              <Avatar className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 mdl:h-32 mdl:w-32 rounded-2xl">
                 <AvatarImage
                   src="https://avatars.githubusercontent.com/u/37252753?v=4"
                   alt="Emre Erden"
@@ -33,7 +33,7 @@ const HomePageComponent = (props: Props) => {
               </Avatar>
             </motion.div>
 
-            <div className="flex flex-col gap-y-2.5">
+            <div className="flex flex-col gap-y-2.5 items-center mdl:items-start">
               <motion.span
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -47,10 +47,12 @@ const HomePageComponent = (props: Props) => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.2, delay: 4 * 0.1 }}
-                className="text-2xl font-semibold flex items-baseline gap-x-1.5"
+                className="text-xl mdl:text-2xl font-semibold flex items-baseline gap-x-1.5"
               >
                 I'm
-                <div className="font-Caveat text-4xl">Emre Erden,</div>
+                <div className="font-Caveat text-3xl sm:text-4xl">
+                  Emre Erden,
+                </div>
               </motion.h1>
 
               <motion.h2

@@ -9,7 +9,7 @@ type Props = {}
 
 const ExperienceComponent = (props: Props) => {
   return (
-    <div className="flex flex-col gap-y-8">
+    <div className="flex flex-col gap-y-8 mx-auto mdl:mx-0">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -25,11 +25,11 @@ const ExperienceComponent = (props: Props) => {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2, delay: 8 * 0.1 }}
-        className="flex gap-x-6"
+        className="flex gap-x-4 sm:gap-x-6"
       >
-        <div className="text-lg">2024</div>
+        <div className="text-base sm:text-lg">2024</div>
 
-        <ul className="flex flex-col gap-y-10 mt-1">
+        <ul className="flex flex-col gap-y-10 mt-0.5 sm:mt-1">
           {Experience[2024].map((experience, index) => (
             <ExperienceCardComponent
               key={index}

@@ -23,20 +23,24 @@ const ExperienceCardComponent = (props: Props) => {
           {props.date}
         </div>
 
-        <div className="flex gap-x-2 items-baseline">
+        <div className="flex flex-wrap gap-x-4 gap-y-2 sm:gap-2 items-baseline">
           <a
             href={props.path}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl hover:text-zinc-400 dark:hover:text-zinc-400 transition-colors font-medium"
+            className="text-xl sm:text-2xl hover:text-zinc-400 dark:hover:text-zinc-400 transition-colors font-medium"
           >
             {props.name}
           </a>
 
-          <div className="text-zinc-600 dark:text-zinc-400">-</div>
+          <div className="flex gap-x-2 items-baseline">
+            <div className="hidden sm:block text-zinc-600 dark:text-zinc-400">
+              -
+            </div>
 
-          <div className="text-zinc-600 dark:text-zinc-400">
-            {props.position}
+            <div className="text-zinc-600 dark:text-zinc-400">
+              {props.position}
+            </div>
           </div>
         </div>
       </div>
