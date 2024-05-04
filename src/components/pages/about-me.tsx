@@ -23,7 +23,7 @@ const AboutPageComponent = (props: Props) => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.2, delay: 3 * 0.1 }}
-          className="text-lg text-center mdl:text-left"
+          className="text-lg text-center mdl:text-left leading-8"
         >
           First of all, Hello Mate! My name is Emre and I'm 23 years old. I live
           in{' '}
@@ -36,13 +36,12 @@ const AboutPageComponent = (props: Props) => {
             Ankara/Turkey
           </a>
           . In the last years of secondary school, my interest in the world of
-          informatics started. I've been learning since then. I'm working to be
-          an experienced developer. In this profession, I'm open to learning and
-          improving myself. I enjoy learning new things and constantly improving
-          myself.
+          informatics started. I've been learning since then. I'm open to
+          improving myself in this profession and I'm working to become an
+          experienced developer. <br /> And I enjoy learning new things!
         </motion.div>
 
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-4 leading-7">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

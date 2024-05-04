@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 //
 import { cn } from '@/lib/utils'
 //
-import AvatarComponent from './avatar'
 import ThemeSettingsComponent from './theme-settings'
 //
 import HeadlineComponent from './headline'
@@ -63,14 +62,12 @@ const SideBarLayout = (props: Props) => {
           )}
         >
           <div className="w-72 min-w-72 h-full border-r dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 flex flex-col gap-y-8 p-6 overflow-y-auto no-scrollbar">
-            <AvatarComponent />
-
             <HeadlineComponent />
 
             <NavigationComponent />
 
             <SideBarListComponent
-              name="Skills"
+              name="Social"
               title="Follow Me!"
               constName={SocialLinks}
             />

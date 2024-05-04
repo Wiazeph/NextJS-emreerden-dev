@@ -25,13 +25,13 @@ const PortfolioListComponent = (props: Props) => {
           key={index}
           className="Repo-Card h-66 w-76 sm:h-68 sm:w-80 md:h-72 md:w-88 mdl:h-68 lg:h-52 lg:w-full lg:flex rounded-md shadow-sm lg:shadow-none overflow-hidden relative group"
         >
-          <div className="Repo-Image relative z-10 lg:z-0 w-full lg:w-2/5 h-full group-hover:blur-sm group-hover:scale-125 lg:group-hover:blur-none lg:group-hover:scale-100 transition-all duration-300 select-none border-l border-y dark:border-zinc-800 rounded-tl-md rounded-bl-md">
+          <div className="Repo-Image relative z-10 lg:z-0 w-full lg:w-2/5 h-full group-hover:blur-sm group-hover:scale-125 lg:group-hover:blur-none lg:group-hover:scale-100 transition-all duration-300 select-none rounded-md border lg:border-l lg:border-y lg:border-r-0 dark:border-zinc-800 lg:rounded-tl-md lg:rounded-bl-md lg:rounded-tr-none lg:rounded-br-none">
             <Image
               src={repo.img}
               alt={repo.name}
               fill
               sizes="100%"
-              className="object-cover rounded-tl-md rounded-bl-md"
+              className="object-cover rounded-md lg:rounded-tl-md lg:rounded-bl-md lg:rounded-tr-none lg:rounded-br-none"
             />
           </div>
 
