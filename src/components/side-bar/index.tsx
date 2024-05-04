@@ -1,6 +1,9 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+//
+import { useWindowSize } from '@uidotdev/usehooks'
 //
 import { cn } from '@/lib/utils'
 //
@@ -20,6 +23,16 @@ const SideBarLayout = (props: Props) => {
   const [isActive, setIsActive] = useState(false)
   const handleOnClick = () => setIsActive(!isActive)
   const activeClass = isActive && 'active'
+
+  const pathname = usePathname()
+
+  const { width } = useWindowSize()
+
+  useEffect(() => {
+    if (width && width < 896) {
+      setIsActive(false)
+    }
+  }, [pathname])
 
   return (
     <>
