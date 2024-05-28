@@ -7,10 +7,9 @@ export const Experience = {
       position: 'Intern Front-End Developer',
       projects: [
         {
-          name: 'AI Website Audit',
+          name: 'Website Audit AI',
           path: 'https://websiteauditai.com/',
-          description:
-            'AI-powered website audit tool that provides a detailed report on your website.',
+          description: 'AI-Powered Website Audit and CRO & UX Analysis',
           stack: [
             'Next.js',
             'TypeScript',
