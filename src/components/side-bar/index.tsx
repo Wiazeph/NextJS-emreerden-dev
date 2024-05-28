@@ -20,13 +20,13 @@ import { ClickAwayListener } from '@/components/helpers/click-away-listener'
 type Props = {}
 
 const SideBarLayout = (props: Props) => {
-  const [isActive, setIsActive] = useState(false)
-  const handleOnClick = () => setIsActive(!isActive)
-  const activeClass = isActive && 'active'
-
   const pathname = usePathname()
 
   const { width } = useWindowSize()
+
+  const [isActive, setIsActive] = useState(false)
+  const handleOnClick = () => setIsActive(!isActive)
+  const activeClass = isActive && 'active'
 
   useEffect(() => {
     if (width && width < 896) {

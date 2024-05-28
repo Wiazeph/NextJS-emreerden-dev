@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 //
 import { motion } from 'framer-motion'
 //
@@ -12,6 +12,8 @@ import { Skeleton } from '@/components/ui/skeleton'
 type Props = {}
 
 const HomePageComponent = (props: Props) => {
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
     <main className="Home Page">
       <div className="w-full max-w-[780px] mx-auto pt-18 pb-12 mdl:py-14 lg:py-18 lgx:py-22 xl:py-30 px-6 mdl:pr-10 flex flex-col gap-y-14">
@@ -40,14 +42,29 @@ const HomePageComponent = (props: Props) => {
                 transition={{ duration: 0.2, delay: 3 * 0.1 }}
                 className="font-medium text-lg tracking-wide"
               >
-                Hey 👋,
+                Hey{' '}
+                <motion.span
+                  onHoverStart={() => setIsHovered(true)}
+                  onHoverEnd={() => setIsHovered(false)}
+                  animate={
+                    isHovered
+                      ? {
+                          rotate: [0, 20, -20, 20, -20, 0],
+                        }
+                      : { rotate: 0 }
+                  }
+                  transition={{ duration: 0.5 }}
+                  className="inline-block text-xl cursor-default"
+                >
+                  👋
+                </motion.span>
               </motion.span>
 
               <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.2, delay: 4 * 0.1 }}
-                className="text-xl mdl:text-2xl font-semibold flex items-baseline gap-x-1.5"
+                className="-mt-0.5 text-xl mdl:text-2xl font-semibold flex items-baseline gap-x-1.5"
               >
                 I'm
                 <div className="font-Caveat text-3xl sm:text-4xl">
