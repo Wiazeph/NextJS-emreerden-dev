@@ -6,7 +6,7 @@ import { Experience } from '@/types/experience'
 
 const ExperienceCardComponent = (props: Experience) => {
   return (
-    <li className="relative max-w-[550px] list-none before:content-[''] before:w-4 before:h-4 before:border-2 before:dark:border-zinc-600 before:bg-zinc-100 before:dark:bg-zinc-800 before:rounded-full before:absolute before:-left-2 before:top-[38px]">
+    <li className="relative max-w-[550px] list-none before:content-[''] before:w-4 before:h-4 before:border-2 before:dark:border-zinc-600 before:bg-zinc-100 before:dark:bg-zinc-800 before:rounded-full before:absolute before:-left-2 before:top-[34px]">
       <div className="flex flex-col gap-y-4 border-l dark:border-zinc-600">
         <div className="flex flex-col gap-y-2 ml-6">
           <div className="text-sm text-zinc-600 dark:text-zinc-400">
@@ -41,7 +41,7 @@ const ExperienceCardComponent = (props: Experience) => {
           </div>
         </div>
 
-        {props.projects !== undefined && (
+        {props.projects && (
           <div className="flex flex-col gap-y-4">
             {props.projects
               .slice()
@@ -68,16 +68,18 @@ const ExperienceCardComponent = (props: Experience) => {
                     {project.description}
                   </div>
 
-                  <div className="flex gap-3 flex-wrap">
-                    {project.stack.map((stack, index) => (
-                      <div
-                        key={index}
-                        className="group-hover:border-zinc-300 transition-colors border dark:border-zinc-700 px-2.5 py-0.5 h-fit rounded-full text-xs dark:bg-zinc-800/80 group-hover:dark:border-zinc-700"
-                      >
-                        {stack}
-                      </div>
-                    ))}
-                  </div>
+                  {project.stack && (
+                    <div className="flex gap-3 flex-wrap">
+                      {project.stack.map((stack, index) => (
+                        <div
+                          key={index}
+                          className="group-hover:border-zinc-300 transition-colors border dark:border-zinc-700 px-2.5 py-0.5 h-fit rounded-full text-xs dark:bg-zinc-800/80 group-hover:dark:border-zinc-700"
+                        >
+                          {stack}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
           </div>

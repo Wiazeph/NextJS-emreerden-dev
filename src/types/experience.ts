@@ -4,13 +4,13 @@ export interface Experience {
   path: string
   date: string
   position: string
-  projects: Project[]
+  projects?: Project[]
 }
 
 export interface Project {
   name: string
   path: string
   description: string
-  whatIDid: string[]
-  stack: string[]
+  whatIDid?: string[]
+  stack?: string[]
 }
