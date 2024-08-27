@@ -2,7 +2,7 @@ import React from 'react'
 //
 import { motion } from 'framer-motion'
 //
-import { Experience } from '@/constants/pages/home/experience'
+import { ExperienceData } from '@/constants/pages/home/experience'
 import ExperienceCardComponent from './experience-card'
 
 type Props = {}
@@ -25,22 +25,21 @@ const ExperienceComponent = (props: Props) => {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2, delay: 8 * 0.1 }}
-        className="flex gap-x-4 sm:gap-x-6"
+        className="flex flex-col gap-y-10"
       >
-        <div className="text-base sm:text-lg">2024</div>
-
-        <ul className="flex flex-col gap-y-10 mt-0.5 sm:mt-1">
-          {Experience[2024].map((experience, index) => (
+        {ExperienceData.slice()
+          .reverse()
+          .map((experience, index) => (
             <ExperienceCardComponent
               key={index}
-              date={experience.date}
-              path={experience.path}
               name={experience.name}
+              icon={experience.icon}
+              path={experience.path}
+              date={experience.date}
               position={experience.position}
               projects={experience.projects}
             />
           ))}
-        </ul>
       </motion.div>
     </div>
   )
