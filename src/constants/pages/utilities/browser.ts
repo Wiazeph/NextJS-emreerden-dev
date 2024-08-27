@@ -1,4 +1,6 @@
-export const Browser = [
+import { Utilities } from '@/types/utilities'
+
+export const Browser: Utilities[] = [
   {
     name: 'Firefox Multi-Account Containers',
     path: 'https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/',

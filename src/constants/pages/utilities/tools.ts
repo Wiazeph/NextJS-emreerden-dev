@@ -1,4 +1,6 @@
-export const Tools = [
+import { Utilities } from '@/types/utilities'
+
+export const Tools: Utilities[] = [
   {
     name: 'Proton Mail',
     path: 'https://proton.me/mail',

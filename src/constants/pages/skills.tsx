@@ -1,3 +1,5 @@
+import { Skills as SkillsType } from '@/types/skills'
+
 import { IoLogoHtml5, IoLogoCss3, IoLogoSass } from 'react-icons/io'
 import { FaReact } from 'react-icons/fa'
 import {
@@ -9,7 +11,7 @@ import {
 import { SiNextdotjs } from 'react-icons/si'
 import { RiSupabaseFill } from 'react-icons/ri'
 
-export const Skills = [
+export const Skills: SkillsType[] = [
   {
     name: 'HTML',
     path: 'https://www.w3schools.com/html/default.asp',

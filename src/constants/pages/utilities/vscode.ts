@@ -1,4 +1,6 @@
-export const VSCode = [
+import { Utilities } from '@/types/utilities'
+
+export const VSCode: Utilities[] = [
   {
     name: 'GitHub Copilot',
     path: 'https://marketplace.visualstudio.com/items?itemName=GitHub.copilot',
