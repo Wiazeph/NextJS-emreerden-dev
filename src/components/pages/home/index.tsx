@@ -81,7 +81,7 @@ const HomePageComponent = (props: Props) => {
                 <span className="text-zinc-400">{'<'}</span>
 
                 <span className="sm:ml-0.5 text-pink-500 dark:text-pink-400">
-                  Front-End Developer
+                  Software Developer
                 </span>
 
                 <span className="text-zinc-400 text-xl">{' />'}</span>

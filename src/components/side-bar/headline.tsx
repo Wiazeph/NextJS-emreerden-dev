@@ -10,7 +10,7 @@ const HeadlineComponent = (props: Props) => {
       <div className="flex flex-col gap-y-2 text-sm">
         <div>Gamer,</div>
 
-        <div>Front-End Developer</div>
+        <div>Software Developer</div>
       </div>
     </div>
   )

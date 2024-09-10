@@ -6,7 +6,7 @@ export const ExperienceData: Experience[] = [
     icon: '/assets/icons/popupsmart.svg',
     path: 'https://popupsmart.com/',
     date: '21 February 2024 - 22 July 2024',
-    position: 'Intern Front-End Developer',
+    position: 'Intern Software Developer',
     projects: [
       {
         name: 'Website Audit AI',
@@ -38,7 +38,7 @@ export const ExperienceData: Experience[] = [
     icon: '/assets/icons/popupsmart.svg',
     path: 'https://popupsmart.com/',
     date: '22 July 2024 - Present',
-    position: 'Front-End Developer',
+    position: 'Software Developer',
     projects: [
       {
         name: 'HR Assistant AI',
