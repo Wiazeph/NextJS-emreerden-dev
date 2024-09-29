@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 //
 import { GoLink } from 'react-icons/go'
-
+//
 import { Experience } from '@/types/experience'
 
 const ExperienceCardComponent = (props: Experience) => {
+  const [showFullDetails, setShowFullDetails] = useState<
+    Record<number, boolean>
+  >({})
+
+  const toggleShowFullDetails = (index: number) => {
+    setShowFullDetails((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }))
+  }
   return (
     <li className="relative max-w-[550px] list-none before:content-[''] before:w-4 before:h-4 before:border-2 before:dark:border-zinc-600 before:bg-zinc-100 before:dark:bg-zinc-800 before:rounded-full before:absolute before:-left-2 before:top-[34px]">
       <div className="flex flex-col gap-y-4 border-l dark:border-zinc-600">
@@ -49,7 +59,7 @@ const ExperienceCardComponent = (props: Experience) => {
               .map((project, index) => (
                 <div
                   key={index}
-                  className="flex flex-col gap-y-5 border ml-6 w-fit dark:border-zinc-800 rounded-md p-5 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors group"
+                  className="flex flex-col gap-y-6 border ml-6 w-fit dark:border-zinc-800 rounded-md p-5 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors group"
                 >
                   <a
                     href={project.path}
@@ -69,15 +79,51 @@ const ExperienceCardComponent = (props: Experience) => {
                   </div>
 
                   {project.stack && (
-                    <div className="flex gap-3 flex-wrap">
-                      {project.stack.map((stack, index) => (
-                        <div
-                          key={index}
-                          className="group-hover:border-zinc-300 transition-colors border dark:border-zinc-700 px-2.5 py-0.5 h-fit rounded-full text-xs dark:bg-zinc-800/80 group-hover:dark:border-zinc-700"
-                        >
-                          {stack}
-                        </div>
-                      ))}
+                    <div className="flex flex-col gap-y-3">
+                      <div className="text-xs text-zinc-800 dark:text-zinc-300 w-fit border-b border-zinc-400 dark:border-zinc-400">
+                        Tech Stack:
+                      </div>
+
+                      <div className="flex gap-2 flex-wrap">
+                        {project.stack.map((stack, index) => (
+                          <div
+                            key={index}
+                            className="group-hover:border-zinc-300 transition-colors border dark:border-zinc-700 px-2.5 py-0.5 h-fit rounded-full text-xs dark:bg-zinc-800/80 group-hover:dark:border-zinc-700"
+                          >
+                            {stack}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {project.whatIDid && (
+                    <div className="flex flex-col gap-y-3">
+                      <div className="text-xs text-zinc-800 dark:text-zinc-300 w-fit border-b border-zinc-400 dark:border-zinc-400">
+                        What i did in this project:
+                      </div>
+
+                      <ul className="flex flex-col gap-y-1 list-disc pl-5 text-zinc-600 dark:text-zinc-400 text-sm overflow-hidden transition-all duration-300">
+                        {project.whatIDid
+                          .slice(
+                            0,
+                            showFullDetails[index] ? project.whatIDid.length : 2
+                          )
+                          .map((whatIDid, index) => (
+                            <li
+                              key={index}
+                              dangerouslySetInnerHTML={{ __html: whatIDid }}
+                            />
+                          ))}
+                      </ul>
+
+                      <button
+                        id="show-more-button"
+                        className="w-fit border dark:border-zinc-700 py-1 px-2 rounded-md text-xs hover:bg-zinc-100 hover:dark:bg-zinc-700 transition-colors"
+                        onClick={() => toggleShowFullDetails(index)}
+                      >
+                        {!showFullDetails[index] ? 'Show more' : 'Show less'}
+                      </button>
                     </div>
                   )}
                 </div>
