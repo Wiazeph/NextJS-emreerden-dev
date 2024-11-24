@@ -17,7 +17,7 @@
 
   /* Pages */
   .Main-Card {
-    @apply Main-Border-Color px-4 w-48 lgx:w-50 xl:w-52 h-14 flex items-center justify-center text-center gap-x-2.5 rounded-md shadow-sm;
+    @apply Main-Border-Color px-4 w-48 lgx:w-50 xl:w-52 h-14 flex items-center justify-center text-center gap-2.5 rounded-md shadow-sm;
   }
   /* Pages */
 }
