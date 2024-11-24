@@ -8,6 +8,7 @@ import { Utilities } from '@/types/utilities'
 //
 import { FaFirefoxBrowser, FaChrome } from 'react-icons/fa6'
 import { IoEarth } from 'react-icons/io5'
+import { cn } from '@/lib/utils'
 
 type Props = {
   name: string
@@ -42,6 +43,9 @@ const UtilitiesListComponent = (props: Props) => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.2, delay: 5 * 0.1 }}
           key={index}
+          className={cn({
+            'Main-Card text-sm flex-col h-22': typeof item.path !== 'string',
+          })}
         >
           {typeof item.path === 'string' ? (
             <a
@@ -53,7 +57,7 @@ const UtilitiesListComponent = (props: Props) => {
               {item.name}
             </a>
           ) : (
-            <div className="Main-Card text-sm flex-col h-22">
+            <>
               <p>{item.name}</p>
               <div className="flex items-center gap-x-4">
                 {links.map(
@@ -73,7 +77,7 @@ const UtilitiesListComponent = (props: Props) => {
                     )
                 )}
               </div>
-            </div>
+            </>
           )}
         </motion.li>
       ))}

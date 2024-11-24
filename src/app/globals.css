@@ -47,7 +47,7 @@
     @apply w-full h-full min-h-dvh max-h-dvh overflow-y-auto;
   }
   .Page-Content {
-    @apply w-full max-w-[780px] mx-auto pt-18 pb-12 mdl:py-14 lg:py-18 lgx:py-22 xl:py-30 px-6 mdl:pr-10 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;
+    @apply w-full max-w-[780px] mx-auto pt-18 pb-12 mdl:py-14 lg:py-18 lgx:py-22 xl:py-30 px-6 md:px-8 mdl:px-12 flex flex-col gap-y-8 sm:gap-y-9 md:gap-y-10 mdl:gap-y-11 lg:gap-y-12;
   }
   .Page-Title {
     @apply text-4xl lg:text-5xl text-center mdl:text-left font-bold tracking-[-2px];
