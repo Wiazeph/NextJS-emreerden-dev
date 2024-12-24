@@ -49,12 +49,12 @@ export const ExperienceData: Experience[] = [
         description:
           'HR Assistant AI is an AI-powered tool designed to automate and streamline various HR tasks using artificial intelligence. It helps manage in-house questions with automated answers and reduce repetitive tasks.',
         whatIDid: [
-          'UI development with shadcn/ui package (Auth, Billing, Profile and Dashboard pages)',
-          'API endpoints for forgot, new and update password and billing processes',
+          'Next API endpoints for forgot, new and update password and billing processes',
           'Modal management for user interactions',
           'Stripe integration for payment processing',
           'Error handling and form validations',
           'Creating Hooks for UI animations',
+          'UI development with shadcn/ui package (Auth, Billing, Profile and Dashboard pages)',
           'Responsive design for mobile and desktop views',
         ],
         stack: [
@@ -76,11 +76,11 @@ export const ExperienceData: Experience[] = [
         description:
           'LiveChatAI, your ultimate AI bot architect. Harnessing the capabilities of ChatGPT, it tailors your data into an interactive chat widget for your website.',
         whatIDid: [
-          'UX flow improvements (User deleting, AI Actions)',
-          'React Query mutations, Zustand store management',
-          'UI improvements and bug fixes',
+          'Creating Next API endpoints for actions',
           'Prisma migrations, schema updates and functions',
-          'Creating API endpoints for actions',
+          'React Query mutations, Zustand store management',
+          'UX flow improvements (User deleting, AI Actions)',
+          'UI improvements and bug fixes',
         ],
         stack: [
           'Next.js',
