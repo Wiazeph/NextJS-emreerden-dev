@@ -25,7 +25,7 @@ const AboutPageComponent = (props: Props) => {
           transition={{ duration: 0.2, delay: 3 * 0.1 }}
           className="text-lg text-center mdl:text-left leading-8"
         >
-          First of all, Hello Mate! My name is Emre and I'm 23 years old. I live
+          First of all, Hello Mate! My name is Emre and I'm 24 years old. I live
           in{' '}
           <a
             href="https://goo.gl/maps/cadu4sCBbzi4B6F98"
@@ -38,7 +38,7 @@ const AboutPageComponent = (props: Props) => {
           . In the last years of secondary school, my interest in the world of
           informatics started. I've been learning since then. I'm open to
           improving myself in this profession and I'm working to become an
-          experienced developer. <br /> And I enjoy learning new things!
+          experienced developer.
         </motion.div>
 
         <div className="flex flex-col gap-y-4 leading-7">
