@@ -8,8 +8,9 @@ import {
   BiLogoTypescript,
   BiLogoGit,
 } from 'react-icons/bi'
-import { SiNextdotjs } from 'react-icons/si'
+import { SiNextdotjs, SiPrisma, SiLangchain } from 'react-icons/si'
 import { RiSupabaseFill } from 'react-icons/ri'
+import { BsStripe } from 'react-icons/bs'
 
 export const Skills: SkillsType[] = [
   {
@@ -49,7 +50,7 @@ export const Skills: SkillsType[] = [
   {
     name: 'Next.js',
     path: 'https://nextjs.org/',
-    icon: <SiNextdotjs />,
+    icon: <SiNextdotjs className="w-5 h-5" />,
   },
   {
     name: 'TypeScript',
@@ -59,11 +60,22 @@ export const Skills: SkillsType[] = [
   {
     name: 'Supabase',
     path: 'https://supabase.com/',
-    icon: <RiSupabaseFill />,
+    icon: <RiSupabaseFill className="w-5 h-5" />,
   },
   {
     name: 'Langchain',
     path: 'https://js.langchain.com/docs/get_started/introduction/',
+    icon: <SiLangchain />,
+  },
+  {
+    name: 'Prisma',
+    path: 'https://www.prisma.io/',
+    icon: <SiPrisma className="w-5 h-5" />,
+  },
+  {
+    name: 'Stripe',
+    path: 'https://stripe.com/',
+    icon: <BsStripe className="w-5 h-5" />,
   },
   {
     name: 'Git',
