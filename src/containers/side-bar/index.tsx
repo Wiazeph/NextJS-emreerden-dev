@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils'
 import HeadlineComponent from './headline'
 import NavigationComponent from './navigation'
 import ThemeSettingsComponent from './theme-settings'
-import SideBarListComponent from '../side-bar-list'
+import SideBarListComponent from '../../components/side-bar-list'
 //
 import { SocialLinks } from '@/constants/side-bar/socials'
 import { ContactLinks } from '@/constants/side-bar/contact'

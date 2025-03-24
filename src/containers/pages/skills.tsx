@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 //
 import { Skills } from '@/constants/pages/skills'
 //
-import PageHeaderComponent from '../page-header'
+import PageHeaderComponent from '../../components/page-header'
 
 type Props = {}
 

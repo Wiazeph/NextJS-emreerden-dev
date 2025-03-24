@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import React from 'react'
 //
-import VSCodeComponent from '@/components/pages/utilities/vscode'
+import VSCodeComponent from '@/containers/pages/utilities/vscode'
 
 export const metadata: Metadata = {
   title: 'VSCode Extensions - Emre Erden',

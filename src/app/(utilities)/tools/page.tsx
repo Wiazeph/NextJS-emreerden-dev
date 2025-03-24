@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import React from 'react'
 //
-import ToolsPageComponent from '@/components/pages/utilities/tools'
+import ToolsPageComponent from '@/containers/pages/utilities/tools'
 
 export const metadata: Metadata = {
   title: 'Tools - Emre Erden',
