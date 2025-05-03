@@ -24,11 +24,7 @@ const ExperienceCardComponent = (props: Experience) => {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <img
-              src={props.icon}
-              alt={props.name}
-              className="w-6 h-6 rounded-full"
-            />
+            <img src={props.icon} alt={props.name} className="w-6 h-6" />
 
             <a
               href={props.path}

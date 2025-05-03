@@ -1,6 +1,6 @@
 import React from 'react'
 //
-import HomePageComponent from '@/components/pages/home'
+import HomePageComponent from '@/containers/pages/home'
 
 type Props = {}
 

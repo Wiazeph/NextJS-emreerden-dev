@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import React from 'react'
 //
-import SkillsComponent from '@/components/pages/skills'
+import SkillsComponent from '@/containers/pages/skills'
 
 export const metadata: Metadata = {
   title: 'Skills - Emre Erden',

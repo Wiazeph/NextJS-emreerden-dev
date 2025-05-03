@@ -99,4 +99,11 @@ export const ExperienceData: Experience[] = [
       },
     ],
   },
+  {
+    name: 'Analyzify',
+    icon: '/assets/icons/analyzify.png',
+    path: 'https://analyzify.com/',
+    date: '24 March 2025 - Present',
+    position: 'Front-End Developer',
+  },
 ]

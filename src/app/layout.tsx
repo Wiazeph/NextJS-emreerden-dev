@@ -3,7 +3,7 @@ import { Poppins, Caveat } from 'next/font/google'
 //
 import './globals.css'
 //
-import SideBarLayout from '@/components/side-bar'
+import SideBarLayout from '@/containers/side-bar'
 //
 import { ThemeProvider } from '@/components/helpers/theme-provider'
 

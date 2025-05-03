@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import React from 'react'
 //
-import ResourcesPageComponent from '@/components/pages/portfolio/resources'
+import ResourcesPageComponent from '@/containers/pages/portfolio/resources'
 
 export const metadata: Metadata = {
   title: 'Resources - Emre Erden',
