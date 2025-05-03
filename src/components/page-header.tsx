@@ -18,7 +18,7 @@ const PageHeaderComponent = (props: Props) => {
         transition={{ duration: 0.2, delay: 2 * 0.1 }}
         className="Page-Title"
       >
-        {props.pageTitle}
+        {props.pageTitle}.
       </motion.div>
 
       <motion.div

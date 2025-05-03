@@ -1,21 +1,21 @@
-'use client'
+'use client';
 
-import React from 'react'
+import React from 'react';
 //
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 //
-import { Skills } from '@/constants/pages/skills'
+import { Skills } from '@/constants/pages/skills';
 //
-import PageHeaderComponent from '../../components/page-header'
+import PageHeaderComponent from '../../components/page-header';
 
-type Props = {}
+type Props = {};
 
 const SkillsPageComponent = (props: Props) => {
   return (
     <main className="Skills Page">
       <div className="Page-Content">
         <PageHeaderComponent
-          pageTitle="skills."
+          pageTitle="skills"
           pageDescription="Skills I know, I use and currently continue to learn"
         />
 
@@ -42,7 +42,7 @@ const SkillsPageComponent = (props: Props) => {
         </ul>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default SkillsPageComponent
+export default SkillsPageComponent;

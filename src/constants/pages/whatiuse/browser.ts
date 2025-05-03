@@ -1,6 +1,6 @@
-import { Utilities } from '@/types/utilities'
+import { WhatIUse } from '@/types/whatiuse';
 
-export const Browser: Utilities[] = [
+export const Browser: WhatIUse[] = [
   {
     name: 'Firefox Multi-Account Containers',
     path: {
@@ -305,4 +305,4 @@ export const Browser: Utilities[] = [
     },
     browser: ['Firefox', 'Chrome'],
   },
-]
+];

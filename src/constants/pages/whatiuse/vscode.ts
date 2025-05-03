@@ -1,6 +1,6 @@
-import { Utilities } from '@/types/utilities'
+import { WhatIUse } from '@/types/whatiuse';
 
-export const VSCode: Utilities[] = [
+export const VSCode: WhatIUse[] = [
   {
     name: 'GitHub Copilot',
     path: 'https://marketplace.visualstudio.com/items?itemName=GitHub.copilot',
@@ -157,4 +157,4 @@ export const VSCode: Utilities[] = [
     name: 'Prisma ',
     path: 'https://marketplace.visualstudio.com/items?itemName=Prisma.prisma',
   },
-]
+];

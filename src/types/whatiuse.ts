@@ -1,4 +1,4 @@
-export interface Utilities {
+export interface WhatIUse {
   name: string
   path:
     | string

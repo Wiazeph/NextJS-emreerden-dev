@@ -1,27 +1,27 @@
-'use client'
+'use client';
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 //
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 //
-import { Browser } from '@/constants/pages/utilities/browser'
+import { Browser } from '@/constants/pages/whatiuse/browser';
 //
-import PageHeaderComponent from '@/components/page-header'
-import UtilitiesListComponent from '@/components/utilities-list'
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+import PageHeaderComponent from '@/components/page-header';
+import WhatIUseListComponent from '@/components/whatiuse-list';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
-type Props = {}
+type Props = {};
 
 const BrowserPageComponent = (props: Props) => {
-  const [browser, setBrowser] = useState<'Firefox' | 'Chrome'>('Firefox')
-  const browsers = ['Firefox', 'Chrome'] as const
+  const [browser, setBrowser] = useState<'Firefox' | 'Chrome'>('Firefox');
+  const browsers = ['Firefox', 'Chrome'] as const;
 
   return (
     <main className="Browser-Extensions Page">
       <div className="Page-Content items-center mdl:items-start">
         <PageHeaderComponent
-          pageTitle="browser exts."
+          pageTitle="browser exts"
           pageDescription="Useful and efficient Browser Add-ons I use"
         />
 
@@ -47,14 +47,14 @@ const BrowserPageComponent = (props: Props) => {
           ))}
         </motion.div>
 
-        <UtilitiesListComponent
+        <WhatIUseListComponent
           name="Browser"
           constName={Browser}
           browser={browser}
         />
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default BrowserPageComponent
+export default BrowserPageComponent;

@@ -1,22 +1,22 @@
-'use client'
+'use client';
 
-import React from 'react'
+import React from 'react';
 //
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 //
-import { Utilities } from '@/types/utilities'
+import { WhatIUse } from '@/types/whatiuse';
 //
-import { FaFirefoxBrowser, FaChrome } from 'react-icons/fa6'
-import { IoEarth } from 'react-icons/io5'
-import { cn } from '@/lib/utils'
+import { FaFirefoxBrowser, FaChrome } from 'react-icons/fa6';
+import { IoEarth } from 'react-icons/io5';
+import { cn } from '@/lib/utils';
 
 type Props = {
-  name: string
-  constName: Utilities[]
-  browser?: 'Firefox' | 'Chrome'
-}
+  name: string;
+  constName: WhatIUse[];
+  browser?: 'Firefox' | 'Chrome';
+};
 
-const UtilitiesListComponent = (props: Props) => {
+const WhatIUseListComponent = (props: Props) => {
   const filteredItems =
     props.name === 'Browser'
       ? props.constName.filter(
@@ -25,13 +25,13 @@ const UtilitiesListComponent = (props: Props) => {
             props.browser &&
             item.browser.includes(props.browser)
         )
-      : props.constName
+      : props.constName;
 
   const links = [
     { key: 'website', icon: IoEarth },
     { key: 'firefox', icon: FaFirefoxBrowser },
     { key: 'chrome', icon: FaChrome },
-  ]
+  ];
 
   return (
     <ul
@@ -82,7 +82,7 @@ const UtilitiesListComponent = (props: Props) => {
         </motion.li>
       ))}
     </ul>
-  )
-}
+  );
+};
 
-export default UtilitiesListComponent
+export default WhatIUseListComponent;

@@ -1,6 +1,6 @@
-import { Utilities } from '@/types/utilities'
+import { WhatIUse } from '@/types/whatiuse';
 
-export const Tools: Utilities[] = [
+export const Stack: WhatIUse[] = [
   {
     name: 'Proton Mail',
     path: 'https://proton.me/mail',
@@ -50,16 +50,24 @@ export const Tools: Utilities[] = [
     path: 'https://www.deepl.com/translator',
   },
   {
-    name: 'Todoist',
-    path: 'https://todoist.com/',
-  },
-  {
     name: 'Notion',
     path: 'https://www.notion.so/',
   },
   {
+    name: 'Todoist',
+    path: 'https://todoist.com/',
+  },
+  {
+    name: 'Raindrop.io',
+    path: 'https://raindrop.io/',
+  },
+  {
     name: 'Pocket',
     path: 'https://getpocket.com/',
+  },
+  {
+    name: 'Cursor',
+    path: 'https://www.cursor.com/',
   },
   {
     name: 'Visual Studio Code',
@@ -74,12 +82,28 @@ export const Tools: Utilities[] = [
     path: 'https://openai.com/chatgpt',
   },
   {
+    name: 'Copilot',
+    path: 'https://copilot.github.com/',
+  },
+  {
+    name: 'Claude',
+    path: 'https://www.anthropic.com/claude',
+  },
+  {
     name: 'Vercel',
     path: 'https://vercel.com/',
   },
   {
     name: 'Linear',
     path: 'https://linear.app/',
+  },
+  {
+    name: 'Shortcut',
+    path: 'https://www.shortcut.com/',
+  },
+  {
+    name: 'Clickup',
+    path: 'https://clickup.com/',
   },
   {
     name: 'Calendly',
@@ -105,4 +129,4 @@ export const Tools: Utilities[] = [
     name: 'Lightshot',
     path: 'https://app.prntscr.com/',
   },
-]
+];
