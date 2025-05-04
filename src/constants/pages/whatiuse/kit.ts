@@ -48,6 +48,13 @@ export const Setup: Kit[] = [
   },
   {
     name: {
+      title: 'North Bayou',
+      specs: 'Nb H180, Dual',
+    },
+    description: 'Monitor Desk Stand',
+  },
+  {
+    name: {
       title: 'Rampage',
       specs: 'HELIOS Mesh, 550W 80+, ATX Mid-T',
     },
