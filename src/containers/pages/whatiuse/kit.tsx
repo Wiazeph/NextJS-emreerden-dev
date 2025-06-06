@@ -6,6 +6,12 @@ import { motion } from 'framer-motion'
 //
 import PageHeaderComponent from '@/components/page-header'
 import { Button } from '@/components/ui/button'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+  TooltipProvider,
+} from '@/components/ui/tooltip'
 //
 import { Gear, Setup, Equipment } from '@/constants/pages/whatiuse/kit'
 //
@@ -67,9 +73,14 @@ const KitPageComponent = (props: Props) => {
                       <span className="text-zinc-500 dark:text-zinc-500">
                         {'>'}
                       </span>{' '}
-                      <span className="whitespace-nowrap overflow-hidden overflow-ellipsis">
-                        {g.name.specs}
-                      </span>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger className="whitespace-nowrap overflow-hidden overflow-ellipsis">
+                            {g.name.specs}
+                          </TooltipTrigger>
+                          <TooltipContent>{g.name.specs}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     </div>
                     <div className="w-1/3">{g.description}</div>
                   </div>
@@ -82,9 +93,14 @@ const KitPageComponent = (props: Props) => {
                       <span className="text-zinc-500 dark:text-zinc-500">
                         {'>'}
                       </span>{' '}
-                      <span className="whitespace-nowrap overflow-hidden overflow-ellipsis">
-                        {s.name.specs}
-                      </span>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger className="whitespace-nowrap overflow-hidden overflow-ellipsis">
+                            {s.name.specs}
+                          </TooltipTrigger>
+                          <TooltipContent>{s.name.specs}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     </div>
                     <div className="w-1/3">{s.description}</div>
                   </div>
@@ -96,9 +112,14 @@ const KitPageComponent = (props: Props) => {
                       <span className="text-zinc-500 dark:text-zinc-500">
                         {'>'}
                       </span>{' '}
-                      <span className="whitespace-nowrap overflow-hidden overflow-ellipsis">
-                        {e.name.specs}
-                      </span>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger className="whitespace-nowrap overflow-hidden overflow-ellipsis">
+                            {e.name.specs}
+                          </TooltipTrigger>
+                          <TooltipContent>{e.name.specs}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     </div>
                     <div className="w-1/3">{e.description}</div>
                   </div>
