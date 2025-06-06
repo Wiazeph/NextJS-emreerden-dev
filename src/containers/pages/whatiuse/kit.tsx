@@ -1,21 +1,21 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 //
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 //
-import PageHeaderComponent from '@/components/page-header';
-import { Button } from '@/components/ui/button';
+import PageHeaderComponent from '@/components/page-header'
+import { Button } from '@/components/ui/button'
 //
-import { Gear, Setup, Equipment } from '@/constants/pages/whatiuse/kit';
+import { Gear, Setup, Equipment } from '@/constants/pages/whatiuse/kit'
 //
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils'
 
-type Props = {};
+type Props = {}
 
 const KitPageComponent = (props: Props) => {
-  const [tab, setTab] = useState<'Gear' | 'Setup' | 'Equipment'>('Gear');
-  const tabs = ['Gear', 'Setup', 'Equipment'] as const;
+  const [tab, setTab] = useState<'Gear' | 'Setup' | 'Equipment'>('Gear')
+  const tabs = ['Gear', 'Setup', 'Equipment'] as const
 
   return (
     <main className="Kit Page">
@@ -51,55 +51,63 @@ const KitPageComponent = (props: Props) => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.2, delay: 5 * 0.1 }}
-          className="border dark:border-zinc-700 w-full rounded-lg "
+          className="overflow-auto w-full"
         >
-          <div className="w-full h-11 border-b dark:border-zinc-700 flex items-center  text-zinc-500 dark:text-zinc-500 text-xs px-4 select-none gap-x-4">
-            <div className="w-2/3">Name/Specs</div>
-            <div className="w-1/3">Description</div>
-          </div>
+          <div className="min-w-max border dark:border-zinc-700 w-full rounded-lg ">
+            <div className="w-full h-11 border-b dark:border-zinc-700 flex items-center  text-zinc-500 dark:text-zinc-500 text-xs px-4 select-none gap-x-4">
+              <div className="w-[60%]">Name/Specs</div>
+              <div className="w-1/3">Description</div>
+            </div>
 
-          {tab === 'Gear'
-            ? Gear.map((g) => (
-                <div className="w-full h-11 border-b last:border-b-0 dark:border-zinc-700 flex items-center  text-zinc-950 dark:text-zinc-50 text-sm px-4 hover:bg-zinc-100 dark:hover:bg-zinc-800 gap-x-4">
-                  <div className="flex items-center gap-x-2 w-2/3">
-                    {g.name.title}{' '}
-                    <span className="text-zinc-500 dark:text-zinc-500">
-                      {'>'}
-                    </span>{' '}
-                    {g.name.specs}
+            {tab === 'Gear'
+              ? Gear.map((g) => (
+                  <div className="w-full h-11 border-b last:border-b-0 dark:border-zinc-700 flex items-center text-zinc-950 dark:text-zinc-50 text-sm px-4 hover:bg-zinc-100 dark:hover:bg-zinc-800 gap-x-4">
+                    <div className="flex items-center gap-x-2 w-[60%]">
+                      <span className="text-nowrap">{g.name.title} </span>
+                      <span className="text-zinc-500 dark:text-zinc-500">
+                        {'>'}
+                      </span>{' '}
+                      <span className="whitespace-nowrap overflow-hidden overflow-ellipsis">
+                        {g.name.specs}
+                      </span>
+                    </div>
+                    <div className="w-1/3">{g.description}</div>
                   </div>
-                  <div className="w-1/3">{g.description}</div>
-                </div>
-              ))
-            : tab === 'Setup'
-            ? Setup.map((s) => (
-                <div className="w-full h-11 border-b last:border-b-0 dark:border-zinc-700 flex items-center  text-zinc-950 dark:text-zinc-50 text-sm px-4 hover:bg-zinc-100 dark:hover:bg-zinc-800 gap-x-4">
-                  <div className="flex items-center gap-x-2 w-2/3">
-                    {s.name.title}{' '}
-                    <span className="text-zinc-500 dark:text-zinc-500">
-                      {'>'}
-                    </span>{' '}
-                    {s.name.specs}
+                ))
+              : tab === 'Setup'
+              ? Setup.map((s) => (
+                  <div className="w-full h-11 border-b last:border-b-0 dark:border-zinc-700 flex items-center text-zinc-950 dark:text-zinc-50 text-sm px-4 hover:bg-zinc-100 dark:hover:bg-zinc-800 gap-x-4">
+                    <div className="flex items-center gap-x-2 w-[60%]">
+                      <span className="text-nowrap">{s.name.title} </span>
+                      <span className="text-zinc-500 dark:text-zinc-500">
+                        {'>'}
+                      </span>{' '}
+                      <span className="whitespace-nowrap overflow-hidden overflow-ellipsis">
+                        {s.name.specs}
+                      </span>
+                    </div>
+                    <div className="w-1/3">{s.description}</div>
                   </div>
-                  <div className="w-1/3">{s.description}</div>
-                </div>
-              ))
-            : Equipment.map((e) => (
-                <div className="w-full h-11 border-b last:border-b-0 dark:border-zinc-700 flex items-center  text-zinc-950 dark:text-zinc-50 text-sm px-4 hover:bg-zinc-100 dark:hover:bg-zinc-800 gap-x-4">
-                  <div className="flex items-center gap-x-2 w-2/3">
-                    {e.name.title}{' '}
-                    <span className="text-zinc-500 dark:text-zinc-500">
-                      {'>'}
-                    </span>{' '}
-                    {e.name.specs}
+                ))
+              : Equipment.map((e) => (
+                  <div className="w-full h-11 border-b last:border-b-0 dark:border-zinc-700 flex items-center text-zinc-950 dark:text-zinc-50 text-sm px-4 hover:bg-zinc-100 dark:hover:bg-zinc-800 gap-x-4">
+                    <div className="flex items-center gap-x-2 w-[60%]">
+                      <span className="text-nowrap">{e.name.title} </span>
+                      <span className="text-zinc-500 dark:text-zinc-500">
+                        {'>'}
+                      </span>{' '}
+                      <span className="whitespace-nowrap overflow-hidden overflow-ellipsis">
+                        {e.name.specs}
+                      </span>
+                    </div>
+                    <div className="w-1/3">{e.description}</div>
                   </div>
-                  <div className="w-1/3">{e.description}</div>
-                </div>
-              ))}
+                ))}
+          </div>
         </motion.div>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default KitPageComponent;
+export default KitPageComponent

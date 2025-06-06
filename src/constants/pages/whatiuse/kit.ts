@@ -1,4 +1,4 @@
-import { Kit } from '@/types/whatiuse';
+import { Kit } from '@/types/whatiuse'
 
 export const Gear: Kit[] = [
   {
@@ -29,9 +29,23 @@ export const Gear: Kit[] = [
     },
     description: 'Smart Watch Strap',
   },
-];
+  {
+    name: {
+      title: 'Spigen',
+      specs: 'Thin Fit Black, 45mm',
+    },
+    description: 'Smart Watch Case',
+  },
+]
 
 export const Setup: Kit[] = [
+  {
+    name: {
+      title: 'Apple',
+      specs: 'M4 Pro, 14", 12-CPU, 16-GPU, 24GB RAM, 512GB SSD',
+    },
+    description: 'MacBook',
+  },
   {
     name: {
       title: 'AOC',
@@ -102,7 +116,7 @@ export const Setup: Kit[] = [
     },
     description: 'HDD',
   },
-];
+]
 
 export const Equipment: Kit[] = [
   {
@@ -161,4 +175,4 @@ export const Equipment: Kit[] = [
     },
     description: 'Gaming Chair',
   },
-];
+]
