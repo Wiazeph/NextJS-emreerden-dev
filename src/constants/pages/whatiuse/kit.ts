@@ -25,13 +25,6 @@ export const Gear: Kit[] = [
   {
     name: {
       title: 'Spigen',
-      specs: 'Matte metallic finish, 45mm',
-    },
-    description: 'Smart Watch Strap',
-  },
-  {
-    name: {
-      title: 'Spigen',
       specs: 'Thin Fit Black, 45mm',
     },
     description: 'Smart Watch Case',
