@@ -1,16 +1,16 @@
 import { Skills as SkillsType } from '@/types/skills'
 
-import { IoLogoHtml5, IoLogoCss3, IoLogoSass } from 'react-icons/io'
-import { FaReact } from 'react-icons/fa'
 import {
-  BiLogoTailwindCss,
-  BiLogoJavascript,
-  BiLogoTypescript,
   BiLogoGit,
+  BiLogoJavascript,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
 } from 'react-icons/bi'
-import { SiNextdotjs, SiPrisma, SiLangchain } from 'react-icons/si'
-import { RiSupabaseFill } from 'react-icons/ri'
 import { BsStripe } from 'react-icons/bs'
+import { FaReact, FaShopify } from 'react-icons/fa'
+import { IoLogoCss3, IoLogoHtml5, IoLogoSass } from 'react-icons/io'
+import { RiSupabaseFill } from 'react-icons/ri'
+import { SiLangchain, SiNextdotjs, SiPrisma } from 'react-icons/si'
 
 export const Skills: SkillsType[] = [
   {
@@ -61,6 +61,12 @@ export const Skills: SkillsType[] = [
     name: 'Supabase',
     path: 'https://supabase.com/',
     icon: <RiSupabaseFill className="w-5 h-5" />,
+  },
+  {
+    name: 'Shopify',
+    description: 'Remix, Extensions',
+    path: 'https://supabase.com/',
+    icon: <FaShopify />,
   },
   {
     name: 'Langchain',

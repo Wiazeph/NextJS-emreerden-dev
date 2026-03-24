@@ -33,9 +33,14 @@ const SkillsPageComponent = (props: Props) => {
                 rel="noopener noreferrer"
                 className="Main-Card"
               >
-                {skill?.icon && <div className="text-2xl">{skill.icon}</div>}
+                {skill?.icon && <div className="text-2xl shrink-0">{skill.icon}</div>}
 
-                <div className="text-sm">{skill.name}</div>
+                <div>
+                  <div className="text-sm">{skill.name}</div>
+                  {skill.description && (
+                    <div className="text-[10px] opacity-60">{skill.description}</div>
+                  )}
+                </div>
               </a>
             </motion.li>
           ))}
