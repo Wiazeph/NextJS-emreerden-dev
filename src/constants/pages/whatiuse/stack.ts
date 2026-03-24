@@ -1,132 +1,180 @@
-import { WhatIUse } from '@/types/whatiuse';
+import { WhatIUse } from "@/types/whatiuse";
 
 export const Stack: WhatIUse[] = [
   {
-    name: 'Proton Mail',
-    path: 'https://proton.me/mail',
+    name: "Proton Mail",
+    path: "https://proton.me/mail",
   },
   {
-    name: 'Proton Pass',
-    path: 'https://proton.me/pass',
+    name: "Proton Pass",
+    path: "https://proton.me/pass",
   },
   {
-    name: 'Proton Calendar',
-    path: 'https://proton.me/calendar',
+    name: "Proton Calendar",
+    path: "https://proton.me/calendar",
   },
   {
-    name: 'Proton VPN',
-    path: 'https://protonvpn.com/',
+    name: "Proton VPN",
+    path: "https://protonvpn.com/",
   },
   {
-    name: 'Authy',
-    path: 'https://authy.com/',
+    name: "Proton Drive",
+    path: "https://proton.me/drive",
   },
   {
-    name: 'Firefox Browser',
-    path: 'https://www.mozilla.org/en-US/firefox/new/',
+    name: "Proton Docs",
+    path: "https://proton.me/drive/docs",
   },
   {
-    name: 'Google Chrome',
-    path: 'https://www.google.com/chrome/',
+    name: "Authy",
+    path: "https://authy.com/",
   },
   {
-    name: 'Google Maps',
-    path: 'https://maps.google.com/',
+    name: "Brave Browser",
+    path: "https://brave.com/",
   },
   {
-    name: 'Google Drive',
-    path: 'https://drive.google.com/drive',
+    name: "Firefox Browser",
+    path: "https://www.mozilla.org/en-US/firefox/new/",
   },
   {
-    name: 'Google Meet',
-    path: 'https://meet.google.com/',
+    name: "Google Chrome",
+    path: "https://www.google.com/chrome/",
   },
   {
-    name: 'Google Translate',
-    path: 'https://translate.google.com/',
+    name: "Whatsapp",
+    path: "https://www.whatsapp.com/",
   },
   {
-    name: 'DeepL Translator',
-    path: 'https://www.deepl.com/translator',
+    name: "Discord",
+    path: "https://discord.com/",
   },
   {
-    name: 'Notion',
-    path: 'https://www.notion.so/',
+    name: "Telegram",
+    path: "https://telegram.org/",
   },
   {
-    name: 'Todoist',
-    path: 'https://todoist.com/',
+    name: "Google Maps",
+    path: "https://maps.google.com/",
   },
   {
-    name: 'Raindrop.io',
-    path: 'https://raindrop.io/',
+    name: "Google Drive",
+    path: "https://drive.google.com/drive",
   },
   {
-    name: 'Pocket',
-    path: 'https://getpocket.com/',
+    name: "Google Meet",
+    path: "https://meet.google.com/",
   },
   {
-    name: 'Cursor',
-    path: 'https://www.cursor.com/',
+    name: "Google Translate",
+    path: "https://translate.google.com/",
   },
   {
-    name: 'Visual Studio Code',
-    path: 'https://code.visualstudio.com/',
+    name: "DeepL Translator",
+    path: "https://www.deepl.com/translator",
   },
   {
-    name: 'Sublime Text',
-    path: 'https://www.sublimetext.com/',
+    name: "Notion",
+    path: "https://www.notion.so/",
   },
   {
-    name: 'ChatGPT',
-    path: 'https://openai.com/chatgpt',
+    name: "Todoist",
+    path: "https://todoist.com/",
   },
   {
-    name: 'Copilot',
-    path: 'https://copilot.github.com/',
+    name: "Raindrop.io",
+    path: "https://raindrop.io/",
   },
   {
-    name: 'Claude',
-    path: 'https://www.anthropic.com/claude',
+    name: "Pocket",
+    path: "https://getpocket.com/",
   },
   {
-    name: 'Vercel',
-    path: 'https://vercel.com/',
+    name: "Cursor",
+    path: "https://www.cursor.com/",
   },
   {
-    name: 'Linear',
-    path: 'https://linear.app/',
+    name: "Visual Studio Code",
+    path: "https://code.visualstudio.com/",
   },
   {
-    name: 'Shortcut',
-    path: 'https://www.shortcut.com/',
+    name: "Warp Terminal",
+    path: "https://www.warp.dev/",
   },
   {
-    name: 'Clickup',
-    path: 'https://clickup.com/',
+    name: "Sublime Text",
+    path: "https://www.sublimetext.com/",
   },
   {
-    name: 'Calendly',
-    path: 'https://calendly.com/',
+    name: "ChatGPT",
+    path: "https://openai.com/chatgpt",
   },
   {
-    name: 'Zoom',
-    path: 'https://zoom.us/',
+    name: "Copilot",
+    path: "https://copilot.github.com/",
   },
   {
-    name: 'Figma',
-    path: 'https://www.figma.com/',
+    name: "Claude",
+    path: "https://www.anthropic.com/claude",
   },
   {
-    name: 'FlowCV',
-    path: 'https://flowcv.com/',
+    name: "Postman",
+    path: "https://www.postman.com/",
   },
   {
-    name: 'Excalidraw',
-    path: 'https://excalidraw.com/',
+    name: "Vercel",
+    path: "https://vercel.com/",
   },
   {
-    name: 'Lightshot',
-    path: 'https://app.prntscr.com/',
+    name: "Slack",
+    path: "https://slack.com/",
+  },
+  {
+    name: "Linear",
+    path: "https://linear.app/",
+  },
+  {
+    name: "Shortcut",
+    path: "https://www.shortcut.com/",
+  },
+  {
+    name: "Clickup",
+    path: "https://clickup.com/",
+  },
+  {
+    name: "Calendly",
+    path: "https://calendly.com/",
+  },
+  {
+    name: "Zoom",
+    path: "https://zoom.us/",
+  },
+  {
+    name: "Figma",
+    path: "https://www.figma.com/",
+  },
+  {
+    name: "FlowCV",
+    path: "https://flowcv.com/",
+  },
+  {
+    name: "Excalidraw",
+    path: "https://excalidraw.com/",
+  },
+  {
+    name: "Zight",
+    path: "https://zight.com/",
+  },
+  {
+    name: "Lightshot",
+    path: "https://app.prntscr.com/",
+  },
+  {
+    name: "AnyDesk",
+    path: "https://anydesk.com/en",
+  },
+  {
+    name: "VLC media player",
+    path: "https://www.videolan.org/",
   },
 ];

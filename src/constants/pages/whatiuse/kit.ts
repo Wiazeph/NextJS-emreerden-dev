@@ -1,171 +1,178 @@
-import { Kit } from '@/types/whatiuse'
+import { Kit } from "@/types/whatiuse";
 
 export const Gear: Kit[] = [
   {
     name: {
-      title: 'Apple',
-      specs: 'iPhone 13',
+      title: "Apple",
+      specs: "iPhone 13",
     },
-    description: 'Mobile Phone',
+    description: "Mobile Phone",
   },
   {
     name: {
-      title: 'Apple',
-      specs: 'AirPods Pro 2',
+      title: "Apple",
+      specs: "AirPods Pro 2",
     },
-    description: 'Wireless Earbuds',
+    description: "Wireless Earbuds",
   },
   {
     name: {
-      title: 'Apple',
-      specs: 'Watch Series 9',
+      title: "Apple",
+      specs: "Watch Series 11",
     },
-    description: 'Smart Watch',
+    description: "Smart Watch",
   },
-  {
-    name: {
-      title: 'Spigen',
-      specs: 'Thin Fit Black, 45mm',
-    },
-    description: 'Smart Watch Case',
-  },
-]
+];
 
 export const Setup: Kit[] = [
   {
     name: {
-      title: 'Apple',
+      title: "Apple",
       specs: 'M4 Pro, 14", 12-CPU, 16-GPU, 24GB RAM, 512GB SSD',
     },
-    description: 'MacBook',
+    description: "MacBook",
   },
   {
     name: {
-      title: 'AOC',
+      title: "AOC",
       specs: 'C27G2Z3, 27", 280Hz',
     },
-    description: 'Monitor',
+    description: "Monitor",
   },
   {
     name: {
-      title: 'AOC',
+      title: "AOC",
       specs: '24G2ZU, 23.8", 240Hz',
     },
-    description: 'Monitor',
+    description: "Monitor",
   },
   {
     name: {
-      title: 'North Bayou',
-      specs: 'Nb H180, Dual',
+      title: "North Bayou",
+      specs: "Nb H180, Dual",
     },
-    description: 'Monitor Desk Stand',
+    description: "Monitor Desk Stand",
   },
   {
     name: {
-      title: 'Rampage',
-      specs: 'HELIOS Mesh, 550W 80+, ATX Mid-T',
+      title: "Rampage",
+      specs: "HELIOS Mesh, 550W 80+, ATX Mid-T",
     },
-    description: 'PC Case',
+    description: "PC Case",
   },
   {
     name: {
-      title: 'ASUS',
-      specs: 'PRIME A520M-K',
+      title: "ASUS",
+      specs: "PRIME A520M-K",
     },
-    description: 'Motherboard',
+    description: "Motherboard",
   },
   {
     name: {
-      title: 'AMD',
-      specs: 'Ryzen 5 5600',
+      title: "AMD",
+      specs: "Ryzen 5 5600",
     },
-    description: 'CPU',
+    description: "CPU",
   },
   {
     name: {
-      title: 'ASUS/NVIDIA',
-      specs: 'GeForce RTX 4060 DUAL WHITE',
+      title: "ASUS/NVIDIA",
+      specs: "GeForce RTX 4060 DUAL WHITE",
     },
-    description: 'GPU',
+    description: "GPU",
   },
   {
     name: {
-      title: 'GSKILL',
-      specs: 'Ripjaws V, 8GB x2',
+      title: "GSKILL",
+      specs: "Ripjaws V, 8GB x2",
     },
-    description: 'RAM',
+    description: "RAM",
   },
   {
     name: {
-      title: 'WD',
-      specs: '500GB Blue, M.2 (4000MB/3600MB)',
+      title: "WD",
+      specs: "500GB Blue, M.2 (4000MB/3600MB)",
     },
-    description: 'SSD',
+    description: "SSD",
   },
   {
     name: {
-      title: 'WD',
-      specs: '1TB Blue, 7200rpm',
+      title: "WD",
+      specs: "1TB Blue, 7200rpm",
     },
-    description: 'HDD',
+    description: "HDD",
   },
-]
+];
 
 export const Equipment: Kit[] = [
   {
     name: {
-      title: 'Logitech',
-      specs: 'G502 X, LIGHTSPEED',
+      title: "Logitech",
+      specs: "MX Brio, UHD 4K",
     },
-    description: 'Mouse',
+    description: "Webcam",
   },
   {
     name: {
-      title: 'SteelSeries',
-      specs: 'Qck Large',
+      title: "Logitech",
+      specs: "G502 X, LIGHTSPEED",
     },
-    description: 'Mouse Pad',
+    description: "Mouse",
   },
   {
     name: {
-      title: 'Logitech',
-      specs: 'G213 Prodigy, LIGHTSYNC RGB',
+      title: "Logitech",
+      specs: "G413 SE, Mechanical",
     },
-    description: 'Keyboard',
+    description: "Keyboard",
   },
   {
     name: {
-      title: 'ASUS',
-      specs: 'ROG Strix Go 2.4 GHz',
+      title: "Logitech",
+      specs: "G213 Prodigy, LIGHTSYNC RGB",
     },
-    description: 'Headset',
+    description: "Keyboard",
   },
   {
     name: {
-      title: 'Logitech',
-      specs: 'MX Brio, UHD 4K',
+      title: "Logitech",
+      specs: "Z207, Bluetooth Speakers",
     },
-    description: 'Webcam',
+    description: "Speakers",
   },
   {
     name: {
-      title: 'HyperX',
-      specs: 'QuadCast 2 S, RGB',
+      title: "ASUS",
+      specs: "ROG Strix Go 2.4 GHz",
     },
-    description: 'Microphone',
+    description: "Headset",
   },
   {
     name: {
-      title: 'FIFINE',
-      specs: 'BM88',
+      title: "HyperX",
+      specs: "QuadCast 2 S, RGB",
     },
-    description: 'Microphone Arm/Stand',
+    description: "Microphone",
   },
   {
     name: {
-      title: 'xDrive',
-      specs: 'FIRTINA, Foot Extension',
+      title: "FIFINE",
+      specs: "BM88",
     },
-    description: 'Gaming Chair',
+    description: "Microphone Arm/Stand",
   },
-]
+  {
+    name: {
+      title: "xDrive",
+      specs: "FIRTINA, Foot Extension",
+    },
+    description: "Gaming Chair",
+  },
+  {
+    name: {
+      title: "SteelSeries",
+      specs: "Qck Large",
+    },
+    description: "Mouse Pad",
+  },
+];
