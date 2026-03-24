@@ -3,10 +3,13 @@
 import React from 'react';
 //
 import { motion } from 'framer-motion';
+import { calculateAge } from '@/lib/utils';
 
 type Props = {};
 
 const AboutPageComponent = (props: Props) => {
+  const age = calculateAge(new Date('2000-11-09'));
+
   return (
     <main className="About Page">
       <div className="Page-Content">
@@ -25,7 +28,7 @@ const AboutPageComponent = (props: Props) => {
           transition={{ duration: 0.2, delay: 3 * 0.1 }}
           className="text-lg text-center mdl:text-left leading-8"
         >
-          First of all, Hello Mate! My name is Emre and I'm 24 years old. I live
+          First of all, Hello Mate! My name is Emre and I'm {age} years old. I live
           in{' '}
           <a
             href="https://goo.gl/maps/cadu4sCBbzi4B6F98"
