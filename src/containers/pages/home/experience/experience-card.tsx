@@ -45,6 +45,10 @@ const ExperienceCardComponent = (props: Experience) => {
               </div>
             </div>
           </div>
+
+          <div className="text-xs text-zinc-500 dark:text-zinc-400">
+            {props.location} · {props.workType}
+          </div>
         </div>
 
         {props.projects && (

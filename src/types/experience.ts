@@ -4,6 +4,8 @@ export interface Experience {
   path: string
   date: string
   position: string
+  location: string
+  workType: string
   projects?: Project[]
 }
 

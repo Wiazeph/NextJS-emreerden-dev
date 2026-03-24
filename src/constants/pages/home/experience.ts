@@ -7,6 +7,8 @@ export const ExperienceData: Experience[] = [
     path: 'https://popupsmart.com/',
     date: '21 February 2024 - 22 July 2024',
     position: 'Intern Software Developer',
+    location: 'Ankara, Turkey',
+    workType: 'Hybrid',
     projects: [
       {
         name: 'Website Audit AI',
@@ -43,6 +45,8 @@ export const ExperienceData: Experience[] = [
     path: 'https://popupsmart.com/',
     date: '22 July 2024 - 27 December 2024',
     position: 'Software Developer',
+    location: 'Ankara, Turkey',
+    workType: 'Hybrid',
     projects: [
       {
         name: 'HR Assistant AI',
@@ -105,5 +109,7 @@ export const ExperienceData: Experience[] = [
     path: 'https://analyzify.com/',
     date: '24 March 2025 - Present',
     position: 'Front-End Developer',
+    location: 'Tallinn, Harjumaa, Estonia',
+    workType: 'Remote',
   },
 ]

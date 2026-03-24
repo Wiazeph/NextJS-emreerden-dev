@@ -42,6 +42,8 @@ const ExperienceComponent = (props: Props) => {
               path={experience.path}
               date={experience.date}
               position={experience.position}
+              location={experience.location}
+              workType={experience.workType}
               projects={experience.projects}
             />
           ))}
