@@ -30,7 +30,7 @@ const ExperienceComponent = (props: Props) => {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2, delay: 8 * 0.1 }}
-        className="flex flex-col gap-y-10"
+        className="flex flex-col border-l dark:border-zinc-600 ml-2"
       >
         {ExperienceData.slice()
           .reverse()

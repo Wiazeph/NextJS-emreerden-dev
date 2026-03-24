@@ -16,9 +16,9 @@ const ExperienceCardComponent = (props: Experience) => {
     }))
   }
   return (
-    <li className="relative max-w-[550px] list-none before:content-[''] before:w-4 before:h-4 before:border-2 before:dark:border-zinc-600 before:bg-zinc-100 before:dark:bg-zinc-800 before:rounded-full before:absolute before:-left-2 before:top-[34px]">
-      <div className="flex flex-col gap-y-4 border-l dark:border-zinc-600">
-        <div className="flex flex-col gap-y-2 ml-6">
+    <li className="relative max-w-[550px] list-none pb-10 last:pb-0 before:content-[''] before:w-4 before:h-4 before:border-2 before:dark:border-zinc-600 before:bg-zinc-100 before:dark:bg-zinc-800 before:rounded-full before:absolute before:-left-[9px] before:top-[2px]">
+      <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-2 ml-5">
           <div className="text-sm text-zinc-600 dark:text-zinc-400">
             {props.date}
           </div>
@@ -55,7 +55,7 @@ const ExperienceCardComponent = (props: Experience) => {
               .map((project, index) => (
                 <div
                   key={index}
-                  className="flex flex-col gap-y-6 border ml-6 w-fit dark:border-zinc-800 rounded-md p-5 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors group"
+                  className="flex flex-col gap-y-6 border ml-5 w-fit dark:border-zinc-800 rounded-md p-5 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors group"
                 >
                   <a
                     href={project.path}
