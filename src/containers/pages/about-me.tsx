@@ -1,14 +1,27 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 //
 import { motion } from 'framer-motion';
-import { calculateAge } from '@/lib/utils';
+import { calculateAge, cn } from '@/lib/utils';
+//
+import { Button } from '@/components/ui/button';
+import {
+  EducationData,
+  CertificationData,
+  LanguageData,
+} from '@/constants/pages/about-me/data';
+import EducationCardComponent from './about-me/education-card';
+import CertificationCardComponent from './about-me/certification-card';
+
+type AboutTab = 'Education' | 'Certifications' | 'Languages';
 
 type Props = {};
 
 const AboutPageComponent = (props: Props) => {
   const age = calculateAge(new Date('2000-11-09'));
+  const [tab, setTab] = useState<AboutTab>('Education');
+  const tabs: AboutTab[] = ['Education', 'Certifications', 'Languages'];
 
   return (
     <main className="About Page">
@@ -110,6 +123,76 @@ const AboutPageComponent = (props: Props) => {
             </motion.div>
           </div>
         </div>
+
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 8 * 0.1 }}
+          className="flex border rounded-md p-1 w-full max-w-max bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700"
+        >
+          {tabs.map((t) => (
+            <Button
+              key={t}
+              onClick={() => setTab(t)}
+              variant={'secondary'}
+              size={'sm'}
+              className={cn('w-full h-8', {
+                'bg-white hover:bg-white dark:bg-zinc-700 dark:hover:bg-zinc-700':
+                  tab === t,
+              })}
+            >
+              {t}
+            </Button>
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 9 * 0.1 }}
+        >
+          {tab === 'Education' ? (
+            <div className="flex flex-col border-l dark:border-zinc-600 ml-2">
+              {EducationData.map((education, index) => (
+                <EducationCardComponent
+                  key={index}
+                  name={education.name}
+                  degree={education.degree}
+                  field={education.field}
+                  date={education.date}
+                />
+              ))}
+            </div>
+          ) : tab === 'Certifications' ? (
+            <div className="flex flex-col border-l dark:border-zinc-600 ml-2">
+              {CertificationData.map((cert, index) => (
+                <CertificationCardComponent
+                  key={index}
+                  name={cert.name}
+                  issuer={cert.issuer}
+                  date={cert.date}
+                  credentialUrl={cert.credentialUrl}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="flex flex-col max-w-[550px] gap-y-4">
+              {LanguageData.map((language, index) => (
+                <div key={index} className='flex flex-col gap-y-4'>
+                  <div className="flex flex-col gap-y-1 ">
+                    <div className="text-lg font-medium">{language.name}</div>
+                    <div className="text-sm text-zinc-500 dark:text-zinc-400">
+                      {language.proficiency}
+                    </div>
+                  </div>
+                  {index < LanguageData.length - 1 && (
+                    <div className="border-b dark:border-zinc-700" />
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </motion.div>
       </div>
     </main>
   );
