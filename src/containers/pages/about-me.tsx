@@ -10,18 +10,20 @@ import {
   EducationData,
   CertificationData,
   LanguageData,
+  EventData,
 } from '@/constants/pages/about-me/data';
 import EducationCardComponent from './about-me/education-card';
 import CertificationCardComponent from './about-me/certification-card';
+import EventCardComponent from './about-me/event-card';
 
-type AboutTab = 'Education' | 'Certifications' | 'Languages';
+type AboutTab = 'Education' | 'Certifications' | 'Events' | 'Languages';
 
 type Props = {};
 
 const AboutPageComponent = (props: Props) => {
   const age = calculateAge(new Date('2000-11-09'));
-  const [tab, setTab] = useState<AboutTab>('Education');
-  const tabs: AboutTab[] = ['Education', 'Certifications', 'Languages'];
+  const [tab, setTab] = useState<AboutTab>('Events');
+  const tabs: AboutTab[] = ['Events', 'Certifications', 'Education', 'Languages'];
 
   return (
     <main className="About Page">
@@ -128,7 +130,7 @@ const AboutPageComponent = (props: Props) => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.2, delay: 8 * 0.1 }}
-          className="flex border rounded-md p-1 w-full max-w-max bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700"
+          className="flex border rounded-md p-1 w-full max-w-max bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 overflow-x-auto"
         >
           {tabs.map((t) => (
             <Button
@@ -136,7 +138,7 @@ const AboutPageComponent = (props: Props) => {
               onClick={() => setTab(t)}
               variant={'secondary'}
               size={'sm'}
-              className={cn('w-full h-8', {
+              className={cn('w-full h-8 text-nowrap', {
                 'bg-white hover:bg-white dark:bg-zinc-700 dark:hover:bg-zinc-700':
                   tab === t,
               })}
@@ -172,6 +174,18 @@ const AboutPageComponent = (props: Props) => {
                   issuer={cert.issuer}
                   date={cert.date}
                   credentialUrl={cert.credentialUrl}
+                />
+              ))}
+            </div>
+          ) : tab === 'Events' ? (
+            <div className="flex flex-col border-l dark:border-zinc-600 ml-2">
+              {EventData.map((event, index) => (
+                <EventCardComponent
+                  key={index}
+                  name={event.name}
+                  role={event.role}
+                  date={event.date}
+                  location={event.location}
                 />
               ))}
             </div>

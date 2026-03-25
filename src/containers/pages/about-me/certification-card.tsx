@@ -25,7 +25,7 @@ const CertificationCardComponent = (props: Certification) => {
             rel="noopener noreferrer"
             className="flex gap-x-1.5 items-center mt-1 text-xs border dark:border-zinc-700 rounded-md px-2 py-1 w-fit hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
-            Show credential
+            Show Credential
             <GoLink className="text-xs" />
           </a>
         )}

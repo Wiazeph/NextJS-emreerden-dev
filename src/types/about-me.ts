@@ -16,3 +16,10 @@ export interface Language {
   name: string
   proficiency: string
 }
+
+export interface Event {
+  name: string
+  role: string
+  date: string
+  location: string
+}
