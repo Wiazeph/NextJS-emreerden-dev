@@ -38,7 +38,7 @@
     @apply flex flex-col gap-y-1;
   }
   .Side-Bar-Card-Hover {
-    @apply flex items-center gap-x-3 transition-all;
+    @apply flex items-center gap-x-2 transition-all;
   }
   /* Side-Bar */
 
