@@ -22,6 +22,13 @@ export const Gear: Kit[] = [
     },
     description: "Smart Watch",
   },
+  {
+    name: {
+      title: "Thule",
+      specs: "Enroute 21L",
+    },
+    description: "Backpack",
+  },
 ];
 
 export const Setup: Kit[] = [
@@ -52,6 +59,13 @@ export const Setup: Kit[] = [
       specs: "Nb H180, Dual",
     },
     description: "Monitor Desk Stand",
+  },
+  {
+    name: {
+      title: "FIFINE",
+      specs: "BM88",
+    },
+    description: "Microphone Arm/Stand",
   },
   {
     name: {
@@ -153,13 +167,6 @@ export const Equipment: Kit[] = [
       specs: "QuadCast 2 S, RGB",
     },
     description: "Microphone",
-  },
-  {
-    name: {
-      title: "FIFINE",
-      specs: "BM88",
-    },
-    description: "Microphone Arm/Stand",
   },
   {
     name: {
