@@ -15,19 +15,20 @@ export function calculateAge(birthDate: Date): number {
   return age
 }
 
+export function calculateDaysBetween(dateStr: string): number {
+  const [startStr, endStr] = dateStr.split(' - ')
+  const start = new Date(startStr)
+  const end = endStr === 'Present' ? new Date() : new Date(endStr)
+  return Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24))
+}
+
 export function calculateTotalExperience(
   experiences: { date: string }[]
 ): string {
   let totalDays = 0
 
   for (const exp of experiences) {
-    const [startStr, endStr] = exp.date.split(' - ')
-    const start = new Date(startStr)
-    const end = endStr === 'Present' ? new Date() : new Date(endStr)
-
-    totalDays += Math.round(
-      (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
-    )
+    totalDays += calculateDaysBetween(exp.date)
   }
 
   const years = Math.floor(totalDays / 365)

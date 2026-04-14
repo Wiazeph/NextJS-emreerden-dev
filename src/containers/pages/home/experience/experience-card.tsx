@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { GoLink } from 'react-icons/go'
 //
 import { Experience } from '@/types/experience'
+import { calculateDaysBetween } from '@/lib/utils'
 
 const ExperienceCardComponent = (props: Experience) => {
   const [showFullDetails, setShowFullDetails] = useState<
@@ -20,7 +21,7 @@ const ExperienceCardComponent = (props: Experience) => {
       <div className="flex flex-col gap-y-4">
         <div className="flex flex-col gap-y-2 ml-5">
           <div className="text-sm text-zinc-600 dark:text-zinc-400">
-            {props.date}
+            {props.date} ({calculateDaysBetween(props.date)} days)
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
